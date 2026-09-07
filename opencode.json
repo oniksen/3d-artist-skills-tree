@@ -1,0 +1,18 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "sqlite-explorer": {
+      "type": "local",
+      "command": ["python", ".mcp/sqlite_explorer.py"],
+      "enabled": true,
+      "environment": {
+        "SQLITE_DB_PATH": ".mcp/database.db"
+      }
+    },
+    "memory": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-memory"],
+      "enabled": true
+    }
+  }
+}

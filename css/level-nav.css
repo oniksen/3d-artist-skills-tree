@@ -1,0 +1,78 @@
+.level-nav {
+  padding: 0 40px;
+  margin-bottom: 32px;
+}
+
+.level-nav-inner {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scrollbar-width: none;
+}
+
+.level-nav-inner::-webkit-scrollbar {
+  display: none;
+}
+
+.level-btn {
+  flex-shrink: 0;
+  padding: 14px 20px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+  text-align: center;
+  min-width: 100px;
+}
+
+.level-btn:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(108, 92, 231, 0.15);
+}
+
+.level-btn.active {
+  background: linear-gradient(135deg, rgba(108, 92, 231, 0.2), rgba(0, 206, 201, 0.1));
+  border-color: var(--accent);
+  box-shadow: 0 0 24px var(--accent-glow);
+}
+
+.level-btn .level-name {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: block;
+}
+
+.level-btn.active .level-name {
+  color: #fff;
+}
+
+.level-btn .level-focus {
+  font-size: 0.66rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+  display: block;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.level-btn.active .level-focus {
+  color: var(--accent2);
+}
+
+.level-btn .level-index {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  display: block;
+  margin-top: 2px;
+}
+
+.level-btn.active .level-index {
+  color: var(--accent);
+}

@@ -1,0 +1,213 @@
+/* Tablets */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 60px 24px 40px;
+  }
+
+  .controls {
+    padding: 12px 24px 16px;
+  }
+
+  .level-nav {
+    padding: 0 24px;
+    margin-bottom: 24px;
+  }
+
+  .level-info {
+    padding: 0 24px;
+    margin-bottom: 20px;
+  }
+
+  .skills-container {
+    padding: 0 24px 60px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero {
+    padding: 48px 16px 28px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero .subtitle {
+    font-size: 0.82rem;
+    margin-top: 8px;
+  }
+
+  .hero .stats-bar {
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  .hero .stat-val {
+    font-size: 1.4rem;
+  }
+
+  .hero .stat-label {
+    font-size: 0.65rem;
+  }
+
+  .controls {
+    padding: 8px 16px 12px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-box {
+    max-width: 100%;
+    min-width: auto;
+  }
+
+  .filter-group {
+    display: none;
+  }
+
+  .level-nav {
+    padding: 0 16px;
+    margin-bottom: 16px;
+  }
+
+  .level-btn {
+    min-width: 80px;
+    padding: 10px 14px;
+  }
+
+  .level-btn .level-name {
+    font-size: 0.72rem;
+  }
+
+  .level-btn .level-focus {
+    font-size: 0.58rem;
+    max-width: 110px;
+  }
+
+  .level-info {
+    padding: 0 16px;
+    margin-bottom: 16px;
+  }
+
+  .level-info-card {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .level-info-card h3 {
+    font-size: 0.85rem;
+  }
+
+  .level-info-card li {
+    font-size: 0.78rem;
+  }
+
+  .skills-container {
+    padding: 0 16px 60px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .skill-card {
+    padding: 12px 14px;
+  }
+
+  .skill-name {
+    font-size: 0.82rem;
+  }
+
+  .skill-desc {
+    font-size: 0.72rem;
+  }
+
+  .modal {
+    padding: 20px;
+    margin: 8px;
+    max-height: 90vh;
+  }
+
+  .modal h2 {
+    font-size: 1.1rem;
+  }
+
+  .modal .modal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .career-heatmap {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .heatmap-cell {
+    padding: 6px 2px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: 1.4rem;
+  }
+
+  .level-btn {
+    min-width: 70px;
+    padding: 8px 10px;
+  }
+
+  .level-btn .level-name {
+    font-size: 0.68rem;
+  }
+
+  .level-btn .level-focus {
+    display: none;
+  }
+
+  .hero .stats-bar {
+    gap: 12px;
+  }
+
+  .hero .stat-val {
+    font-size: 1.1rem;
+  }
+
+  .category-header h2 {
+    font-size: 0.78rem;
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1440px) {
+  .hero {
+    padding: 100px 60px 70px;
+  }
+
+  .controls {
+    padding: 20px 60px 28px;
+  }
+
+  .level-nav {
+    padding: 0 60px;
+  }
+
+  .level-info {
+    padding: 0 60px;
+  }
+
+  .skills-container {
+    padding: 0 60px 80px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 14px;
+  }
+}

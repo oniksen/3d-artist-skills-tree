@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="siteTitle">3D Artist Master Skill Tree</title>
+  <meta id="siteDesc" name="description" content="Interactive skill tree for 3D artists — Career progression from Beginner to Art Director">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/canvas.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/controls.css">
+  <link rel="stylesheet" href="css/level-nav.css">
+  <link rel="stylesheet" href="css/level-info.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    .lang-switch {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      z-index: 100;
+      display: flex;
+      gap: 4px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 4px;
+    }
+    .lang-btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: inherit;
+    }
+    .lang-btn:hover {
+      color: var(--text);
+      background: var(--hover);
+    }
+    .lang-btn.active {
+      color: var(--accent);
+      background: var(--accent-bg);
+    }
+  </style>
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="lang-switch">
+    <button class="lang-btn active" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="ru">RU</button>
+  </div>
+
+  <div class="app">
+    <header class="hero">
+      <h1 id="heroTitle">3D Artist Master Skill Tree</h1>
+      <p class="subtitle" id="heroSubtitle">Career progression from Beginner to Art Director — Game Art, AAA/AA/Indie, Real-time 3D, Unreal Engine, Film/VFX fundamentals</p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-val" id="totalSkills">—</div>
+          <div class="stat-label" id="statSkillsLabel">Skills</div>
+        </div>
+        <div class="stat">
+          <div class="stat-val" id="totalCategories">—</div>
+          <div class="stat-label" id="statCategoriesLabel">Categories</div>
+        </div>
+        <div class="stat">
+          <div class="stat-val" id="totalLevels">—</div>
+          <div class="stat-label" id="statLevelsLabel">Career Levels</div>
+        </div>
+        <div class="stat">
+          <div class="stat-val">10</div>
+          <div class="stat-label" id="statMaxDiffLabel">Max Difficulty</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="controls">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Search skills by name, description, or category...">
+      </div>
+      <div class="filter-group" id="categoryFilters"></div>
+    </div>
+
+    <nav class="level-nav">
+      <div class="level-nav-inner" id="levelNav"></div>
+    </nav>
+
+    <section class="level-info" id="levelInfo"></section>
+
+    <main class="skills-container" id="skillsContainer"></main>
+  </div>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modalContent"></div>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/categories.js"></script>
+  <script src="js/canvas.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/skills.js"></script>
+  <script src="js/level-nav.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
