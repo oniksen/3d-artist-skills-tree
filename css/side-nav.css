@@ -8,6 +8,7 @@
 
 .side-nav {
   display: none;
+  padding-top: env(safe-area-inset-top);
 }
 
 .side-brand {

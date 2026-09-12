@@ -1,6 +1,6 @@
 /* Top bar */
 body {
-  padding-top: 60px;
+  padding-top: calc(60px + env(safe-area-inset-top));
 }
 
 .top-bar {
@@ -12,8 +12,8 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 0 20px;
-  height: 60px;
+  padding: env(safe-area-inset-top) 20px 0;
+  height: calc(60px + env(safe-area-inset-top));
   background: rgba(10, 10, 15, 0.75);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
