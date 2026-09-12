@@ -32,7 +32,7 @@ function buildLevelNav() {
 
     return `
       <div class="${cls.join(' ')}" data-level="${lv}">
-        <span class="level-name">${passed ? '✅ ' : ''}${getLevelLabel(lv)}${locked ? ' 🔒' : ''}</span>
+        <span class="level-name">${passed ? `${Icons.svg('circle-check', 14)} ` : ''}${getLevelLabel(lv)}${locked ? ` ${Icons.svg('lock', 13)}` : ''}</span>
         <span class="level-focus">${info?.focus || ''}</span>
         <span class="level-index">${I18n.t('skills_count', { count })}</span>
         ${showBar ? `
@@ -94,11 +94,11 @@ function renderLevelInfo() {
   let statusBadge = '';
   if (!readonly) {
     if (locked) {
-      statusBadge = `<span class="level-status-badge locked">🔒 ${I18n.t('level_status_locked')}</span>`;
+      statusBadge = `<span class="level-status-badge locked">${Icons.svg('lock', 14)} ${I18n.t('level_status_locked')}</span>`;
     } else if (passed) {
-      statusBadge = `<span class="level-status-badge passed">✅ ${I18n.t('level_status_passed')}</span>`;
+      statusBadge = `<span class="level-status-badge passed">${Icons.svg('circle-check', 14)} ${I18n.t('level_status_passed')}</span>`;
     } else if (isCurrent) {
-      statusBadge = `<span class="level-status-badge current">▶ ${I18n.t('level_status_in_progress')}</span>`;
+      statusBadge = `<span class="level-status-badge current">${Icons.svg('play', 14)} ${I18n.t('level_status_in_progress')}</span>`;
     }
   }
 

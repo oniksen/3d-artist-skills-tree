@@ -79,7 +79,7 @@ const View = (() => {
     }
     const data = Progress.getState().streak;
     const current = data && data.currentStreak ? data.currentStreak : 0;
-    badge.innerHTML = `<button class="streak-badge-btn" title="${I18n.t('streak_badge_title')}">🔥 <span>${current}</span></button>`;
+    badge.innerHTML = `<button class="streak-badge-btn" title="${I18n.t('streak_badge_title')}">${Icons.svg('flame', 16)} <span>${current}</span></button>`;
     badge.querySelector('button').addEventListener('click', toggleStreakPopover);
   }
 
@@ -90,7 +90,7 @@ const View = (() => {
     if (!user) {
       holder.innerHTML = `
         <button class="user-menu-btn login" id="userMenuBtn">
-          <span class="um-avatar">👤</span>
+          <span class="um-avatar">${Icons.svg('log-in', 16)}</span>
           <span class="um-label">${I18n.t('auth_login_btn')}</span>
         </button>`;
       holder.querySelector('#userMenuBtn').addEventListener('click', openLogin);
@@ -119,13 +119,13 @@ const View = (() => {
             </div>
           </div>
           <div class="um-stats">
-            <div class="um-stat"><span class="um-stat-icon">⭐</span><span class="um-stat-val" data-umstat="score">—</span><span class="um-stat-label">${I18n.t('profile_score')}</span></div>
-            <div class="um-stat"><span class="um-stat-icon">🔥</span><span class="um-stat-val" data-umstat="streak">—</span><span class="um-stat-label">${I18n.t('streak_current')}</span></div>
-            <div class="um-stat"><span class="um-stat-icon um-stat-level-ico"></span><span class="um-stat-val um-stat-level-name">—</span><span class="um-stat-label">${I18n.t('dash_current_level')}</span></div>
+            <div class="um-stat"><span class="um-stat-icon">${Icons.svg('star', 18)}</span><span class="um-stat-val" data-umstat="score">—</span><span class="um-stat-label">${I18n.t('profile_score')}</span></div>
+            <div class="um-stat"><span class="um-stat-icon">${Icons.svg('flame', 18)}</span><span class="um-stat-val" data-umstat="streak">—</span><span class="um-stat-label">${I18n.t('streak_current')}</span></div>
+            <div class="um-stat"><span class="um-stat-icon um-stat-level-ico">${Icons.svg('award', 18)}</span><span class="um-stat-val um-stat-level-name">—</span><span class="um-stat-label">${I18n.t('dash_current_level')}</span></div>
           </div>
           <div class="um-actions">
-            <button class="um-item" id="umReset" role="menuitem"><span class="um-item-icon">🔄</span><span>${I18n.t('auth_reset_progress')}</span></button>
-            <button class="um-item um-item-danger" id="umLogout" role="menuitem"><span class="um-item-icon">🚪</span><span>${I18n.t('auth_logout')}</span></button>
+            <button class="um-item" id="umReset" role="menuitem"><span class="um-item-icon">${Icons.svg('refresh-cw', 16)}</span><span>${I18n.t('auth_reset_progress')}</span></button>
+            <button class="um-item um-item-danger" id="umLogout" role="menuitem"><span class="um-item-icon">${Icons.svg('log-out', 16)}</span><span>${I18n.t('auth_logout')}</span></button>
           </div>
         </div>
       </div>`;
@@ -141,7 +141,6 @@ const View = (() => {
       const st = Progress.getState().streak;
       streakEl.textContent = st && st.currentStreak ? st.currentStreak : 0;
       const lv = Progress.getCurrentLevelId();
-      levelIc.textContent = LEVEL_ICONS[lv] || '';
       levelNm.textContent = getLevelLabel(lv);
     };
     btn.addEventListener('click', e => {
@@ -257,7 +256,7 @@ const View = (() => {
     content.innerHTML = `
       <div class="auth-inner">
         <button class="modal-close" id="loginCloseBtn">&times;</button>
-        <div class="auth-icon">🎨</div>
+        <div class="auth-icon">${Icons.svg('palette', 44)}</div>
         <h2>${isSignup ? I18n.t('auth_signup_title') : I18n.t('auth_login_title')}</h2>
         <p class="auth-sub">${isSignup ? I18n.t('auth_signup_sub') : I18n.t('auth_login_sub')}</p>
         <form class="auth-form" id="authForm">
@@ -397,11 +396,11 @@ const View = (() => {
       streak: I18n.t('ach_group_streak'),
     };
     const groupIcons = {
-      level_master: '👑',
-      level_up: '🎉',
-      category_perfect: '⭐',
-      path_complete: '🏁',
-      streak: '🔥',
+      level_master: Icons.svg('crown', 18),
+      level_up: Icons.svg('party-popper', 18),
+      category_perfect: Icons.svg('star', 18),
+      path_complete: Icons.svg('flag', 18),
+      streak: Icons.svg('flame', 18),
     };
 
     grid.innerHTML = groups.map(group => `
@@ -416,6 +415,9 @@ const View = (() => {
   function buildAchievementCard(def, earned) {
     const record = earned.find(r => Achievements.matches(def, r));
     const isEarned = !!record;
+    const ACH_ICON = { '👑': 'crown', '🎉': 'party-popper', '⭐': 'star', '🏁': 'flag', '🔥': 'flame' };
+    const achIconName = ACH_ICON[def.icon];
+    const iconSvg = achIconName ? Icons.svg(achIconName, 22) : def.icon;
     let title, condition;
     const p = def.params;
     switch (def.type) {

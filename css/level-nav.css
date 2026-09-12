@@ -50,6 +50,10 @@
   color: #fff;
 }
 
+.level-btn.passed .level-name .luc {
+  color: var(--success);
+}
+
 .level-btn .level-focus {
   font-size: 0.66rem;
   color: var(--text-muted);

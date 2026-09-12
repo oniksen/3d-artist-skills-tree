@@ -28,7 +28,7 @@ function buildProgressSectionHTML(skill) {
         <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:${prog.percent}%"></div></div>
         <span class="skill-progress-pct">${prog.percent}% · ${prog.score}/${prog.max}</span>
       </div>
-      ${readonly ? `<div class="readonly-hint">🔒 ${I18n.t('auth_required_progress')}</div>` : ''}
+      ${readonly ? `<div class="readonly-hint">${Icons.svg('lock', 13)} ${I18n.t('auth_required_progress')}</div>` : ''}
     </div>`;
 }
 

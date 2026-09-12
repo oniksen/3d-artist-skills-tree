@@ -58,6 +58,13 @@ img, svg {
   max-width: 100%;
 }
 
+/* Lucide inline icons */
+.luc {
+  display: inline-flex;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
 button {
   font-family: var(--font);
   cursor: pointer;

@@ -96,7 +96,7 @@ function buildStreakCard() {
     return `
       <div class="dash-day">
         <span class="dash-day-label${d.isToday ? ' today' : ''}">${label.slice(0, 2)}</span>
-        <div class="${cls.join(' ')}">${d.active ? '🔥' : ''}</div>
+        <div class="${cls.join(' ')}">${d.active ? Icons.svg('flame', 12) : ''}</div>
       </div>`;
   }).join('');
 
@@ -104,7 +104,7 @@ function buildStreakCard() {
     <div class="dash-card glow-orange">
       <h2 class="dash-card-title">${I18n.t('dash_streak_title')}</h2>
       <div class="dash-streak-head">
-        <span class="dash-streak-fire">🔥</span>
+        <span class="dash-streak-fire">${Icons.svg('flame', 26)}</span>
         <div>
           <div class="dash-streak-count">${current} ${pluralize(current, I18n.t('streak_day_1'), I18n.t('streak_day_2'), I18n.t('streak_day_5'))}</div>
           <div class="dash-streak-record">${I18n.t('streak_longest')}: ${longest} ${pluralize(longest, I18n.t('streak_day_1'), I18n.t('streak_day_2'), I18n.t('streak_day_5'))}</div>
@@ -140,7 +140,7 @@ function buildNextMilestone() {
   if (couldUnlock) {
     return `
       <div class="dash-ready">
-        <div class="dash-ready-title">🎉 ${I18n.t('dash_ready_title')}</div>
+        <div class="dash-ready-title">${Icons.svg('party-popper', 20)} ${I18n.t('dash_ready_title')}</div>
         <div class="dash-ready-body">${I18n.t('dash_ready_body', { level: getLevelLabel(next) })}</div>
       </div>`;
   }
@@ -175,5 +175,5 @@ function renderDashboard() {
       ${buildStreakCard()}
       ${buildNextMilestone()}
     </div>
-    ${readonly ? `<div class="dashboard-readonly">🔒 ${I18n.t('auth_required_progress')}</div>` : ''}`;
+    ${readonly ? `<div class="dashboard-readonly">${Icons.svg('lock', 14)} ${I18n.t('auth_required_progress')}</div>` : ''}`;
 }

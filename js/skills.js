@@ -15,7 +15,7 @@ function renderSkills() {
   if (skills.length === 0) {
     container.innerHTML = `
       <div class="empty-state">
-        <div class="empty-icon">🔍</div>
+        <div class="empty-icon">${Icons.svg('search', 28)}</div>
         <p>${I18n.t('no_skills_found')}</p>
       </div>`;
     return;

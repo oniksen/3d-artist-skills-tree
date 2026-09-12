@@ -3,7 +3,7 @@ async function init() {
   await loadData();
   if (!DATA) {
     document.getElementById('skillsContainer').innerHTML =
-      `<div class="empty-state"><div class="empty-icon">⚠️</div><p>${I18n.t('failed_to_load')}</p></div>`;
+      `<div class="empty-state"><div class="empty-icon">${Icons.svg('triangle-alert', 28)}</div><p>${I18n.t('failed_to_load')}</p></div>`;
     return;
   }
 

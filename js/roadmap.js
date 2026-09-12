@@ -59,7 +59,7 @@ function renderRoadmap() {
         ${focusLabel ? `<span class="roadmap-focus">${focusLabel}</span>` : ''}
       </div>
       <div class="roadmap-all-done">
-        <div class="rd-icon">✅</div>
+        <div class="rd-icon">${Icons.svg('circle-check', 32)}</div>
         <p>${I18n.t('road_all_done')}</p>
       </div>`;
     return;
@@ -71,7 +71,7 @@ function renderRoadmap() {
     return `
       <div class="gap-row" data-skill="${g.skillId}">
         <div class="gap-left">
-          <span class="gap-badge ${badgeCls}">${g.critical ? '⚠' : '◔'}</span>
+          <span class="gap-badge ${badgeCls}">${g.critical ? Icons.svg('triangle-alert', 14) : '◔'}</span>
           <div class="gap-info">
             <div class="gap-name">${g.skillName}</div>
             <div class="gap-meta">${g.categoryName} · ${g.levelName}</div>
