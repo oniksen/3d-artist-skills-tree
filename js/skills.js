@@ -1,3 +1,5 @@
+let skillsInitialRender = true;
+
 function refreshAfterProgress() {
   renderSkills();
   renderLevelInfo();
@@ -39,34 +41,59 @@ function renderSkills() {
     const catScore = Progress.getCategoryScore(currentLevel, cat);
 
     return `
-      <div class="category-section">
-        <div class="category-header${isCollapsed ? ' collapsed' : ''}" data-cat="${cat}">
+      <div class="category-section${isCollapsed ? ' collapsed' : ''}">
+        <div class="category-header${isCollapsed ? ' collapsed' : ''}" data-cat="${cat}" role="button" aria-expanded="${!isCollapsed}">
           <div class="category-dot" style="background:${color}; color:${color}"></div>
-          <h2>${getCategoryLabel(cat)}</h2>
+          <div class="category-title">
+            <h2>${getCategoryLabel(cat)}</h2>
+            ${!readonly ? `
+              <div class="cat-progress">
+                <div class="cat-progress-bar"><div class="cat-progress-fill" style="width:${catScore.percent}%"></div></div>
+                <span class="cat-progress-pct">${catScore.percent}%</span>
+              </div>` : ''}
+          </div>
           <span class="cat-count">${catSkills.length}</span>
-          ${!readonly ? `
-            <div class="cat-progress">
-              <div class="cat-progress-bar"><div class="cat-progress-fill" style="width:${catScore.percent}%"></div></div>
-              <span class="cat-progress-pct">${catScore.percent}%</span>
-            </div>` : ''}
-          <span class="cat-toggle">▼</span>
+          <span class="cat-toggle">${Icons.svg('chevron-down', 16)}</span>
         </div>
-        ${isCollapsed ? '' : `
+        <div class="category-collapse${isCollapsed ? ' state-hidden' : ''}">
           <div class="skills-grid">
             ${catSkills.map(s => buildSkillCard(s)).join('')}
-          </div>`}
+          </div>
+        </div>
       </div>`;
   }).join('');
 
   container.querySelectorAll('.category-header').forEach(header => {
+    const section = header.parentElement;
+    const collapse = section.querySelector('.category-collapse');
     header.addEventListener('click', () => {
       const cat = header.dataset.cat;
-      if (collapsedCategories.has(cat)) {
-        collapsedCategories.delete(cat);
-      } else {
+      const collapsing = !collapsedCategories.has(cat);
+      if (collapsing) {
         collapsedCategories.add(cat);
+        header.classList.add('collapsed');
+        section.classList.add('collapsed');
+        header.setAttribute('aria-expanded', 'false');
+        collapse.classList.remove('state-hidden');
+        if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          collapse.classList.add('state-hidden');
+        } else {
+          collapse.addEventListener('transitionend', function onCollapseEnd(e) {
+            if (e.propertyName === 'grid-template-rows') {
+              collapse.classList.add('state-hidden');
+              collapse.removeEventListener('transitionend', onCollapseEnd);
+            }
+          });
+        }
+      } else {
+        collapsedCategories.delete(cat);
+        collapse.classList.remove('state-hidden');
+        requestAnimationFrame(() => requestAnimationFrame(() => {
+          header.classList.remove('collapsed');
+          section.classList.remove('collapsed');
+          header.setAttribute('aria-expanded', 'true');
+        }));
       }
-      renderSkills();
     });
   });
 
@@ -75,6 +102,11 @@ function renderSkills() {
       openModal(card.dataset.id);
     });
   });
+
+  if (skillsInitialRender) {
+    skillsInitialRender = false;
+    setTimeout(() => container.classList.add('ready'), 450);
+  }
 }
 
 function buildSkillCard(skill) {
