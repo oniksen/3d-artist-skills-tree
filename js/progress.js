@@ -167,10 +167,11 @@ const Progress = (() => {
     await Store.setAssessment(id, skillId, assessment);
 
     if (becomingNew) {
-      Streak.sync().then((streak) => {
-        if (streak) state.streak = streak.currentStreak;
-        Bus.emit('streak:change', streak || null);
-      });
+      try {
+        const s = await Streak.sync();
+        if (s) state.streak = s;
+        Bus.emit('streak:change', s || null);
+      } catch (_) {}
     }
     await recalculate();
     Bus.emit('progress:change', { skillId, score });

@@ -84,9 +84,10 @@ function buildQuickStats() {
 
 function buildStreakCard() {
   const data = Progress.getState().streak;
-  const current = data ? data.currentStreak : 0;
-  const longest = data ? data.longestStreak : 0;
-  const week = Streak.getWeek(data);
+  const st = data && typeof data === 'object' ? data : {};
+  const current = st.currentStreak ? st.currentStreak : 0;
+  const longest = st.longestStreak ? st.longestStreak : 0;
+  const week = Streak.getWeek(st);
 
   const daysCells = week.map(d => {
     const label = I18n.t('weekday_' + ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'][Streak.parseDayString(d.date).getDay()]);

@@ -78,7 +78,8 @@ const View = (() => {
       return;
     }
     const data = Progress.getState().streak;
-    const current = data && data.currentStreak ? data.currentStreak : 0;
+    const st = data && typeof data === 'object' ? data : {};
+    const current = st.currentStreak ? st.currentStreak : 0;
     badge.innerHTML = `<button class="streak-badge-btn" title="${I18n.t('streak_badge_title')}">${Icons.svg('flame', 16)} <span>${current}</span></button>`;
     badge.querySelector('button').addEventListener('click', toggleStreakPopover);
   }
@@ -139,7 +140,8 @@ const View = (() => {
       if (!scoreEl || !streakEl) return;
       scoreEl.textContent = Progress.getTotalScore();
       const st = Progress.getState().streak;
-      streakEl.textContent = st && st.currentStreak ? st.currentStreak : 0;
+      const streakData = st && typeof st === 'object' ? st : {};
+      streakEl.textContent = streakData.currentStreak ? streakData.currentStreak : 0;
       const lv = Progress.getCurrentLevelId();
       levelNm.textContent = getLevelLabel(lv);
     };
@@ -196,7 +198,8 @@ const View = (() => {
         }
       });
       const data = Progress.getState().streak;
-      const week = Streak.getWeek(data);
+      const st = data && typeof data === 'object' ? data : {};
+      const week = Streak.getWeek(st);
       const today = Streak.getLocalDayString();
       const dateLabel = d => {
         const parsed = Streak.parseDayString(d);
@@ -216,8 +219,8 @@ const View = (() => {
             </div>`).join('')}
         </div>
         <div class="streak-stats">
-          <div class="ss-item"><span class="ss-val">${data ? data.currentStreak : 0}</span><span class="ss-label">${I18n.t('streak_current')}</span></div>
-          <div class="ss-item"><span class="ss-val">${data ? data.longestStreak : 0}</span><span class="ss-label">${I18n.t('streak_longest')}</span></div>
+          <div class="ss-item"><span class="ss-val">${st.currentStreak || 0}</span><span class="ss-label">${I18n.t('streak_current')}</span></div>
+          <div class="ss-item"><span class="ss-val">${st.longestStreak || 0}</span><span class="ss-label">${I18n.t('streak_longest')}</span></div>
         </div>`;
       const closeBtn = popover.querySelector('#streakPopClose');
       if (closeBtn) closeBtn.addEventListener('click', () => popover.classList.add('hidden'));
