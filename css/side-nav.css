@@ -80,6 +80,10 @@
     justify-content: center;
   }
 
+  .side-brand {
+    display: none;
+  }
+
   .side-brand-text {
     display: none;
   }
