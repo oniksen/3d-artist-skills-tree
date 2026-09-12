@@ -1,0 +1,142 @@
+/* Achievements view */
+.app-view {
+  min-height: 100vh;
+  padding: 0 48px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.achievements-page {
+  padding-top: 48px;
+}
+
+.achievements-head h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 0 8px;
+  background: linear-gradient(90deg, var(--text-primary), var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.achievements-head p {
+  color: var(--text-secondary);
+  margin: 0 0 20px;
+}
+
+.achievements-summary {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.ach-summary-bar {
+  flex: 1;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--glass);
+  overflow: hidden;
+}
+
+.ach-summary-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2), var(--accent4));
+  transition: width 0.4s ease;
+}
+
+.ach-summary-text {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent2);
+  white-space: nowrap;
+}
+
+.ach-group {
+  margin-bottom: 32px;
+}
+
+.ach-group-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.ach-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.ach-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+  transition: all var(--transition-fast);
+  opacity: 0.75;
+}
+
+.ach-card.earned {
+  border-color: rgba(253, 203, 110, 0.4);
+  opacity: 1;
+  box-shadow: 0 0 20px rgba(253, 203, 110, 0.06);
+}
+
+.ach-icon {
+  font-size: 26px;
+  flex-shrink: 0;
+}
+
+.ach-card:not(.earned) .ach-icon {
+  filter: grayscale(1);
+  opacity: 0.5;
+}
+
+.ach-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.ach-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.ach-cond {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 3px;
+  line-height: 1.4;
+}
+
+.ach-state {
+  font-family: var(--mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.ach-card.earned .ach-state {
+  color: var(--accent4);
+}

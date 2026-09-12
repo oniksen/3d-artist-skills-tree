@@ -3,13 +3,32 @@ let DATA = null;
 async function loadData() {
   try {
     const lang = I18n.getLang();
-    const resp = await fetch(`./data/${lang}.json`);
-    DATA = await resp.json();
+    const [dataResp, subResp] = await Promise.all([
+      fetch(`./data/${lang}.json`),
+      fetch(`./data/subtopics.${lang}.json`),
+    ]);
+    const data = await dataResp.json();
+    let subtopicsMap = {};
+    try {
+      subtopicsMap = await subResp.json();
+    } catch (e) {
+      console.warn('Failed to load subtopics, fallback to empty map', e);
+    }
+    data.skills = (data.skills || []).map(s => {
+      const subs = subtopicsMap[s.id] || [];
+      return { ...s, subtopics: subs, maxWeight: s.difficulty || 1 };
+    });
+    DATA = data;
     return DATA;
   } catch (e) {
     console.error('Failed to load skill data:', e);
     return null;
   }
+}
+
+function getSkillSubtopics(skillId) {
+  const skill = getSkillById(skillId);
+  return skill?.subtopics || [];
 }
 
 function getSkillById(id) {

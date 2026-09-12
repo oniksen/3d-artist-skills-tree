@@ -1,0 +1,130 @@
+/* Streak badge */
+.streak-badge-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 5px 12px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent4);
+  font-family: var(--mono);
+  cursor: pointer;
+  transition: border var(--transition-fast), background var(--transition-fast);
+}
+
+.streak-badge-btn:hover {
+  border-color: var(--border-hover);
+  background: var(--bg-card-hover);
+}
+
+.streak-badge.hidden {
+  display: none;
+}
+
+/* Popover */
+.streak-popover {
+  position: fixed;
+  top: 68px;
+  right: 16px;
+  z-index: 90;
+  width: 300px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  padding: 16px;
+  animation: menuIn 0.18s ease;
+}
+
+.streak-popover.hidden {
+  display: none;
+}
+
+.streak-pop-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+}
+
+.streak-pop-close {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.streak-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.streak-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.sd-date {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.sd-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--border-hover);
+  background: var(--glass);
+}
+
+.streak-day.active .sd-dot {
+  background: var(--accent4);
+  border-color: transparent;
+  box-shadow: 0 0 10px rgba(253, 203, 110, 0.5);
+}
+
+.streak-day.today .sd-date {
+  color: var(--accent4);
+  font-weight: 700;
+}
+
+.streak-stats {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.ss-item {
+  flex: 1;
+  background: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px;
+  text-align: center;
+}
+
+.ss-val {
+  display: block;
+  font-family: var(--mono);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent4);
+}
+
+.ss-label {
+  font-size: 11px;
+  color: var(--text-muted);
+}

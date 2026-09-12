@@ -1,0 +1,342 @@
+/* ==== General progress bars ==== */
+.skill-progress-mini {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0 2px;
+}
+
+.sp-bar {
+  flex: 1;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--glass);
+  overflow: hidden;
+}
+
+.sp-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sp-pct {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-secondary);
+  min-width: 34px;
+  text-align: right;
+}
+
+.skill-progress-mini.mastered .sp-fill {
+  background: var(--success);
+}
+
+.skill-progress-mini.mastered .sp-pct {
+  color: var(--success);
+}
+
+/* Mastered cards */
+.skill-card.mastered {
+  border-color: rgba(81, 207, 102, 0.35);
+}
+
+.skill-card.mastered .skill-name {
+  color: var(--success);
+}
+
+/* Category progress in header */
+.cat-progress {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+  margin-right: 8px;
+  min-width: 90px;
+}
+
+.cat-progress-bar {
+  flex: 1;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--glass);
+  overflow: hidden;
+}
+
+.cat-progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  transition: width 0.3s ease;
+}
+
+.cat-progress-pct {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-secondary);
+  min-width: 32px;
+  text-align: right;
+}
+
+/* Level nav progress */
+.level-progress {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.level-progress-bar {
+  flex: 1;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--glass);
+  overflow: hidden;
+}
+
+.level-progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent2), var(--accent));
+  transition: width 0.3s ease;
+}
+
+.level-progress-pct {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--text-secondary);
+  min-width: 30px;
+  text-align: right;
+}
+
+/* Level lock styling */
+.level-btn.locked {
+  opacity: 0.55;
+}
+
+.level-btn.passed .level-name {
+  color: var(--success);
+}
+
+.level-btn.current .level-name {
+  color: var(--accent);
+}
+
+/* Level info progress block */
+.level-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--glass);
+}
+
+.level-status-badge.current { color: var(--accent2); }
+.level-status-badge.passed { color: var(--success); }
+.level-status-badge.locked { color: var(--danger); }
+
+.level-score-block {
+  margin-top: 14px;
+}
+
+.level-score-bar {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--glass);
+  overflow: hidden;
+}
+
+.level-score-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent2), var(--accent));
+  transition: width 0.35s ease;
+}
+
+.level-score-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+.level-score-pct {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent2);
+}
+
+.level-score-pts {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.level-lock-hint {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Modal: subtopic progress section */
+.skill-progress-section {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--glass);
+  padding: 16px;
+}
+
+.progress-section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.progress-section-head h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+}
+
+.skill-score-badge {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent2);
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border-hover);
+  background: var(--bg-card);
+}
+
+.skill-score-badge.mastered {
+  color: var(--success);
+  border-color: rgba(81, 207, 102, 0.4);
+}
+
+.subtopics-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.subtopic-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background var(--transition-fast);
+  user-select: none;
+}
+
+.subtopic-row:hover {
+  background: var(--bg-card);
+}
+
+.subtopic-row input {
+  display: none;
+}
+
+.subtopic-chk {
+  width: 18px;
+  height: 18px;
+  border-radius: 6px;
+  border: 1px solid var(--border-hover);
+  background: var(--bg-card);
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+  position: relative;
+}
+
+.subtopic-row input:disabled + .subtopic-chk {
+  opacity: 0.4;
+}
+
+.subtopic-row.checked .subtopic-chk {
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  border-color: transparent;
+}
+
+.subtopic-row.checked .subtopic-chk::after {
+  content: '✓';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.subtopic-name {
+  flex: 1;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.subtopic-row.checked .subtopic-name {
+  color: var(--text-secondary);
+  text-decoration: line-through;
+  text-decoration-color: rgba(136, 136, 160, 0.4);
+}
+
+.subtopic-num {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.subtopics-empty {
+  font-size: 13px;
+  color: var(--text-muted);
+  padding: 4px 0;
+}
+
+.skill-progress-bar-wrap {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-progress-bar {
+  flex: 1;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--glass);
+  overflow: hidden;
+}
+
+.skill-progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  transition: width 0.3s ease;
+}
+
+.skill-progress-pct {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.readonly-hint {
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--accent4);
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px dashed rgba(253, 203, 110, 0.35);
+  background: rgba(253, 203, 110, 0.05);
+}

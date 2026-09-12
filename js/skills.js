@@ -1,3 +1,10 @@
+function refreshAfterProgress() {
+  renderSkills();
+  renderLevelInfo();
+  buildLevelNav();
+  View.refreshStats();
+}
+
 function renderSkills() {
   const container = document.getElementById('skillsContainer');
   if (!container) return;
@@ -28,6 +35,8 @@ function renderSkills() {
     const catSkills = grouped[cat].sort((a, b) => a.difficulty - b.difficulty);
     const isCollapsed = collapsedCategories.has(cat);
     const color = CATEGORY_COLORS[cat] || 'var(--accent)';
+    const readonly = Progress.isReadonly();
+    const catScore = Progress.getCategoryScore(currentLevel, cat);
 
     return `
       <div class="category-section">
@@ -35,6 +44,11 @@ function renderSkills() {
           <div class="category-dot" style="background:${color}; color:${color}"></div>
           <h2>${getCategoryLabel(cat)}</h2>
           <span class="cat-count">${catSkills.length}</span>
+          ${!readonly ? `
+            <div class="cat-progress">
+              <div class="cat-progress-bar"><div class="cat-progress-fill" style="width:${catScore.percent}%"></div></div>
+              <span class="cat-progress-pct">${catScore.percent}%</span>
+            </div>` : ''}
           <span class="cat-toggle">▼</span>
         </div>
         ${isCollapsed ? '' : `
@@ -66,6 +80,9 @@ function renderSkills() {
 function buildSkillCard(skill) {
   const status = getStatus(skill.id, currentLevel);
   const color = CATEGORY_COLORS[skill.category] || 'var(--accent)';
+  const readonly = Progress.isReadonly();
+  const prog = Progress.getSkillProgress(skill.id);
+  const mastered = prog.total > 0 && prog.done === prog.total;
 
   const diffBars = Array.from({ length: 10 }, (_, i) =>
     `<div class="bar-seg${i < skill.difficulty ? ' filled' : ''}"></div>`
@@ -80,15 +97,22 @@ function buildSkillCard(skill) {
     ? `<span class="prereq-tag">+${skill.prerequisites.length - 3}</span>`
     : '';
 
+  const progressHtml = !readonly ? `
+    <div class="skill-progress-mini${mastered ? ' mastered' : ''}">
+      <div class="sp-bar"><div class="sp-fill" style="width:${prog.percent}%"></div></div>
+      <span class="sp-pct">${mastered ? I18n.t('progress_done') : `${prog.percent}%`}</span>
+    </div>` : '';
+
   return `
-    <div class="skill-card" data-id="${skill.id}">
+    <div class="skill-card${mastered ? ' mastered' : ''}" data-id="${skill.id}">
       <div class="skill-top">
         <span class="skill-name">${skill.name}</span>
         <span class="status-badge status-${status}">
-          ${status === 'not_required' ? '—' : status}
+          ${status === 'not_required' ? '—' : I18n.t('status_' + status)}
         </span>
       </div>
       <div class="skill-desc">${skill.description}</div>
+      ${progressHtml}
       <div class="skill-meta">
         <div class="difficulty-bar diff-${Math.min(skill.difficulty, 10)}">${diffBars}</div>
         <span class="meta-tag">${skill.difficulty}/10</span>

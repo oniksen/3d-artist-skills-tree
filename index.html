@@ -11,57 +11,47 @@
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/canvas.css">
+  <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/controls.css">
   <link rel="stylesheet" href="css/level-nav.css">
   <link rel="stylesheet" href="css/level-info.css">
+  <link rel="stylesheet" href="css/progress.css">
   <link rel="stylesheet" href="css/skills.css">
   <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/streak.css">
+  <link rel="stylesheet" href="css/achievements.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <link rel="stylesheet" href="css/bottom-nav.css">
+  <link rel="stylesheet" href="css/toast.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <style>
-    .lang-switch {
-      position: fixed;
-      top: 16px;
-      right: 16px;
-      z-index: 100;
-      display: flex;
-      gap: 4px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 4px;
-    }
-    .lang-btn {
-      background: none;
-      border: none;
-      color: var(--text-muted);
-      font-size: 13px;
-      font-weight: 600;
-      padding: 6px 12px;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: all 0.2s;
-      font-family: inherit;
-    }
-    .lang-btn:hover {
-      color: var(--text);
-      background: var(--hover);
-    }
-    .lang-btn.active {
-      color: var(--accent);
-      background: var(--accent-bg);
-    }
-  </style>
 </head>
 <body>
   <canvas id="bg-canvas"></canvas>
 
-  <div class="lang-switch">
-    <button class="lang-btn active" data-lang="en">EN</button>
-    <button class="lang-btn" data-lang="ru">RU</button>
-  </div>
+  <header class="top-bar">
+    <button class="brand-btn" id="brandBtn" title="3D Skill Tree">
+      <span class="brand-icon">🎨</span>
+      <span class="brand-text" id="brandText">3D Skill Tree</span>
+    </button>
+    <nav class="top-nav" id="topNav">
+      <a class="top-nav-link active" data-view="tree"><span>🌳</span><span class="nav-label">Tree</span></a>
+      <a class="top-nav-link" data-view="achievements" title="Achievements"><span>🏆</span><span class="nav-label">Achievements</span></a>
+    </nav>
+    <div class="top-bar-right">
+      <button class="score-chip hidden" id="scoreChip" title="Score">⭐ <span id="scoreChipVal">0</span></button>
+      <div id="streakBadge" class="streak-badge hidden"></div>
+      <div id="userMenu"></div>
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ru">RU</button>
+      </div>
+    </div>
+  </header>
 
-  <div class="app">
+  <div id="streakPopover" class="streak-popover"></div>
+
+  <div class="app" id="viewTree">
     <header class="hero">
       <h1 id="heroTitle">3D Artist Master Skill Tree</h1>
       <p class="subtitle" id="heroSubtitle">Career progression from Beginner to Art Director — Game Art, AAA/AA/Indie, Real-time 3D, Unreal Engine, Film/VFX fundamentals</p>
@@ -102,18 +92,49 @@
     <main class="skills-container" id="skillsContainer"></main>
   </div>
 
+  <div class="app-view" id="viewAchievements" hidden>
+    <section class="achievements-page">
+      <div class="achievements-head">
+        <h1 id="achTitle">Achievements</h1>
+        <div class="achievements-summary" id="achSummary"></div>
+      </div>
+      <div class="achievements-groups" id="achievementsGrid"></div>
+    </section>
+  </div>
+
+  <nav class="bottom-nav" id="bottomNav">
+    <button class="bottom-nav-btn active" data-view="tree"><span class="bn-icon">🌳</span><span class="bn-label">Tree</span></button>
+    <button class="bottom-nav-btn" data-view="achievements"><span class="bn-icon">🏆</span><span class="bn-label">Achievements</span></button>
+    <button class="bottom-nav-btn" id="bottomAuthBtn"><span class="bn-icon">👤</span><span class="bn-label">Login</span></button>
+  </nav>
+
+  <div class="modal-overlay" id="loginOverlay">
+    <div class="modal auth-modal" id="loginContent"></div>
+  </div>
+
   <div class="modal-overlay" id="modalOverlay">
     <div class="modal" id="modalContent"></div>
   </div>
 
+  <div id="toastContainer" class="toast-container"></div>
+
   <script src="js/i18n.js"></script>
   <script src="js/data.js"></script>
   <script src="js/categories.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/bus.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/store-firestore.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/achievements.js"></script>
+  <script src="js/streak.js"></script>
   <script src="js/canvas.js"></script>
   <script src="js/search.js"></script>
   <script src="js/modal.js"></script>
   <script src="js/skills.js"></script>
   <script src="js/level-nav.js"></script>
+  <script src="js/view.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

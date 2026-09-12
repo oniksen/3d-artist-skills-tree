@@ -1,3 +1,51 @@
+function buildProgressSectionHTML(skill) {
+  const subs = skill.subtopics || [];
+  const prog = Progress.getSkillProgress(skill.id);
+  const readonly = Progress.isReadonly();
+  const mastered = prog.total > 0 && prog.done === prog.total;
+
+  const rows = subs.map((st, i) => {
+    const checked = prog.total > 0 && (Progress.getAssessment(skill.id)?.subtopics?.[i]);
+    return `
+      <label class="subtopic-row${checked ? ' checked' : ''}">
+        <input type="checkbox" data-idx="${i}" ${checked ? 'checked' : ''} ${readonly ? 'disabled' : ''}>
+        <span class="subtopic-chk"></span>
+        <span class="subtopic-name">${st}</span>
+        <span class="subtopic-num">${i + 1}/${subs.length}</span>
+      </label>`;
+  }).join('');
+
+  return `
+    <div class="modal-section skill-progress-section" id="skillProgressSection">
+      <div class="progress-section-head">
+        <h3>${I18n.t('progress_subtopics')}</h3>
+        <div class="skill-score-badge${mastered ? ' mastered' : ''}">
+          ${mastered ? I18n.t('progress_mastered') : `${prog.done}/${prog.total}`}
+        </div>
+      </div>
+      ${subs.length ? `<div class="subtopics-list">${rows}</div>` : `<div class="subtopics-empty">${I18n.t('progress_no_subtopics')}</div>`}
+      <div class="skill-progress-bar-wrap">
+        <div class="skill-progress-bar"><div class="skill-progress-fill" style="width:${prog.percent}%"></div></div>
+        <span class="skill-progress-pct">${prog.percent}% · ${prog.score}/${prog.max}</span>
+      </div>
+      ${readonly ? `<div class="readonly-hint">🔒 ${I18n.t('auth_required_progress')}</div>` : ''}
+    </div>`;
+}
+
+function bindProgressSectionEvents(skill) {
+  const section = document.getElementById('skillProgressSection');
+  if (!section) return;
+  section.querySelectorAll('input[type="checkbox"]').forEach(input => {
+    input.addEventListener('change', async () => {
+      const idx = Number(input.dataset.idx);
+      await Progress.toggleSubtopic(skill.id, idx);
+      section.innerHTML = buildProgressSectionHTML(skill);
+      bindProgressSectionEvents(skill);
+      refreshAfterProgress();
+    });
+  });
+}
+
 function openModal(skillId) {
   const skill = getSkillById(skillId);
   if (!skill) return;
@@ -69,6 +117,8 @@ function openModal(skillId) {
       </div>
     </div>
 
+    ${buildProgressSectionHTML(skill)}
+
     <div class="modal-section">
       <h3>${I18n.t('modal_career_progression')}</h3>
       <div class="career-heatmap">${statusBadges}</div>
@@ -122,6 +172,7 @@ function openModal(skillId) {
   overlay.classList.add('active');
   document.body.style.overflow = 'hidden';
 
+  bindProgressSectionEvents(skill);
   document.getElementById('modalCloseBtn').addEventListener('click', closeModal);
 }
 

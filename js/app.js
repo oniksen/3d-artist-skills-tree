@@ -11,14 +11,20 @@ async function init() {
   document.getElementById('totalCategories').textContent = getAllCategories().length;
   document.getElementById('totalLevels').textContent = LEVEL_ORDER.length;
 
-  buildLevelNav();
-  buildCategoryFilters();
-  initSearch();
-  initModal();
+  updateStaticText();
   initCanvas();
   initLangSwitch();
+  initModal();
+  initSearch();
 
-  selectLevel('junior');
+  await Progress.refresh();
+
+  buildLevelNav();
+  buildCategoryFilters();
+
+  View.init();
+  renderLevelInfo();
+  renderSkills();
 }
 
 async function switchLang(lang) {
@@ -35,6 +41,8 @@ async function switchLang(lang) {
   buildLevelNav();
   buildCategoryFilters();
   selectLevel(currentLevel);
+  View.renderAchievements();
+  View.refreshStats();
 
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.lang === lang);
@@ -51,7 +59,23 @@ function updateStaticText() {
   document.getElementById('statLevelsLabel').textContent = I18n.t('stat_levels');
   document.getElementById('statMaxDiffLabel').textContent = I18n.t('stat_max_difficulty');
   document.getElementById('searchInput').placeholder = I18n.t('search_placeholder');
-  document.getElementById('siteTitle').textContent = I18n.t('site_title');
+  document.getElementById('brandText').textContent = I18n.t('brand_title');
+  document.getElementById('topNav').querySelectorAll('.nav-label').forEach(el => {
+    const parent = el.closest('.top-nav-link');
+    if (parent) {
+      el.textContent = I18n.t('nav_' + parent.dataset.view);
+    }
+  });
+  document.querySelectorAll('#bottomNav .bn-label:not(#bottomAuthBtn .bn-label)').forEach(el => {
+    const parent = el.closest('.bottom-nav-btn');
+    if (parent && parent.dataset.view) {
+      el.textContent = I18n.t('nav_' + parent.dataset.view);
+    }
+  });
+  document.querySelectorAll('#bottomAuthBtn .bn-label').forEach(el => {
+    el.textContent = I18n.t('nav_login');
+  });
+  document.getElementById('achTitle').textContent = I18n.t('ach_title');
   document.title = I18n.t('site_title');
 }
 

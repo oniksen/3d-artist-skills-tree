@@ -1,6 +1,6 @@
 let activeCategories = new Set();
 let searchQuery = '';
-let collapsedCategories = new Set();
+let collapsedCategories = new Set(Object.keys(CATEGORY_COLORS));
 
 function buildCategoryFilters() {
   const container = document.getElementById('categoryFilters');

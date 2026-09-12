@@ -3,17 +3,27 @@
 }
 
 .category-section {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
   animation: fadeUp 0.4s ease both;
 }
 
 .category-header {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
   align-items: center;
   gap: 12px;
-  margin-bottom: 16px;
-  padding: 8px 0;
+  padding: 12px 16px;
+  cursor: pointer;
   user-select: none;
+  transition: var(--transition);
+}
+
+.category-header:hover {
+  background: var(--bg-card-hover);
 }
 
 .category-dot {
@@ -43,10 +53,14 @@
 }
 
 .category-header .cat-toggle {
-  margin-left: auto;
   font-size: 0.7rem;
   color: var(--text-muted);
   transition: var(--transition);
+  padding-left: 8px;
+}
+
+.category-header.collapsed {
+  border-color: var(--glass-border);
 }
 
 .category-header.collapsed .cat-toggle {
@@ -61,6 +75,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 12px;
+  padding: 16px;
 }
 
 .skill-card {
@@ -69,7 +84,7 @@
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 16px 18px;
+  padding: 20px 18px 16px;
   transition: var(--transition);
   cursor: pointer;
   position: relative;
@@ -82,10 +97,11 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 2px;
+  height: 3px;
   background: linear-gradient(90deg, var(--accent), var(--accent2));
   opacity: 0;
   transition: var(--transition);
+  z-index: 1;
 }
 
 .skill-card:hover {
