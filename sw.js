@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE = 'skill-tree-v6';
+const CACHE = 'skill-tree-v7';
 const STATIC_ASSETS = [
   './',
   './index.html',

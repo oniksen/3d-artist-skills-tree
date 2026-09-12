@@ -8,6 +8,10 @@
   "stat_max_difficulty": "Max Difficulty",
   "search_placeholder": "Search skills by name, description, or category...",
 
+  "filters_title": "Categories",
+  "filters_aria": "Open filters",
+  "filters_close": "Close",
+
   "brand_title": "3D Skill Tree",
   "nav_tree": "Tree",
   "nav_roadmap": "Roadmap",

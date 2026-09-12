@@ -8,6 +8,10 @@
   "stat_max_difficulty": "Макс. сложность",
   "search_placeholder": "Поиск навыков по названию, описанию или категории...",
 
+  "filters_title": "Категории",
+  "filters_aria": "Открыть фильтры",
+  "filters_close": "Закрыть",
+
   "brand_title": "3D Skill Tree",
   "nav_tree": "Дерево",
   "nav_roadmap": "Маршрут",

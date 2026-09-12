@@ -103,8 +103,8 @@
       <div class="search-box">
         <span class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="luc"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg></span>
         <input type="text" id="searchInput" placeholder="Search skills by name, description, or category...">
+        <button class="search-filter-btn" id="searchFilterBtn" aria-label="Open filters"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="luc"><path d="M10 8h4"/><path d="M12 21v-9"/><path d="M12 8V3"/><path d="M17 16h4"/><path d="M19 12V3"/><path d="M19 21v-5"/><path d="M3 14h4"/><path d="M5 10V3"/><path d="M5 21v-7"/></svg></button>
       </div>
-      <div class="filter-group" id="categoryFilters"></div>
     </div>
 
     <nav class="level-nav">
@@ -150,6 +150,17 @@
   </div>
 
   <div id="toastContainer" class="toast-container"></div>
+
+  <aside class="filter-sidebar" id="filterSidebar" aria-hidden="true">
+    <div class="filter-sidebar-backdrop" id="filterSidebarBackdrop"></div>
+    <div class="filter-sidebar-panel" role="dialog" aria-modal="true">
+      <div class="filter-sidebar-head">
+        <h3 id="filterSidebarTitle">Categories</h3>
+        <button class="filter-sidebar-close" id="filterSidebarClose" aria-label="Close">&times;</button>
+      </div>
+      <div class="filter-group filter-group-sidebar" id="categoryFilters"></div>
+    </div>
+  </aside>
 
   <script src="js/icons.js"></script>
   <script src="js/i18n.js"></script>

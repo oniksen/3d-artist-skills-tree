@@ -16,6 +16,7 @@ async function init() {
   initLangSwitch();
   initModal();
   initSearch();
+  initFilterSidebar();
 
   await Progress.refresh();
   currentLevel = Progress.isReadonly() ? 'junior' : Progress.getCurrentLevelId();
@@ -76,6 +77,12 @@ function updateStaticText() {
     }
   });
   document.getElementById('achTitle').textContent = I18n.t('ach_title');
+  const filterTitle = document.getElementById('filterSidebarTitle');
+  if (filterTitle) filterTitle.textContent = I18n.t('filters_title');
+  const filterBtn = document.getElementById('searchFilterBtn');
+  if (filterBtn) filterBtn.setAttribute('aria-label', I18n.t('filters_aria'));
+  const filterClose = document.getElementById('filterSidebarClose');
+  if (filterClose) filterClose.setAttribute('aria-label', I18n.t('filters_close'));
   document.title = I18n.t('site_title');
 }
 

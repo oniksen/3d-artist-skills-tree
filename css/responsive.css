@@ -137,10 +137,6 @@
     min-width: auto;
   }
 
-  .filter-group {
-    display: none;
-  }
-
   .level-nav {
     padding: 0 16px;
     margin-bottom: 16px;
