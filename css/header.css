@@ -32,12 +32,13 @@ body {
   font-weight: 700;
   padding: 6px 10px;
   border-radius: var(--radius-sm);
-  cursor: pointer;
+  cursor: default;
   transition: background var(--transition-fast);
 }
 
-.brand-btn:hover {
-  background: var(--glass);
+.top-bar .brand-btn:hover,
+.side-brand .brand-btn:hover {
+  background: none;
 }
 
 .brand-icon {

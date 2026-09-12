@@ -48,7 +48,7 @@ const Toast = (() => {
 // streak badge/popover and hash routing (#/tree, #/achievements, #/login)
 // ============================================================
 const View = (() => {
-  let currentHashView = 'tree';
+  let currentHashView = 'dashboard';
 
   // ---------- Header / stats ----------
 
@@ -249,7 +249,7 @@ const View = (() => {
     const overlay = document.getElementById('loginOverlay');
     overlay.classList.remove('active');
     if (resetHash && (location.hash === '#/login' || location.hash === '')) {
-      history.replaceState(null, '', '#/tree');
+      history.replaceState(null, '', '#/dashboard');
     }
   }
 
@@ -330,9 +330,9 @@ const View = (() => {
   // ---------- Router ----------
 
   function route() {
-    const hash = location.hash || '#/tree';
+    const hash = location.hash || '#/dashboard';
     const parts = hash.replace(/^#?\//, '').split('/');
-    const view = parts[0] || 'tree';
+    const view = parts[0] || 'dashboard';
     if (view === 'login') {
       openLogin();
       return;
@@ -476,12 +476,6 @@ const View = (() => {
 
   function init() {
     refreshStats();
-    document.getElementById('brandBtn').addEventListener('click', () => {
-      location.hash = '#/tree';
-    });
-    document.getElementById('sideBrandBtn').addEventListener('click', () => {
-      location.hash = '#/tree';
-    });
     document.querySelectorAll('#sideNav .side-nav-link, #bottomNav .bottom-nav-btn[data-view]').forEach(link => {
       link.addEventListener('click', () => {
         location.hash = '#/' + link.dataset.view;
