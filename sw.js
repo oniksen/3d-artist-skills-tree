@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE = 'skill-tree-v2';
+const CACHE = 'skill-tree-v3';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -14,6 +14,7 @@ const STATIC_ASSETS = [
   './css/base.css',
   './css/canvas.css',
   './css/header.css',
+  './css/profile.css',
   './css/side-nav.css',
   './css/hero.css',
   './css/controls.css',

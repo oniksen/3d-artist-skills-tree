@@ -146,6 +146,9 @@
   "auth_wrong_credentials": "Неверный email или пароль",
   "auth_error_generic": "Что-то пошло не так",
 
+  "profile_score": "Очки",
+  "profile_since": "С нами с {date}",
+
   "ach_title": "Достижения",
   "ach_earned_of": "{earned} из {total}",
   "ach_group_level_up": "Переходы уровней",

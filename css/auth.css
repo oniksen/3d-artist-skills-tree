@@ -17,6 +17,11 @@
   margin: 4px 0;
 }
 
+/* Auth title is centered — don't reserve asymmetric space for the close button */
+.auth-modal h2 {
+  padding-right: 0;
+}
+
 .auth-sub {
   color: var(--text-muted);
   font-size: 13px;

@@ -146,6 +146,9 @@
   "auth_wrong_credentials": "Wrong email or password",
   "auth_error_generic": "Something went wrong",
 
+  "profile_score": "Score",
+  "profile_since": "Member since {date}",
+
   "ach_title": "Achievements",
   "ach_earned_of": "{earned} of {total}",
   "ach_group_level_up": "Level ups",

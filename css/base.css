@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+/* Visibility utility: toggling via classList ("hidden") */
+.hidden {
+  display: none !important;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 16px;

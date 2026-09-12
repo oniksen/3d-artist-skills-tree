@@ -72,7 +72,11 @@ const View = (() => {
     if (!badge) return;
     const readonly = Progress.isReadonly();
     badge.classList.toggle('hidden', readonly);
-    if (readonly) return;
+    if (readonly) {
+      const popover = document.getElementById('streakPopover');
+      if (popover) popover.classList.add('hidden');
+      return;
+    }
     const data = Progress.getState().streak;
     const current = data && data.currentStreak ? data.currentStreak : 0;
     badge.innerHTML = `<button class="streak-badge-btn" title="${I18n.t('streak_badge_title')}">🔥 <span>${current}</span></button>`;
@@ -93,23 +97,63 @@ const View = (() => {
       return;
     }
     const initial = (user.displayName || user.email || 'U').slice(0, 1).toUpperCase();
+    const memberSince = I18n.t('profile_since', {
+      date: new Date(user.createdAt).toLocaleDateString(
+        I18n.getLang() === 'ru' ? 'ru-RU' : 'en-US',
+        { month: 'long', year: 'numeric' }
+      ),
+    });
     holder.innerHTML = `
       <div class="user-menu" id="userMenuRoot">
-        <button class="user-menu-btn" id="userMenuBtn">
+        <button class="user-menu-btn" id="userMenuBtn" aria-haspopup="true" aria-expanded="false">
           <span class="um-avatar">${initial}</span>
           <span class="um-label">${user.displayName || user.email}</span>
         </button>
-        <div class="user-menu-dropdown hidden" id="userMenuDropdown">
-          <div class="um-header">${user.email}</div>
-          <button class="um-item" id="umReset">${I18n.t('auth_reset_progress')}</button>
-          <button class="um-item" id="umLogout">${I18n.t('auth_logout')}</button>
+        <div class="user-menu-dropdown hidden" id="userMenuDropdown" role="menu">
+          <div class="um-profile">
+            <div class="um-avatar-ring"><span class="um-big-avatar">${initial}</span></div>
+            <div class="um-profile-text">
+              <div class="um-name">${user.displayName || user.email}</div>
+              <div class="um-email">${user.email}</div>
+              <div class="um-since">${memberSince}</div>
+            </div>
+          </div>
+          <div class="um-stats">
+            <div class="um-stat"><span class="um-stat-icon">⭐</span><span class="um-stat-val" data-umstat="score">—</span><span class="um-stat-label">${I18n.t('profile_score')}</span></div>
+            <div class="um-stat"><span class="um-stat-icon">🔥</span><span class="um-stat-val" data-umstat="streak">—</span><span class="um-stat-label">${I18n.t('streak_current')}</span></div>
+            <div class="um-stat"><span class="um-stat-icon um-stat-level-ico"></span><span class="um-stat-val um-stat-level-name">—</span><span class="um-stat-label">${I18n.t('dash_current_level')}</span></div>
+          </div>
+          <div class="um-actions">
+            <button class="um-item" id="umReset" role="menuitem"><span class="um-item-icon">🔄</span><span>${I18n.t('auth_reset_progress')}</span></button>
+            <button class="um-item um-item-danger" id="umLogout" role="menuitem"><span class="um-item-icon">🚪</span><span>${I18n.t('auth_logout')}</span></button>
+          </div>
         </div>
       </div>`;
     const btn = holder.querySelector('#userMenuBtn');
     const dd = holder.querySelector('#userMenuDropdown');
+    const refreshUmStats = () => {
+      const scoreEl = dd.querySelector('[data-umstat="score"]');
+      const streakEl = dd.querySelector('[data-umstat="streak"]');
+      const levelIc = dd.querySelector('.um-stat-level-ico');
+      const levelNm = dd.querySelector('.um-stat-level-name');
+      if (!scoreEl || !streakEl) return;
+      scoreEl.textContent = Progress.getTotalScore();
+      const st = Progress.getState().streak;
+      streakEl.textContent = st && st.currentStreak ? st.currentStreak : 0;
+      const lv = Progress.getCurrentLevelId();
+      levelIc.textContent = LEVEL_ICONS[lv] || '';
+      levelNm.textContent = getLevelLabel(lv);
+    };
     btn.addEventListener('click', e => {
       e.stopPropagation();
+      const willOpen = dd.classList.contains('hidden');
+      if (willOpen) {
+        const sp = document.getElementById('streakPopover');
+        if (sp) sp.classList.add('hidden');
+      }
+      refreshUmStats();
       dd.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(willOpen));
     });
     holder.querySelector('#umLogout').addEventListener('click', async () => {
       closeLoginInternal(false);
@@ -145,6 +189,13 @@ const View = (() => {
     const isOpen = !popover.classList.contains('hidden');
     popover.classList.toggle('hidden', isOpen);
     if (!isOpen) {
+      document.querySelectorAll('.user-menu-dropdown').forEach(dd => {
+        if (!dd.classList.contains('hidden')) {
+          dd.classList.add('hidden');
+          const btn = document.querySelector('.user-menu-btn');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        }
+      });
       const data = Progress.getState().streak;
       const week = Streak.getWeek(data);
       const today = Streak.getLocalDayString();
