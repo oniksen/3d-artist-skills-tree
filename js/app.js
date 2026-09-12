@@ -62,8 +62,9 @@ function updateStaticText() {
   document.getElementById('statMaxDiffLabel').textContent = I18n.t('stat_max_difficulty');
   document.getElementById('searchInput').placeholder = I18n.t('search_placeholder');
   document.getElementById('brandText').textContent = I18n.t('brand_title');
-  document.getElementById('topNav').querySelectorAll('.nav-label').forEach(el => {
-    const parent = el.closest('.top-nav-link');
+  document.getElementById('sideBrandText').textContent = I18n.t('brand_title');
+  document.getElementById('sideNav').querySelectorAll('.nav-label').forEach(el => {
+    const parent = el.closest('.side-nav-link');
     if (parent) {
       el.textContent = I18n.t('nav_' + parent.dataset.view);
     }

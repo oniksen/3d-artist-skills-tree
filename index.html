@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/canvas.css">
   <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/side-nav.css">
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/controls.css">
   <link rel="stylesheet" href="css/level-nav.css">
@@ -32,16 +33,10 @@
   <canvas id="bg-canvas"></canvas>
 
   <header class="top-bar">
-    <button class="brand-btn" id="brandBtn" title="3D Skill Tree">
+    <button class="brand-btn top-bar-brand" id="brandBtn" title="3D Skill Tree">
       <span class="brand-icon">🎨</span>
       <span class="brand-text" id="brandText">3D Skill Tree</span>
     </button>
-    <nav class="top-nav" id="topNav">
-      <a class="top-nav-link active" data-view="tree"><span>🌳</span><span class="nav-label">Tree</span></a>
-      <a class="top-nav-link" data-view="roadmap" title="Roadmap"><span>🗺️</span><span class="nav-label">Roadmap</span></a>
-      <a class="top-nav-link" data-view="dashboard" title="Dashboard"><span>📊</span><span class="nav-label">Dashboard</span></a>
-      <a class="top-nav-link" data-view="achievements" title="Achievements"><span>🏆</span><span class="nav-label">Achievements</span></a>
-    </nav>
     <div class="top-bar-right">
       <button class="score-chip hidden" id="scoreChip" title="Score">⭐ <span id="scoreChipVal">0</span></button>
       <div id="streakBadge" class="streak-badge hidden"></div>
@@ -52,6 +47,21 @@
       </div>
     </div>
   </header>
+
+  <nav class="side-nav" id="sideNav" aria-label="Основная навигация">
+    <div class="side-brand">
+      <button class="brand-btn" id="sideBrandBtn" title="3D Skill Tree">
+        <span class="brand-icon">🎨</span>
+        <span class="brand-text side-brand-text" id="sideBrandText">3D Skill Tree</span>
+      </button>
+    </div>
+    <div class="side-nav-inner">
+      <a class="side-nav-link active" data-view="tree" title="Tree"><span>🌳</span><span class="nav-label">Tree</span></a>
+      <a class="side-nav-link" data-view="roadmap" title="Roadmap"><span>🗺️</span><span class="nav-label">Roadmap</span></a>
+      <a class="side-nav-link" data-view="dashboard" title="Dashboard"><span>📊</span><span class="nav-label">Dashboard</span></a>
+      <a class="side-nav-link" data-view="achievements" title="Achievements"><span>🏆</span><span class="nav-label">Achievements</span></a>
+    </div>
+  </nav>
 
   <div id="streakPopover" class="streak-popover"></div>
 

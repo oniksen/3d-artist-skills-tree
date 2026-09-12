@@ -323,7 +323,7 @@ const View = (() => {
     if (name === 'achievements') renderAchievements();
     else if (name === 'dashboard') renderDashboard();
     else if (name === 'roadmap') renderRoadmap();
-    document.querySelectorAll('#topNav .top-nav-link').forEach(link => {
+    document.querySelectorAll('#sideNav .side-nav-link').forEach(link => {
       link.classList.toggle('active', link.dataset.view === name);
     });
     document.querySelectorAll('#bottomNav .bottom-nav-btn').forEach(btn => {
@@ -433,7 +433,10 @@ const View = (() => {
     document.getElementById('brandBtn').addEventListener('click', () => {
       location.hash = '#/tree';
     });
-    document.querySelectorAll('#topNav .top-nav-link, #bottomNav .bottom-nav-btn[data-view]').forEach(link => {
+    document.getElementById('sideBrandBtn').addEventListener('click', () => {
+      location.hash = '#/tree';
+    });
+    document.querySelectorAll('#sideNav .side-nav-link, #bottomNav .bottom-nav-btn[data-view]').forEach(link => {
       link.addEventListener('click', () => {
         location.hash = '#/' + link.dataset.view;
       });

@@ -1,0 +1,168 @@
+/* ============================================================
+   Main navigation adapted to Material Design breakpoints
+   (mirrors android-skills-tree Header):
+     compact (<600px)  → bottom navigation (bottom-nav.css)
+     medium (600-839)  → navigation rail
+     large  (>=840px)  → navigation drawer
+   ============================================================ */
+
+.side-nav {
+  display: none;
+}
+
+.side-brand {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: 60px;
+}
+
+.side-nav-inner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  overflow-y: auto;
+  padding: 8px 0;
+}
+
+.side-nav-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.side-nav-link:hover {
+  color: var(--text-primary);
+  background: var(--glass);
+}
+
+.side-nav-link.active {
+  color: var(--accent);
+  background: var(--accent-glow);
+}
+
+/* ---------- Medium: navigation rail (600-839px) ---------- */
+@media (min-width: 600px) and (max-width: 839px) {
+  body {
+    padding-left: 84px;
+  }
+
+  .top-bar {
+    left: 84px;
+  }
+
+  .side-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-side, 50);
+    width: 84px;
+    background: rgba(10, 10, 15, 0.8);
+    border-right: 1px solid var(--border);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+
+  .side-brand {
+    justify-content: center;
+  }
+
+  .side-brand-text {
+    display: none;
+  }
+
+  .side-brand .brand-btn {
+    padding: 6px;
+    font-size: 18px;
+  }
+
+  .side-nav-inner {
+    align-items: stretch;
+  }
+
+  .side-nav-link {
+    flex-direction: column;
+    gap: 3px;
+    padding: 10px 4px;
+    margin: 0 8px;
+    border-radius: var(--radius-sm);
+    font-size: 10px;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .side-nav-link span:first-child {
+    font-size: 20px;
+  }
+}
+
+/* ---------- Large: navigation drawer (>=840px) ---------- */
+@media (min-width: 840px) {
+  body {
+    padding-left: 264px;
+  }
+
+  .top-bar {
+    left: 264px;
+  }
+
+  .top-bar-brand {
+    display: none;
+  }
+
+  .side-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-side, 50);
+    width: 264px;
+    background: rgba(10, 10, 15, 0.8);
+    border-right: 1px solid var(--border);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+
+  .side-brand {
+    padding: 0 16px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .side-nav-inner {
+    padding: 16px 12px;
+  }
+
+  .side-nav-link {
+    padding: 10px 12px;
+    border-radius: var(--radius-sm);
+  }
+}
+
+/* Active left accent bar (drawer style, like DesktopNavItem) */
+@media (min-width: 840px) {
+  .side-nav-link.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 3px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, var(--accent), var(--accent2));
+  }
+}

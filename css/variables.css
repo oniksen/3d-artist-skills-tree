@@ -38,6 +38,7 @@
 
   --z-canvas: 0;
   --z-content: 1;
+  --z-side: 50;
   --z-controls: 100;
   --z-modal-overlay: 1000;
 }
