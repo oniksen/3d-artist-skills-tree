@@ -1,0 +1,189 @@
+/* ============================================================
+   Roadmap view — skills requiring attention for the current
+   and next levels (adapted from android-skills-tree GapList).
+   ============================================================ */
+
+.roadmap-page {
+  padding-top: 48px;
+}
+
+.roadmap-head h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 0 8px;
+  background: linear-gradient(90deg, var(--text-primary), var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.roadmap-head p {
+  color: var(--text-secondary);
+  margin: 0 0 12px;
+}
+
+.roadmap-focus {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid rgba(108, 92, 231, 0.35);
+  background: rgba(108, 92, 231, 0.1);
+  color: #a29bfe;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.roadmap-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gap-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.gap-row:hover {
+  border-color: var(--border-hover);
+  background: var(--bg-card-hover);
+  transform: translateX(4px);
+}
+
+.gap-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+}
+
+.gap-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.gap-badge.critical {
+  background: rgba(255, 107, 107, 0.15);
+  color: var(--danger);
+}
+
+.gap-badge.low {
+  background: rgba(253, 203, 110, 0.15);
+  color: var(--accent4);
+}
+
+.gap-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.gap-meta {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.gap-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.gap-score {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.gap-bar {
+  width: 96px;
+  height: 6px;
+  background: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.gap-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.5s ease;
+}
+
+.gap-bar-fill.critical {
+  background: linear-gradient(90deg, var(--danger), #ff922b);
+}
+
+.gap-bar-fill.low {
+  background: linear-gradient(90deg, var(--accent4), #ffd43b);
+}
+
+.roadmap-count {
+  margin-top: 16px;
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* All done state */
+.roadmap-all-done {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(81, 207, 102, 0.3);
+  background: rgba(81, 207, 102, 0.08);
+  border-radius: var(--radius);
+  padding: 28px;
+  text-align: center;
+}
+
+.roadmap-all-done::before {
+  content: '';
+  position: absolute;
+  left: -24px;
+  top: -24px;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  background: var(--success);
+  opacity: 0.15;
+  filter: blur(48px);
+}
+
+.roadmap-all-done .rd-icon {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.roadmap-all-done p {
+  color: var(--success);
+  font-weight: 600;
+  font-size: 15px;
+}

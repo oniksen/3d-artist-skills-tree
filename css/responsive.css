@@ -43,6 +43,10 @@
 
 /* Mobile */
 @media (max-width: 768px) {
+  .dashboard-page,
+  .roadmap-page {
+    padding-top: 28px;
+  }
   .top-bar {
     padding: 0 12px;
     gap: 8px;

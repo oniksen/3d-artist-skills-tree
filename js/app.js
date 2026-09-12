@@ -41,6 +41,8 @@ async function switchLang(lang) {
   buildLevelNav();
   buildCategoryFilters();
   selectLevel(currentLevel);
+  renderRoadmap();
+  renderDashboard();
   View.renderAchievements();
   View.refreshStats();
 

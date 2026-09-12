@@ -280,6 +280,8 @@ const View = (() => {
     renderLevelInfo();
     renderSkills();
     if (currentHashView === 'achievements') renderAchievements();
+    else if (currentHashView === 'dashboard') renderDashboard();
+    else if (currentHashView === 'roadmap') renderRoadmap();
   }
 
   // ---------- Router ----------
@@ -292,8 +294,8 @@ const View = (() => {
       openLogin();
       return;
     }
-    if (view === 'achievements') {
-      showView('achievements');
+    if (view === 'achievements' || view === 'dashboard' || view === 'roadmap') {
+      showView(view);
       return;
     }
     showView('tree');
@@ -308,16 +310,19 @@ const View = (() => {
 
   function showView(name) {
     currentHashView = name;
-    const treeView = document.getElementById('viewTree');
-    const achView = document.getElementById('viewAchievements');
-    if (name === 'achievements') {
-      treeView.hidden = true;
-      achView.hidden = false;
-      renderAchievements();
-    } else {
-      achView.hidden = true;
-      treeView.hidden = false;
-    }
+    const views = {
+      tree: 'viewTree',
+      roadmap: 'viewRoadmap',
+      dashboard: 'viewDashboard',
+      achievements: 'viewAchievements',
+    };
+    Object.keys(views).forEach(key => {
+      const el = document.getElementById(views[key]);
+      if (el) el.hidden = key !== name;
+    });
+    if (name === 'achievements') renderAchievements();
+    else if (name === 'dashboard') renderDashboard();
+    else if (name === 'roadmap') renderRoadmap();
     document.querySelectorAll('#topNav .top-nav-link').forEach(link => {
       link.classList.toggle('active', link.dataset.view === name);
     });
@@ -458,8 +463,13 @@ const View = (() => {
     });
     Bus.on('progress:change', () => {
       refreshAfterProgress();
+      if (currentHashView === 'dashboard') renderDashboard();
+      else if (currentHashView === 'roadmap') renderRoadmap();
     });
-    Bus.on('streak:change', () => refreshStats());
+    Bus.on('streak:change', () => {
+      refreshStats();
+      if (currentHashView === 'dashboard') renderDashboard();
+    });
     Bus.on('achievement:new', record => achievementToast(record));
     Bus.on('level:up', result => levelUpToast(result));
   }

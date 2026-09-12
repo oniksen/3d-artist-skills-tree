@@ -1,0 +1,327 @@
+/* ============================================================
+   Dashboard view — LevelProgressCard, QuickStats, StreakCard,
+   NextMilestone (adapted from android-skills-tree).
+   ============================================================ */
+
+.dashboard-page {
+  padding-top: 48px;
+}
+
+.dashboard-head h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 0 8px;
+  background: linear-gradient(90deg, var(--text-primary), var(--accent2), var(--accent3));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.dashboard-head p {
+  color: var(--text-secondary);
+  margin: 0 0 20px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.dash-card {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  transition: box-shadow var(--transition);
+}
+
+.dash-card:hover {
+  box-shadow: var(--shadow);
+}
+
+.dash-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  pointer-events: none;
+}
+
+.dash-card.glow-blue::before {
+  background: linear-gradient(90deg, transparent, var(--accent2), transparent);
+}
+
+.dash-card.glow-purple::before {
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+}
+
+.dash-card.glow-green::before {
+  background: linear-gradient(90deg, transparent, var(--success), transparent);
+}
+
+.dash-card.glow-orange::before {
+  background: linear-gradient(90deg, transparent, var(--accent4), transparent);
+}
+
+.dash-card-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 10px;
+}
+
+.dash-current-level {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--accent2);
+  margin: 0 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dash-max-level {
+  color: var(--success) !important;
+}
+
+.dash-bar {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--glass);
+  overflow: hidden;
+}
+
+.dash-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent2), var(--accent));
+  transition: width 0.4s ease;
+}
+
+.dash-bar-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.dash-bar-pct {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.dash-bar-note {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.dash-hint {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Quick stats */
+.dash-stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.dash-stat-value {
+  font-family: var(--mono);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.dash-stat-row + .dash-bar {
+  margin-bottom: 14px;
+}
+
+/* Streak card week */
+.dash-streak-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.dash-streak-fire {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.dash-streak-count {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.dash-streak-record {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.dash-week {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.dash-day {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.dash-day-label {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.dash-day-label.today {
+  color: var(--accent4);
+}
+
+.dash-day-cell {
+  width: 100%;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  background: var(--glass);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+.dash-day-cell.active {
+  background: rgba(253, 203, 110, 0.15);
+  border-color: rgba(253, 203, 110, 0.4);
+  color: var(--accent4);
+}
+
+.dash-day-cell.istoday {
+  border-color: rgba(253, 203, 110, 0.4);
+}
+
+/* Next milestone */
+.dash-milestone-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.dash-milestone-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.dash-milestone-check {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+  background: var(--glass);
+  color: var(--text-muted);
+}
+
+.dash-milestone-item.done {
+  color: var(--text-muted);
+}
+
+.dash-milestone-item.done .dash-milestone-check {
+  background: rgba(81, 207, 102, 0.15);
+  border-color: rgba(81, 207, 102, 0.4);
+  color: var(--success);
+}
+
+.dash-milestone-pct {
+  font-family: var(--mono);
+  font-size: 12px;
+  margin-left: auto;
+  color: var(--text-secondary);
+}
+
+.dash-milestone-item.done .dash-milestone-pct {
+  color: var(--success);
+}
+
+/* Ready / all-done states */
+.dash-ready {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(81, 207, 102, 0.3);
+  background: rgba(81, 207, 102, 0.08);
+  border-radius: var(--radius);
+  padding: 20px;
+  text-align: center;
+}
+
+.dash-ready::before {
+  content: '';
+  position: absolute;
+  right: -24px;
+  top: -24px;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  background: var(--success);
+  opacity: 0.15;
+  filter: blur(48px);
+}
+
+.dash-ready-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--success);
+  margin-bottom: 6px;
+}
+
+.dash-ready-body {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+/* Readonly hint on dashboard */
+.dashboard-readonly {
+  margin-top: 16px;
+  padding: 12px 16px;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: center;
+}
