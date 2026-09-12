@@ -39,7 +39,7 @@ function bindProgressSectionEvents(skill) {
     input.addEventListener('change', async () => {
       const idx = Number(input.dataset.idx);
       await Progress.toggleSubtopic(skill.id, idx);
-      section.innerHTML = buildProgressSectionHTML(skill);
+      section.outerHTML = buildProgressSectionHTML(skill);
       bindProgressSectionEvents(skill);
       refreshAfterProgress();
     });
