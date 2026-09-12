@@ -59,6 +59,13 @@ function buildLevelNav() {
 }
 
 function selectLevel(level) {
+  if (!Progress.isReadonly() && level !== Progress.getCurrentLevelId() && !Progress.isLevelUnlocked(level)) {
+    Toast.show(I18n.t('level_locked_hint', {
+      level: getLevelLabel(level),
+      percent: getUnlockHint(level),
+    }), 'warn');
+    return;
+  }
   currentLevel = level;
 
   document.querySelectorAll('.level-btn').forEach(btn => {

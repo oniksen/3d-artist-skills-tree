@@ -18,13 +18,13 @@ async function init() {
   initSearch();
 
   await Progress.refresh();
+  currentLevel = Progress.isReadonly() ? 'junior' : Progress.getCurrentLevelId();
 
   buildLevelNav();
   buildCategoryFilters();
 
   View.init();
-  renderLevelInfo();
-  renderSkills();
+  View.route();
 }
 
 async function switchLang(lang) {

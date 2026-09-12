@@ -515,5 +515,5 @@ const View = (() => {
     Bus.on('level:up', result => levelUpToast(result));
   }
 
-  return { init, refreshStats, renderAchievements, renderStreakBadge };
+  return { init, refreshStats, renderAchievements, renderStreakBadge, route };
 })();

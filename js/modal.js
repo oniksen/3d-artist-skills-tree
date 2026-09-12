@@ -38,6 +38,15 @@ function bindProgressSectionEvents(skill) {
   section.querySelectorAll('input[type="checkbox"]').forEach(input => {
     input.addEventListener('change', async () => {
       const idx = Number(input.dataset.idx);
+      if (!Progress.isReadonly() && !Progress.isLevelUnlocked(currentLevel)) {
+        Toast.show(I18n.t('level_locked_hint', {
+          level: getLevelLabel(currentLevel),
+          percent: getUnlockHint(currentLevel),
+        }), 'warn');
+        section.outerHTML = buildProgressSectionHTML(skill);
+        bindProgressSectionEvents(skill);
+        return;
+      }
       await Progress.toggleSubtopic(skill.id, idx);
       section.outerHTML = buildProgressSectionHTML(skill);
       bindProgressSectionEvents(skill);
