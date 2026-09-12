@@ -69,14 +69,11 @@ function updateStaticText() {
       el.textContent = I18n.t('nav_' + parent.dataset.view);
     }
   });
-  document.querySelectorAll('#bottomNav .bn-label:not(#bottomAuthBtn .bn-label)').forEach(el => {
+  document.querySelectorAll('#bottomNav .bn-label').forEach(el => {
     const parent = el.closest('.bottom-nav-btn');
     if (parent && parent.dataset.view) {
       el.textContent = I18n.t('nav_' + parent.dataset.view);
     }
-  });
-  document.querySelectorAll('#bottomAuthBtn .bn-label').forEach(el => {
-    el.textContent = I18n.t('nav_login');
   });
   document.getElementById('achTitle').textContent = I18n.t('ach_title');
   document.title = I18n.t('site_title');

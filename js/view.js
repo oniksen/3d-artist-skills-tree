@@ -56,7 +56,6 @@ const View = (() => {
     renderScoreChip();
     renderStreakBadge();
     renderUserMenu();
-    renderBottomNav();
   }
 
   function renderScoreChip() {
@@ -180,15 +179,6 @@ const View = (() => {
         }
       });
     }
-  }
-
-  // ---------- Bottom nav ----------
-
-  function renderBottomNav() {
-    const authBtn = document.getElementById('bottomAuthBtn');
-    if (!authBtn) return;
-    const user = Auth.getCurrentUser();
-    authBtn.classList.toggle('is-logged', !!user);
   }
 
   // ---------- Auth (login modal) ----------
@@ -440,14 +430,6 @@ const View = (() => {
       link.addEventListener('click', () => {
         location.hash = '#/' + link.dataset.view;
       });
-    });
-    document.getElementById('bottomAuthBtn').addEventListener('click', () => {
-      if (Auth.getCurrentUser()) {
-        const btn = document.getElementById('userMenuBtn');
-        if (btn) btn.click();
-      } else {
-        openLogin();
-      }
     });
     const loginOverlay = document.getElementById('loginOverlay');
     loginOverlay.addEventListener('click', e => {

@@ -50,8 +50,4 @@
     -webkit-backdrop-filter: blur(14px);
     border-top: 1px solid var(--border);
   }
-
-  .bottom-nav-btn.is-logged {
-    color: var(--accent2);
-  }
 }
