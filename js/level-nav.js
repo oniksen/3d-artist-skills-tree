@@ -123,10 +123,9 @@ function renderLevelInfo() {
       <div>
         <div class="level-info-head">
           <h3>${LEVEL_ICONS[currentLevel] || ''} ${getLevelLabel(currentLevel)} ${I18n.t('level_focus_suffix')}</h3>
-          ${statusBadge}
         </div>
         <p class="focus-text">${info.focus}</p>
-        <div class="skill-count-badge">${I18n.t('skills_at_level', { count })}</div>
+        <div class="level-info-badges">${statusBadge}<span class="skill-count-badge">${I18n.t('skills_at_level', { count })}</span></div>
         ${progressHtml}
         ${locked ? `<div class="level-lock-hint">${I18n.t('level_lock_explain', { percent: getUnlockHint(currentLevel), level: getLevelLabel(currentLevel) })}</div>` : ''}
       </div>

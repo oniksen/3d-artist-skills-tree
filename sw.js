@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE = 'skill-tree-v16';
+const CACHE = 'skill-tree-v18';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -50,6 +50,7 @@ const STATIC_ASSETS = [
   './js/skills.js',
   './js/modal.js',
   './js/level-nav.js',
+  './js/patch-notes.js',
   './js/roadmap.js',
   './js/dashboard.js',
   './js/view.js',
@@ -57,6 +58,7 @@ const STATIC_ASSETS = [
   './js/pwa.js',
   './locales/en.json',
   './locales/ru.json',
+  './patch-notes.json',
   './data/en.json',
   './data/subtopics.en.json',
   './data/ru.json',

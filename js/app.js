@@ -28,6 +28,8 @@ async function init() {
 
   View.init();
   View.route();
+
+  await showPatchNotesIfNew();
 }
 
 async function switchLang(lang) {

@@ -1,0 +1,26 @@
+{
+  "versions": [
+    {
+      "id": "2026-09-13",
+      "date": "2026-09-13",
+      "title": {
+        "en": "What's New",
+        "ru": "Обновления"
+      },
+      "changes": {
+        "en": [
+          "Light and dark theme support with a theme switcher in the header",
+          "Guest read-only progress view for visitors",
+          "Level info card: status and skills count moved below the level description",
+          "Bug fixes and performance improvements"
+        ],
+        "ru": [
+          "Поддержка светлой и тёмной тем с переключателем в шапке",
+          "Просмотр прогресса для неавторизованных посетителей",
+          "Карточка уровня: статус и количество навыков перенесены под описание уровня",
+          "Исправления ошибок и улучшение производительности"
+        ]
+      }
+    }
+  ]
+}
