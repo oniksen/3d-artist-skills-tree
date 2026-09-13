@@ -189,5 +189,8 @@
   "theme_dark": "Dark theme",
   "theme_system": "System theme",
   "patch_notes_button": "What's new",
-  "patch_notes_failed": "Update notes could not be loaded."
+  "patch_notes_failed": "Update notes could not be loaded.",
+  "settings_title": "Settings",
+  "settings_language": "Language",
+  "settings_theme": "Theme"
 }

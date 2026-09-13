@@ -82,6 +82,18 @@
     padding: 5px 6px;
   }
 
+  /* Collapse header controls into the unified settings menu */
+  .top-bar-right > .lang-switch,
+  .top-bar-right > .theme-switch,
+  #patchNotesBtn,
+  #userMenu {
+    display: none;
+  }
+
+  .settings-menu {
+    display: block;
+  }
+
   .achievements-page {
     padding-top: 24px;
   }

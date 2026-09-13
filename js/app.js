@@ -88,12 +88,23 @@ function updateStaticText() {
   if (filterBtn) filterBtn.setAttribute('aria-label', I18n.t('filters_aria'));
   const filterClose = document.getElementById('filterSidebarClose');
   if (filterClose) filterClose.setAttribute('aria-label', I18n.t('filters_close'));
-  const patchBtn = document.getElementById('patchNotesBtn');
-  if (patchBtn) {
-    const patchTitle = I18n.t('patch_notes_button');
-    patchBtn.setAttribute('title', patchTitle);
-    patchBtn.setAttribute('aria-label', patchTitle);
+  const patchTitle = I18n.t('patch_notes_button');
+  document.querySelectorAll('.patch-btn').forEach(btn => {
+    const label = btn.querySelector('span:last-child');
+    if (label) label.textContent = patchTitle;
+    btn.setAttribute('title', patchTitle);
+    btn.setAttribute('aria-label', patchTitle);
+  });
+  const settingsBtn = document.getElementById('settingsMenuBtn');
+  if (settingsBtn) {
+    const settingsTitle = I18n.t('settings_title');
+    settingsBtn.setAttribute('title', settingsTitle);
+    settingsBtn.setAttribute('aria-label', settingsTitle);
   }
+  const settingsLangLabel = document.getElementById('settingsLangLabel');
+  if (settingsLangLabel) settingsLangLabel.textContent = I18n.t('settings_language');
+  const settingsThemeLabel = document.getElementById('settingsThemeLabel');
+  if (settingsThemeLabel) settingsThemeLabel.textContent = I18n.t('settings_theme');
   document.title = I18n.t('site_title');
 }
 

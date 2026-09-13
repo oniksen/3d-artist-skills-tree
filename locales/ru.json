@@ -189,5 +189,8 @@
   "theme_dark": "Тёмная тема",
   "theme_system": "Системная тема",
   "patch_notes_button": "Что нового",
-  "patch_notes_failed": "Не удалось загрузить описание обновления."
+  "patch_notes_failed": "Не удалось загрузить описание обновления.",
+  "settings_title": "Настройки",
+  "settings_language": "Язык",
+  "settings_theme": "Тема"
 }

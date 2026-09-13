@@ -66,7 +66,15 @@ html[data-theme="light"] .user-menu-dropdown {
   background: linear-gradient(180deg, #ffffff, #f2f2f7);
 }
 
+html[data-theme="light"] .settings-menu-dropdown {
+  background: linear-gradient(180deg, #ffffff, #f2f2f7);
+}
+
 html[data-theme="light"] .um-big-avatar {
+  background: radial-gradient(circle at 30% 25%, #ffffff, var(--bg-secondary));
+}
+
+html[data-theme="light"] .settings-avatar {
   background: radial-gradient(circle at 30% 25%, #ffffff, var(--bg-secondary));
 }
 

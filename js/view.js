@@ -84,6 +84,122 @@ const View = (() => {
     badge.querySelector('button').addEventListener('click', toggleStreakPopover);
   }
 
+  // Shared builder for the account area (profile + stats + actions). Used by
+  // both the desktop user menu dropdown and the compact settings menu.
+  function buildAccountBody(user) {
+    if (!user) {
+      return `
+        <div class="um-profile um-profile-guest">
+          <div class="um-avatar-ring"><span class="um-big-avatar">${Icons.svg('log-in', 22)}</span></div>
+          <div class="um-profile-text">
+            <div class="um-name">${I18n.t('auth_login_title')}</div>
+            <div class="um-since">${I18n.t('auth_required_progress')}</div>
+          </div>
+        </div>
+        <div class="um-actions">
+          <button class="um-item" id="umSignIn" role="menuitem"><span class="um-item-icon">${Icons.svg('log-in', 16)}</span><span>${I18n.t('auth_login_btn')}</span></button>
+        </div>`;
+    }
+    const initial = (user.displayName || user.email || 'U').slice(0, 1).toUpperCase();
+    const memberSince = I18n.t('profile_since', {
+      date: new Date(user.createdAt).toLocaleDateString(
+        I18n.getLang() === 'ru' ? 'ru-RU' : 'en-US',
+        { month: 'long', year: 'numeric' }
+      ),
+    });
+    return `
+      <div class="um-profile">
+        <div class="um-avatar-ring"><span class="um-big-avatar">${initial}</span></div>
+        <div class="um-profile-text">
+          <div class="um-name">${user.displayName || user.email}</div>
+          <div class="um-email">${user.email}</div>
+          <div class="um-since">${memberSince}</div>
+        </div>
+      </div>
+      <div class="um-stats">
+        <div class="um-stat"><span class="um-stat-icon">${Icons.svg('star', 18)}</span><span class="um-stat-val" data-umstat="score">—</span><span class="um-stat-label">${I18n.t('profile_score')}</span></div>
+        <div class="um-stat"><span class="um-stat-icon">${Icons.svg('flame', 18)}</span><span class="um-stat-val" data-umstat="streak">—</span><span class="um-stat-label">${I18n.t('streak_current')}</span></div>
+        <div class="um-stat"><span class="um-stat-icon um-stat-level-ico">${Icons.svg('award', 18)}</span><span class="um-stat-val um-stat-level-name">—</span><span class="um-stat-label">${I18n.t('dash_current_level')}</span></div>
+      </div>
+      <div class="um-actions">
+        <button class="um-item" id="umReset" role="menuitem"><span class="um-item-icon">${Icons.svg('refresh-cw', 16)}</span><span>${I18n.t('auth_reset_progress')}</span></button>
+        <button class="um-item um-item-danger" id="umLogout" role="menuitem"><span class="um-item-icon">${Icons.svg('log-out', 16)}</span><span>${I18n.t('auth_logout')}</span></button>
+      </div>`;
+  }
+
+  function refreshUmStats(root) {
+    const scoreEl = root.querySelector('[data-umstat="score"]');
+    const streakEl = root.querySelector('[data-umstat="streak"]');
+    const levelIc = root.querySelector('.um-stat-level-ico');
+    const levelNm = root.querySelector('.um-stat-level-name');
+    if (!scoreEl || !streakEl) return;
+    scoreEl.textContent = Progress.getTotalScore();
+    const st = Progress.getState().streak;
+    const streakData = st && typeof st === 'object' ? st : {};
+    streakEl.textContent = streakData.currentStreak ? streakData.currentStreak : 0;
+    if (levelNm) {
+      const lv = Progress.getCurrentLevelId();
+      levelNm.textContent = getLevelLabel(lv);
+    }
+  }
+
+  // Binds account actions inside `root`. Returns nothing but wires up the DOM.
+  function bindAccountBody(root) {
+    const signIn = root.querySelector('#umSignIn');
+    if (signIn) {
+      signIn.addEventListener('click', openLogin);
+      return;
+    }
+    const logout = root.querySelector('#umLogout');
+    if (logout) {
+      logout.addEventListener('click', async () => {
+        closeLoginInternal(false);
+        await Auth.signOut();
+        await Progress.refresh();
+        currentLevel = 'junior';
+        View.refreshStats();
+        buildLevelNav();
+        renderLevelInfo();
+        renderSkills();
+        renderAchievements();
+        Toast.show(I18n.t('auth_logged_out'), 'info');
+      });
+    }
+    const resetBtn = root.querySelector('#umReset');
+    if (resetBtn) {
+      resetBtn.addEventListener('click', async () => {
+        if (confirm(I18n.t('auth_reset_confirm'))) {
+          await Progress.reset();
+          currentLevel = Progress.getCurrentLevelId();
+          View.refreshStats();
+          buildLevelNav();
+          renderLevelInfo();
+          renderSkills();
+          renderAchievements();
+          Toast.show(I18n.t('auth_progress_reset'), 'info');
+        }
+      });
+    }
+  }
+
+  function renderSettingsMenu() {
+    const holder = document.getElementById('settingsAccount');
+    const avatar = document.getElementById('settingsAvatar');
+    const user = Auth.getCurrentUser();
+    if (holder) {
+      holder.innerHTML = buildAccountBody(user);
+      bindAccountBody(holder);
+    }
+    if (avatar) {
+      if (user) {
+        const initial = (user.displayName || user.email || 'U').slice(0, 1).toUpperCase();
+        avatar.innerHTML = `<span class="settings-initial">${initial}</span>`;
+      } else {
+        avatar.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="luc"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>`;
+      }
+    }
+  }
+
   function renderUserMenu() {
     const holder = document.getElementById('userMenu');
     if (!holder) return;
@@ -95,15 +211,10 @@ const View = (() => {
           <span class="um-label">${I18n.t('auth_login_btn')}</span>
         </button>`;
       holder.querySelector('#userMenuBtn').addEventListener('click', openLogin);
+      renderSettingsMenu();
       return;
     }
     const initial = (user.displayName || user.email || 'U').slice(0, 1).toUpperCase();
-    const memberSince = I18n.t('profile_since', {
-      date: new Date(user.createdAt).toLocaleDateString(
-        I18n.getLang() === 'ru' ? 'ru-RU' : 'en-US',
-        { month: 'long', year: 'numeric' }
-      ),
-    });
     holder.innerHTML = `
       <div class="user-menu" id="userMenuRoot">
         <button class="user-menu-btn" id="userMenuBtn" aria-haspopup="true" aria-expanded="false">
@@ -111,75 +222,26 @@ const View = (() => {
           <span class="um-label">${user.displayName || user.email}</span>
         </button>
         <div class="user-menu-dropdown hidden" id="userMenuDropdown" role="menu">
-          <div class="um-profile">
-            <div class="um-avatar-ring"><span class="um-big-avatar">${initial}</span></div>
-            <div class="um-profile-text">
-              <div class="um-name">${user.displayName || user.email}</div>
-              <div class="um-email">${user.email}</div>
-              <div class="um-since">${memberSince}</div>
-            </div>
-          </div>
-          <div class="um-stats">
-            <div class="um-stat"><span class="um-stat-icon">${Icons.svg('star', 18)}</span><span class="um-stat-val" data-umstat="score">—</span><span class="um-stat-label">${I18n.t('profile_score')}</span></div>
-            <div class="um-stat"><span class="um-stat-icon">${Icons.svg('flame', 18)}</span><span class="um-stat-val" data-umstat="streak">—</span><span class="um-stat-label">${I18n.t('streak_current')}</span></div>
-            <div class="um-stat"><span class="um-stat-icon um-stat-level-ico">${Icons.svg('award', 18)}</span><span class="um-stat-val um-stat-level-name">—</span><span class="um-stat-label">${I18n.t('dash_current_level')}</span></div>
-          </div>
-          <div class="um-actions">
-            <button class="um-item" id="umReset" role="menuitem"><span class="um-item-icon">${Icons.svg('refresh-cw', 16)}</span><span>${I18n.t('auth_reset_progress')}</span></button>
-            <button class="um-item um-item-danger" id="umLogout" role="menuitem"><span class="um-item-icon">${Icons.svg('log-out', 16)}</span><span>${I18n.t('auth_logout')}</span></button>
-          </div>
+          ${buildAccountBody(user)}
         </div>
       </div>`;
     const btn = holder.querySelector('#userMenuBtn');
     const dd = holder.querySelector('#userMenuDropdown');
-    const refreshUmStats = () => {
-      const scoreEl = dd.querySelector('[data-umstat="score"]');
-      const streakEl = dd.querySelector('[data-umstat="streak"]');
-      const levelIc = dd.querySelector('.um-stat-level-ico');
-      const levelNm = dd.querySelector('.um-stat-level-name');
-      if (!scoreEl || !streakEl) return;
-      scoreEl.textContent = Progress.getTotalScore();
-      const st = Progress.getState().streak;
-      const streakData = st && typeof st === 'object' ? st : {};
-      streakEl.textContent = streakData.currentStreak ? streakData.currentStreak : 0;
-      const lv = Progress.getCurrentLevelId();
-      levelNm.textContent = getLevelLabel(lv);
-    };
+    bindAccountBody(dd);
     btn.addEventListener('click', e => {
       e.stopPropagation();
       const willOpen = dd.classList.contains('hidden');
       if (willOpen) {
+        refreshUmStats(dd);
         const sp = document.getElementById('streakPopover');
         if (sp) sp.classList.add('hidden');
+        const sd = document.getElementById('settingsMenuDropdown');
+        if (sd) sd.classList.add('hidden');
       }
-      refreshUmStats();
       dd.classList.toggle('hidden');
       btn.setAttribute('aria-expanded', String(willOpen));
     });
-    holder.querySelector('#umLogout').addEventListener('click', async () => {
-      closeLoginInternal(false);
-      await Auth.signOut();
-      await Progress.refresh();
-      currentLevel = 'junior';
-      View.refreshStats();
-      buildLevelNav();
-      renderLevelInfo();
-      renderSkills();
-      renderAchievements();
-      Toast.show(I18n.t('auth_logged_out'), 'info');
-    });
-    holder.querySelector('#umReset').addEventListener('click', async () => {
-      if (confirm(I18n.t('auth_reset_confirm'))) {
-        await Progress.reset();
-        currentLevel = Progress.getCurrentLevelId();
-        View.refreshStats();
-        buildLevelNav();
-        renderLevelInfo();
-        renderSkills();
-        renderAchievements();
-        Toast.show(I18n.t('auth_progress_reset'), 'info');
-      }
-    });
+    renderSettingsMenu();
   }
 
   // ---------- Streak popover ----------
@@ -197,6 +259,12 @@ const View = (() => {
           if (btn) btn.setAttribute('aria-expanded', 'false');
         }
       });
+      const sd = document.getElementById('settingsMenuDropdown');
+      if (sd && !sd.classList.contains('hidden')) {
+        sd.classList.add('hidden');
+        const sb = document.getElementById('settingsMenuBtn');
+        if (sb) sb.setAttribute('aria-expanded', 'false');
+      }
       const data = Progress.getState().streak;
       const st = data && typeof data === 'object' ? data : {};
       const week = Streak.getWeek(st);
@@ -478,7 +546,41 @@ const View = (() => {
       document.querySelectorAll('.user-menu-dropdown:not(.hidden)').forEach(dd => {
         if (!e.target.closest('.user-menu')) dd.classList.add('hidden');
       });
+      const sd = document.getElementById('settingsMenuDropdown');
+      const sb = document.getElementById('settingsMenuBtn');
+      if (sd && !sd.classList.contains('hidden') && !e.target.closest('.settings-menu')) {
+        sd.classList.add('hidden');
+        if (sb) sb.setAttribute('aria-expanded', 'false');
+      }
+      if (e.target.closest('#patchNotesBtnCompact')) {
+        if (sd) sd.classList.add('hidden');
+      }
     });
+
+    const settingsMenuBtn = document.getElementById('settingsMenuBtn');
+    if (settingsMenuBtn) {
+      settingsMenuBtn.addEventListener('click', e => {
+        e.stopPropagation();
+        const dd = document.getElementById('settingsMenuDropdown');
+        if (!dd) return;
+        const willOpen = dd.classList.contains('hidden');
+        if (willOpen) {
+          const acc = document.getElementById('settingsAccount');
+          if (acc) refreshUmStats(acc);
+          const sp = document.getElementById('streakPopover');
+          if (sp) sp.classList.add('hidden');
+          document.querySelectorAll('.user-menu-dropdown').forEach(d => {
+            if (!d.classList.contains('hidden')) {
+              d.classList.add('hidden');
+              const b = document.querySelector('.user-menu-btn');
+              if (b) b.setAttribute('aria-expanded', 'false');
+            }
+          });
+        }
+        dd.classList.toggle('hidden');
+        settingsMenuBtn.setAttribute('aria-expanded', String(willOpen));
+      });
+    }
 
     Auth.onAuthChange(user => {
       onAuthChanged(user);

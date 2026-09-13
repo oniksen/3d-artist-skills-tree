@@ -89,7 +89,7 @@ async function openPatchNotesButton() {
 
 function initPatchNotes() {
   document.addEventListener('click', (e) => {
-    if (e.target.closest && e.target.closest('#patchNotesBtn')) {
+    if (e.target.closest && e.target.closest('.patch-btn')) {
       openPatchNotesButton();
     }
   });
