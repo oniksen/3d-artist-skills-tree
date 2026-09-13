@@ -89,7 +89,11 @@ const Auth = (() => {
 
   function onAuthChange(cb) {
     const fa = firebaseAuth();
-    if (fa) return fa.onAuthStateChanged((user) => { try { cb(mapFirebaseUser(user)); } catch (e) { console.error(e); } });
+    if (fa) return fa.onAuthStateChanged((user) => {
+      const mapped = mapFirebaseUser(user);
+      if (mapped && normalizeEmail(mapped.email) === ALLOWED_EMAIL) upsertProfile(mapped);
+      try { cb(mapped); } catch (e) { console.error(e); }
+    });
     listeners.push(cb);
     return () => { const i = listeners.indexOf(cb); if (i !== -1) listeners.splice(i, 1); };
   }

@@ -31,6 +31,7 @@ const Progress = (() => {
           const snap = await firebase.firestore().doc('public/owner/main').get();
           const data = snap.exists ? snap.data() : null;
           cachedOwnerUid = (data && data.uid) || null;
+          if (!cachedOwnerUid) console.warn('[progress] owner uid not found at public/owner/main — guests see zero state until owner signs in');
         } else {
           cachedOwnerUid = null;
         }
@@ -74,13 +75,13 @@ const Progress = (() => {
       return state;
     }
     const [progress, assessments, streak, achievements] = await Promise.all([
-      Store.getProgress(id),
-      Store.getAssessments(id),
-      Store.getStreak(id),
-      Store.getAchievements(id),
+      Store.getProgress(id).catch(() => null),
+      Store.getAssessments(id).catch(() => null),
+      Store.getStreak(id).catch(() => null),
+      Store.getAchievements(id).catch(() => null),
     ]);
     state.uid = id;
-    state.progress = progress;
+    state.progress = progress || { currentLevelId: LEVEL_ORDER[0], unlockedLevelIds: [LEVEL_ORDER[0]], totalScore: 0 };
     state.assessments = assessments || {};
     state.streak = streak;
     state.achievements = achievements || [];
