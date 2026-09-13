@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "title": "Дерево навыков 3D-художника",
   "generated_for": "Карьерный путь от начального до Арт-директора",
   "last_reviewed": "2026-09-05",
@@ -168,7 +168,28 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Proko — Drawing Fundamentals: Accuracy, Values, & Light",
+          "url": "https://www.proko.com/course/drawing-fundamentals-accuracy-values-light"
+        },
+        {
+          "title": "Proko — Figure Drawing Fundamentals (gesture and measuring)",
+          "url": "https://www.proko.com/course/figure-drawing-fundamentals"
+        },
+        {
+          "title": "Drawabox — Lesson 1: Lines, Ellipses and Boxes",
+          "url": "https://drawabox.com/lesson/1"
+        },
+        {
+          "title": "The Drawing Source — Value Drawing: The Key to Realism",
+          "url": "https://www.thedrawingsource.com/value-drawing.html"
+        },
+        {
+          "title": "Art Prof — Proportions for Figure Drawing",
+          "url": "https://artprof.org/learn/tutorials-media/drawing/proportions-for-figure-drawing"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -187,7 +208,28 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Proko — Drawing Basics (shape, silhouette, perspective)",
+          "url": "https://www.proko.com/course/drawing-basics"
+        },
+        {
+          "title": "Drawabox — Lesson 1: Lines, Ellipses and Boxes",
+          "url": "https://drawabox.com/lesson/1"
+        },
+        {
+          "title": "Drawabox — Lesson 2: Contour Lines, Texture and Construction (silhouette)",
+          "url": "https://drawabox.com/lesson/2"
+        },
+        {
+          "title": "The Virtual Instructor — Drawing Basics: Construction",
+          "url": "https://thevirtualinstructor.com/blog/drawing-basics-construction"
+        },
+        {
+          "title": "Ctrl+Paint — Digital Painting Simplified (shape design)",
+          "url": "https://www.ctrlpaint.com/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -206,7 +248,24 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Proko — Drawing Basics (form, shade, edges)",
+          "url": "https://www.proko.com/course/drawing-basics"
+        },
+        {
+          "title": "Drawabox — Lesson 2: Contour Lines, Texture and Construction (3D space)",
+          "url": "https://drawabox.com/lesson/2"
+        },
+        {
+          "title": "The Drawing Source — Value, Light and Form",
+          "url": "https://www.thedrawingsource.com/light-and-form.html"
+        },
+        {
+          "title": "The Virtual Instructor — Drawing Basics: Construction",
+          "url": "https://thevirtualinstructor.com/blog/drawing-basics-construction"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -225,7 +284,28 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "The Drawing Source — 7 Figure Drawing Proportions to Know",
+          "url": "https://www.thedrawingsource.com/figure-drawing-proportions.html"
+        },
+        {
+          "title": "Artists Network — Drawing the Proportions of the Human Body",
+          "url": "https://www.artistsnetwork.com/art-techniques/drawing-proportions-human-body-ameral"
+        },
+        {
+          "title": "Drawing Academy — Proportion of the Human Body",
+          "url": "https://drawingacademy.com/drawing-lessons/proportion-of-the-human-body"
+        },
+        {
+          "title": "Wikipedia — Human body proportions (canons)",
+          "url": "https://en.wikipedia.org/wiki/Body_proportions"
+        },
+        {
+          "title": "Art Prof — Proportions for Figure Drawing",
+          "url": "https://artprof.org/learn/tutorials-media/drawing/proportions-for-figure-drawing"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -244,7 +324,28 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Proko — The Perspective Course (Marshall Vandruff)",
+          "url": "https://www.proko.com/course/the-perspective-course"
+        },
+        {
+          "title": "Drawabox — Lesson 1: Boxes: Foreshortening and Vanishing Points",
+          "url": "https://drawabox.com/lesson/1/7"
+        },
+        {
+          "title": "Marshall Vandruff — 1994 Perspective Drawing Series",
+          "url": "https://marshallart.com/SHOP/all-products/all-videos/1994-perspective-drawing-series"
+        },
+        {
+          "title": "Proko — The Perspective Course (free lessons playlist)",
+          "url": "https://www.youtube.com/playlist?list=PLtG4P3lq8RHFoefyASDnGxFtsjxpelkTK"
+        },
+        {
+          "title": "Drawabox — Lesson 1: Lines, Ellipses and Boxes",
+          "url": "https://drawabox.com/lesson/1"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -263,7 +364,28 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "The Drawing Source — Value Drawing: The Key to Realism",
+          "url": "https://www.thedrawingsource.com/value-drawing.html"
+        },
+        {
+          "title": "The Drawing Source — How to Draw a Value Scale",
+          "url": "https://www.thedrawingsource.com/value-scale.html"
+        },
+        {
+          "title": "The Drawing Source — Value, Light and Form",
+          "url": "https://www.thedrawingsource.com/light-and-form.html"
+        },
+        {
+          "title": "Proko — Drawing Fundamentals: Accuracy, Values, & Light",
+          "url": "https://www.proko.com/course/drawing-fundamentals-accuracy-values-light"
+        },
+        {
+          "title": "Dorian Iten — Values: A Drawing Guide",
+          "url": "https://www.dorian-iten.com/values"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -282,7 +404,28 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Adobe — Colour Theory Guide (psychology and design)",
+          "url": "https://www.adobe.com/uk/creativecloud/design/discover/color-theory.html"
+        },
+        {
+          "title": "Adobe — What are Primary, Secondary and Tertiary Colors?",
+          "url": "https://www.adobe.com/creativecloud/design/discover/secondary-colors.html"
+        },
+        {
+          "title": "Adobe — The color wheel explained",
+          "url": "https://www.adobe.com/express/learn/blog/color-wheel-explained"
+        },
+        {
+          "title": "W3C — Colour Theory (Web Standards Curriculum)",
+          "url": "https://www.w3.org/wiki/Colour_theory"
+        },
+        {
+          "title": "Adobe Learn — Explore the basics of color theory (Illustrator)",
+          "url": "https://www.adobe.com/learn/illustrator/in-app/explore-the-basics-of-color-theory"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -301,7 +444,28 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Adobe — How to use and break the rule of thirds",
+          "url": "https://www.adobe.com/creativecloud/photography/discover/rule-of-thirds.html"
+        },
+        {
+          "title": "Interaction Design Foundation — Rule of Thirds: Definitive Guide",
+          "url": "https://ixdf.org/literature/article/rule-of-thirds-examples"
+        },
+        {
+          "title": "Adobe — 15 essential composition techniques",
+          "url": "https://www.adobe.com/au/creativecloud/roc/blog/photography/photography-composition-techniques.html"
+        },
+        {
+          "title": "Adobe — Negative space photography",
+          "url": "https://www.adobe.com/creativecloud/photography/type/negative-space-photography.html"
+        },
+        {
+          "title": "Great Big Photography World — 22 Essential Composition Rules",
+          "url": "https://greatbigphotographyworld.com/compositional-rules-in-photography-start-here"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -320,7 +484,24 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Proko — Drawing Basics",
+          "url": "https://www.proko.com/course/drawing-basics"
+        },
+        {
+          "title": "Drawabox — Lesson 1: Lines, Ellipses and Boxes",
+          "url": "https://drawabox.com/lesson/1"
+        },
+        {
+          "title": "Adobe — 15 essential composition techniques",
+          "url": "https://www.adobe.com/au/creativecloud/roc/blog/photography/photography-composition-techniques.html"
+        },
+        {
+          "title": "Interaction Design Foundation — Rule of Thirds guide",
+          "url": "https://ixdf.org/literature/article/rule-of-thirds-examples"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -339,7 +520,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Drawabox — Lesson 2: Contour Lines, Texture and Construction (silhouette)",
+          "url": "https://drawabox.com/lesson/2"
+        },
+        {
+          "title": "The Virtual Instructor — Drawing Basics: Construction",
+          "url": "https://thevirtualinstructor.com/blog/drawing-basics-construction"
+        },
+        {
+          "title": "Proko — Drawing Basics (shape, silhouette, perspective)",
+          "url": "https://www.proko.com/course/drawing-basics"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -358,7 +552,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Proko — Drawing Fundamentals: Accuracy, Values, & Light",
+          "url": "https://www.proko.com/course/drawing-fundamentals-accuracy-values-light"
+        },
+        {
+          "title": "The Drawing Source — Value, Light and Form",
+          "url": "https://www.thedrawingsource.com/light-and-form.html"
+        },
+        {
+          "title": "Art Prof — Proportions for Figure Drawing",
+          "url": "https://artprof.org/learn/tutorials-media/drawing/proportions-for-figure-drawing"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -377,7 +584,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Proko — Drawing Basics",
+          "url": "https://www.proko.com/course/drawing-basics"
+        },
+        {
+          "title": "The Drawing Source — Value, Light and Form",
+          "url": "https://www.thedrawingsource.com/light-and-form.html"
+        },
+        {
+          "title": "Ctrl+Paint — Digital Painting Simplified",
+          "url": "https://www.ctrlpaint.com/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -453,7 +673,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Proko — Drawing Basics",
+          "url": "https://www.proko.com/course/drawing-basics"
+        },
+        {
+          "title": "Ctrl+Paint — Digital Painting Simplified",
+          "url": "https://www.ctrlpaint.com/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -472,7 +701,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Proko — Anatomy of the Human Body",
+          "url": "https://www.proko.com/course/anatomy-of-the-human-body"
+        },
+        {
+          "title": "Anatomy for Sculptors",
+          "url": "https://anatomy4sculptors.com/"
+        },
+        {
+          "title": "Proko — Figure Drawing Fundamentals",
+          "url": "https://www.proko.com/course/figure-drawing-fundamentals"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -491,7 +733,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Proko — The Perspective Course (Marshall Vandruff)",
+          "url": "https://www.proko.com/course/the-perspective-course"
+        },
+        {
+          "title": "Drawabox — Lesson 1: Lines, Ellipses and Boxes",
+          "url": "https://drawabox.com/lesson/1"
+        },
+        {
+          "title": "Architecture Wikipedia — Architectural proportion",
+          "url": "https://en.wikipedia.org/wiki/Architectural_proportion"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -529,7 +784,24 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Lighting and Rendering",
+          "url": "https://docs.blender.org/manual/en/latest/render/index.html"
+        },
+        {
+          "title": "Three Point Lighting Tutorial — 3dRender.com",
+          "url": "http://www.3drender.com/light/3point.html"
+        },
+        {
+          "title": "Proko — Drawing Basics (value/edge/light)",
+          "url": "https://www.proko.com/course/drawing-basics"
+        },
+        {
+          "title": "The Drawing Source — Value, Light and Form",
+          "url": "https://www.thedrawingsource.com/light-and-form.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -548,7 +820,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Mesh Structure (vertices, edges, faces)",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/structure.html"
+        },
+        {
+          "title": "Blender Manual — Meshes (index)",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/index.html"
+        },
+        {
+          "title": "Blender Developer Docs — Mesh: Data Structures",
+          "url": "https://developer.blender.org/docs/features/objects/mesh/mesh"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -570,7 +855,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Mesh Structure (topology, edge loops, poles)",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/structure.html"
+        },
+        {
+          "title": "Blender Manual — Select Loops (edge/face loop selection)",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/selecting/loops.html"
+        },
+        {
+          "title": "Polycount — Topology Wiki",
+          "url": "https://polycount.com/discussion/121708/topology-wiki"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -589,7 +887,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Editing Normals (flat/smooth, custom split)",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/normals.html"
+        },
+        {
+          "title": "Blender Manual — Normals Modifiers (Weighted Normal, Smooth By Angle)",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/normals/index.html"
+        },
+        {
+          "title": "Blender Manual — Mesh Structure (normals basics)",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/structure.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -627,7 +938,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Object Transforms (local/global space)",
+          "url": "https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/control/pivot_point/index.html"
+        },
+        {
+          "title": "Epic Games — Transform Basics",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/transform-basics-in-unreal-engine"
+        },
+        {
+          "title": "Wikipedia — Coordinate system (3D)",
+          "url": "https://en.wikipedia.org/wiki/Three-dimensional_space"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -646,7 +970,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Basic Transformations (Move, Rotate, Scale)",
+          "url": "https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/basics.html"
+        },
+        {
+          "title": "Blender Manual — Pivot Point",
+          "url": "https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/control/pivot_point/index.html"
+        },
+        {
+          "title": "Blender Manual — Move, Rotate, Scale (Edit Mode)",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/transform/basic.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -684,7 +1021,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Unwrapping (UVs intro)",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/uv/unwrapping/index.html"
+        },
+        {
+          "title": "Blender Manual — Editing UVs (editor, packing, pinning)",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/uv/editing.html"
+        },
+        {
+          "title": "Blender Manual — Mesh Structure",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/structure.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -706,7 +1056,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Beyond Extent — Texel Density (what it is, px/cm standards)",
+          "url": "https://www.beyondextent.com/deep-dives/deepdive-texeldensity"
+        },
+        {
+          "title": "Polycount — Texel Density and Units in Depth",
+          "url": "https://polycount.com/discussion/192294/texel-density-and-units-in-depth"
+        },
+        {
+          "title": "Blender Manual — Unwrapping",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/uv/unwrapping/index.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -782,7 +1145,24 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Marmoset — Basic Theory of PBR",
+          "url": "https://marmoset.co/posts/basic-theory-of-physically-based-rendering"
+        },
+        {
+          "title": "Marmoset — Physically-Based Rendering, And You Can Too!",
+          "url": "https://marmoset.co/posts/physically-based-rendering-and-you-can-too"
+        },
+        {
+          "title": "LearnOpenGL — PBR Theory (microfacets, BRDF)",
+          "url": "https://learnopengl.com/PBR/Theory"
+        },
+        {
+          "title": "Epic Games — Materials Overview",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/materials-in-unreal-engine"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -877,7 +1257,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Creating and Using LODs in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/creating-and-using-lods-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Static Meshes",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/static-meshes"
+        },
+        {
+          "title": "Marmoset — Basic Theory of PBR (density/quality reference)",
+          "url": "https://marmoset.co/posts/basic-theory-of-physically-based-rendering"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -953,7 +1346,24 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Mesh Primitives",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/primitives.html"
+        },
+        {
+          "title": "Blender Manual — Meshes Introduction",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/introduction.html"
+        },
+        {
+          "title": "Blender Guru — Beginner Chair Modelling Series (box modeling)",
+          "url": "https://www.blenderguru.com/posts/chair-soborg"
+        },
+        {
+          "title": "Learning Blender (O'Reilly) — Box Modeling",
+          "url": "https://www.oreilly.com/library/view/learning-blender-a/9780133886283/ch07lev2sec1.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -972,7 +1382,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Meshes Introduction (modeling workflow)",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/introduction.html"
+        },
+        {
+          "title": "Blender Guru — Beginner Chair Modelling Series (blockout)",
+          "url": "https://www.blenderguru.com/posts/chair-soborg"
+        },
+        {
+          "title": "Blender Manual — Mesh Primitives",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/primitives.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -991,7 +1414,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Proko — Drawing Basics (shape/form)",
+          "url": "https://www.proko.com/course/drawing-basics"
+        },
+        {
+          "title": "Drawabox — Lesson 2: Contour Lines, Texture and Construction (3D space)",
+          "url": "https://drawabox.com/lesson/2"
+        },
+        {
+          "title": "Blender Manual — Meshes Introduction",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/introduction.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1010,7 +1446,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Meshes Introduction",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/introduction.html"
+        },
+        {
+          "title": "Blender Manual — Modifiers Introduction (non-destructive)",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/introduction.html"
+        },
+        {
+          "title": "Proko — Drawing Basics",
+          "url": "https://www.proko.com/course/drawing-basics"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1029,7 +1478,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Proko — Drawing Basics (form and level of detail)",
+          "url": "https://www.proko.com/course/drawing-basics"
+        },
+        {
+          "title": "Drawabox — Lesson 2: Contour Lines, Texture and Construction",
+          "url": "https://drawabox.com/lesson/2"
+        },
+        {
+          "title": "Blender Manual — Sculpting Overview",
+          "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/index.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1048,7 +1510,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Meshes Introduction",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/introduction.html"
+        },
+        {
+          "title": "Learning Blender (O'Reilly) — Box Modeling",
+          "url": "https://www.oreilly.com/library/view/learning-blender-a/9780133886283/ch07lev2sec1.html"
+        },
+        {
+          "title": "Blender Guru — Beginner Chair Modelling Series",
+          "url": "https://www.blenderguru.com/posts/chair-soborg"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1067,7 +1542,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Subdivision Surface Modifier",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/subdivision_surface.html"
+        },
+        {
+          "title": "Blender Manual — Modifiers Introduction",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/introduction.html"
+        },
+        {
+          "title": "CG Cookie — Introduction to Hard Surface Modeling",
+          "url": "https://cgcookie.com/courses/introduction-to-hard-surface-modeling"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1086,7 +1574,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Boolean Modifier",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/booleans.html"
+        },
+        {
+          "title": "Blender Manual — Modifiers Introduction",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/introduction.html"
+        },
+        {
+          "title": "The Gnomon Workshop — Blender Hard-Surface Modeling Techniques",
+          "url": "https://www.thegnomonworkshop.com/workshops/blender-hard-surface-modeling-techniques"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1105,7 +1606,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Curves Overview",
+          "url": "https://docs.blender.org/manual/en/3.5/modeling/curves/index.html"
+        },
+        {
+          "title": "Blender Manual — Curves to Mesh / Object Conversion",
+          "url": "https://docs.blender.org/manual/en/latest/scene_layout/object/editing/convert.html"
+        },
+        {
+          "title": "Blender Manual — Curve Modifiers",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/curve.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1124,7 +1638,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "CG Cookie — Introduction to Hard Surface Modeling",
+          "url": "https://cgcookie.com/courses/introduction-to-hard-surface-modeling"
+        },
+        {
+          "title": "The Gnomon Workshop — Blender Hard-Surface Modeling Techniques",
+          "url": "https://www.thegnomonworkshop.com/workshops/blender-hard-surface-modeling-techniques"
+        },
+        {
+          "title": "Blender Manual — Modifiers (Bevel, Boolean, etc.)",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/index.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1143,7 +1670,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Proko — Anatomy of the Human Body",
+          "url": "https://www.proko.com/course/anatomy-of-the-human-body"
+        },
+        {
+          "title": "Anatomy for Sculptors",
+          "url": "https://anatomy4sculptors.com/"
+        },
+        {
+          "title": "Blender Manual — Sculpting Overview",
+          "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/index.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1241,7 +1781,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Polycount — Topology Wiki",
+          "url": "https://polycount.com/discussion/121708/topology-wiki"
+        },
+        {
+          "title": "Blender Manual — Mesh Structure (edge flow, poles)",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/structure.html"
+        },
+        {
+          "title": "Epic Games — Static Meshes",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/static-meshes"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1263,7 +1816,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Retopology",
+          "url": "https://docs.blender.org/manual/en/4.2/modeling/meshes/retopology.html"
+        },
+        {
+          "title": "Polycount — Topology Wiki",
+          "url": "https://polycount.com/discussion/121708/topology-wiki"
+        },
+        {
+          "title": "Blender Manual — Mesh Structure",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/structure.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1301,7 +1867,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Unwrapping (seams, intro)",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/uv/unwrapping/index.html"
+        },
+        {
+          "title": "Blender Manual — Editing UVs",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/uv/editing.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1320,7 +1895,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Unwrapping",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/uv/unwrapping/index.html"
+        },
+        {
+          "title": "Blender Manual — Editing UVs",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/uv/editing.html"
+        },
+        {
+          "title": "Blender Guru — Chair Tutorial Part 7: UV Unwrapping",
+          "url": "https://www.blenderguru.com/posts/chair-soborg"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1339,7 +1927,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Editing UVs (packing, pinning)",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/uv/editing.html"
+        },
+        {
+          "title": "Blender Manual — Unwrapping",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/uv/unwrapping/index.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1358,7 +1955,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "FlippedNormals — The Complete Introduction to UV Mapping",
+          "url": "https://flippednormals.com/downloads/the-complete-introduction-to-uv-mapping"
+        },
+        {
+          "title": "Blender Manual — Unwrapping",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/uv/unwrapping/index.html"
+        },
+        {
+          "title": "Polycount — Texel Density and Units in Depth",
+          "url": "https://polycount.com/discussion/192294/texel-density-and-units-in-depth"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1415,7 +2025,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — UV Overlays (distortion/area)",
+          "url": "https://docs.blender.org/manual/en/latest/editors/uv/overlays.html"
+        },
+        {
+          "title": "Blender Manual — Editing UVs",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/uv/editing.html"
+        },
+        {
+          "title": "Polycount — Texel Density and Units in Depth",
+          "url": "https://polycount.com/discussion/192294/texel-density-and-units-in-depth"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1438,7 +2061,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Render Baking (normal maps, AO, etc.)",
+          "url": "https://docs.blender.org/manual/en/latest/render/cycles/baking.html"
+        },
+        {
+          "title": "Substance — Baking Textures (Allegorithmic)",
+          "url": "https://substance3d.adobe.com/tutorials/courses/getting-started-with-substance-3d-painter"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1457,7 +2089,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Render Baking",
+          "url": "https://docs.blender.org/manual/en/latest/render/cycles/baking.html"
+        },
+        {
+          "title": "Polycount — Ambient Occlusion Baking",
+          "url": "https://polycount.com/discussion/83549/ambient-occlusion-baking"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1476,7 +2117,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Render Baking",
+          "url": "https://docs.blender.org/manual/en/latest/render/cycles/baking.html"
+        },
+        {
+          "title": "Substance — Baking",
+          "url": "https://substance3d.adobe.com/tutorials/courses/getting-started-with-substance-3d-painter"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1495,7 +2145,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Render Baking",
+          "url": "https://docs.blender.org/manual/en/latest/render/cycles/baking.html"
+        },
+        {
+          "title": "Substance — Baking",
+          "url": "https://substance3d.adobe.com/tutorials/courses/getting-started-with-substance-3d-painter"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1514,7 +2173,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Render Baking (ray distance, cage)",
+          "url": "https://docs.blender.org/manual/en/latest/render/cycles/baking.html"
+        },
+        {
+          "title": "Substance — Baking in Substance 3D Painter",
+          "url": "https://substance3d.adobe.com/tutorials/courses/getting-started-with-substance-3d-painter"
+        },
+        {
+          "title": "Polycount — Normal Map Baking Basics",
+          "url": "https://polycount.com/discussion/83549/ambient-occlusion-baking"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1556,7 +2228,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Marmoset — Basic Theory of PBR",
+          "url": "https://marmoset.co/posts/basic-theory-of-physically-based-rendering"
+        },
+        {
+          "title": "Substance — Getting Started with Substance 3D Painter",
+          "url": "https://substance3d.adobe.com/tutorials/courses/getting-started-with-substance-3d-painter"
+        },
+        {
+          "title": "Epic Games — Materials Overview",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/materials-in-unreal-engine"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1575,7 +2260,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Marmoset — Basic Theory of PBR (albedo/roughness)",
+          "url": "https://marmoset.co/posts/basic-theory-of-physically-based-rendering"
+        },
+        {
+          "title": "Substance — Getting Started with Painter",
+          "url": "https://substance3d.adobe.com/tutorials/courses/getting-started-with-substance-3d-painter"
+        },
+        {
+          "title": "Epic Games — Materials Overview",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/materials-in-unreal-engine"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1594,7 +2292,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Marmoset — Basic Theory of PBR (roughness)",
+          "url": "https://marmoset.co/posts/basic-theory-of-physically-based-rendering"
+        },
+        {
+          "title": "Substance — Getting Started with Painter",
+          "url": "https://substance3d.adobe.com/tutorials/courses/getting-started-with-substance-3d-painter"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1613,7 +2320,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Marmoset — Basic Theory of PBR (metallic)",
+          "url": "https://marmoset.co/posts/basic-theory-of-physically-based-rendering"
+        },
+        {
+          "title": "LearnOpenGL — PBR Theory (metallic workflow)",
+          "url": "https://learnopengl.com/PBR/Theory"
+        },
+        {
+          "title": "Epic Games — Materials Overview",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/materials-in-unreal-engine"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1632,7 +2352,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Render Baking (normal maps)",
+          "url": "https://docs.blender.org/manual/en/latest/render/cycles/baking.html"
+        },
+        {
+          "title": "Substance — Getting Started with Painter",
+          "url": "https://substance3d.adobe.com/tutorials/courses/getting-started-with-substance-3d-painter"
+        },
+        {
+          "title": "Blender Manual — Normals",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/normals.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1708,7 +2441,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "3Dmotive — Learn the Hand-Painted Texturing Style for Video Games",
+          "url": "https://3dmotive.teachable.com/p/3dmotive-learn-the-hand-painted-texturing-style-for-video-games"
+        },
+        {
+          "title": "BlenderNation — Hand Painted Textures in Blender 2.8 by Chocofur",
+          "url": "https://www.blendernation.com/2019/06/17/hand-painted-textures-in-blender-2-8-tutorial-by-chocofur"
+        },
+        {
+          "title": "Ctrl+Paint — Digital Painting Simplified",
+          "url": "https://www.ctrlpaint.com/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1749,7 +2495,24 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Marmoset — Basic Theory of PBR",
+          "url": "https://marmoset.co/posts/basic-theory-of-physically-based-rendering"
+        },
+        {
+          "title": "Marmoset — Physically-Based Rendering, And You Can Too!",
+          "url": "https://marmoset.co/posts/physically-based-rendering-and-you-can-too"
+        },
+        {
+          "title": "Epic Games — Materials Overview",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/materials-in-unreal-engine"
+        },
+        {
+          "title": "LearnOpenGL — PBR Theory",
+          "url": "https://learnopengl.com/PBR/Theory"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1787,7 +2550,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Marmoset — Basic Theory of PBR (specular/reflection)",
+          "url": "https://marmoset.co/posts/basic-theory-of-physically-based-rendering"
+        },
+        {
+          "title": "LearnOpenGL — PBR Theory (specular workflow)",
+          "url": "https://learnopengl.com/PBR/Theory"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1920,7 +2692,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Decals in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/decals"
+        },
+        {
+          "title": "Epic Games — Materials Overview",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/materials-in-unreal-engine"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1977,7 +2758,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "3dRender.com — Three Point Lighting Tutorial (Jeremy Birn)",
+          "url": "http://www.3drender.com/light/3point.html"
+        },
+        {
+          "title": "Pluralsight — Understanding Three-Point Lighting",
+          "url": "https://www.pluralsight.com/resources/blog/software-development/understanding-three-point-lighting"
+        },
+        {
+          "title": "Blender Manual — Lighting and Rendering",
+          "url": "https://docs.blender.org/manual/en/latest/render/index.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1996,7 +2790,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Lighting in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/10-16-lighting"
+        },
+        {
+          "title": "Unreal Engine — Lighting for Educators and Students (PDF)",
+          "url": "https://cdn2.unrealengine.com/lighting-for-educators-and-students-20mb-6b793664ebe8.pdf"
+        },
+        {
+          "title": "Epic Games — Lumen Global Illumination",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-global-illumination-and-reflections-in-unreal-engine"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2034,7 +2841,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — World Properties (HDRI/Environment)",
+          "url": "https://docs.blender.org/manual/en/latest/render/lights/world.html"
+        },
+        {
+          "title": "HDRI Haven (Poly Haven) — Free HDRIs for lighting",
+          "url": "https://polyhaven.com/hdris"
+        },
+        {
+          "title": "Epic Games — Lumen Global Illumination",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-global-illumination-and-reflections-in-unreal-engine"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2053,7 +2873,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Post Process Effects (exposure)",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/post-process-effects-in-unreal-engine"
+        },
+        {
+          "title": "Marmoset — Basic Theory of PBR (exposure/lighting)",
+          "url": "https://marmoset.co/posts/basic-theory-of-physically-based-rendering"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2072,7 +2901,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "3dRender.com — Three Point Lighting (warm/cool concepts)",
+          "url": "http://www.3drender.com/light/3point.html"
+        },
+        {
+          "title": "Adobe — Colour Theory Guide",
+          "url": "https://www.adobe.com/uk/creativecloud/design/discover/color-theory.html"
+        },
+        {
+          "title": "Blender Manual — Lighting and Rendering",
+          "url": "https://docs.blender.org/manual/en/latest/render/index.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2167,7 +3009,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Depth of Field (EEVEE)",
+          "url": "https://docs.blender.org/manual/en/latest/render/eevee/render_settings/depth_of_field.html"
+        },
+        {
+          "title": "Epic Games — Post Process Effects",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/post-process-effects-in-unreal-engine"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2205,7 +3056,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Collections (organizing, link/append)",
+          "url": "https://docs.blender.org/manual/en/latest/scene_layout/collections/collections.html"
+        },
+        {
+          "title": "Blender Manual — Collections Introduction",
+          "url": "https://docs.blender.org/manual/en/latest/scene_layout/collections/index.html"
+        },
+        {
+          "title": "Blender Manual — Linking and Appendix (data sharing)",
+          "url": "https://docs.blender.org/manual/en/latest/files/linked_libraries/index.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2224,7 +3088,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Modifiers Introduction (stack, options, applying)",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/introduction.html"
+        },
+        {
+          "title": "Blender Manual — Modifiers Index (all built-in modifiers)",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/index.html"
+        },
+        {
+          "title": "Blender Guru — Beginner Chair Modelling Series (modifiers)",
+          "url": "https://www.blenderguru.com/posts/chair-soborg"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2262,7 +3139,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Sculpting Overview",
+          "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/index.html"
+        },
+        {
+          "title": "Blender Manual — Sculpting Tools",
+          "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tools/index.html"
+        },
+        {
+          "title": "Blender Manual — Dyntopo (Sculpt Mode)",
+          "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tool_settings/dyntopo.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2281,7 +3171,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Unwrapping",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/uv/unwrapping/index.html"
+        },
+        {
+          "title": "Blender Manual — Editing UVs",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/uv/editing.html"
+        },
+        {
+          "title": "Blender Manual — UV Maps",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/uv/index.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2300,7 +3203,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Shader Editor",
+          "url": "https://docs.blender.org/manual/en/latest/editors/shader_editor.html"
+        },
+        {
+          "title": "Blender Manual — Principled BSDF",
+          "url": "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/principled.html"
+        },
+        {
+          "title": "Blender Manual — Nodes Introduction",
+          "url": "https://docs.blender.org/manual/en/latest/render/shader_nodes/introduction.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2357,7 +3273,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Maxon — ZBrush News / Learning",
+          "url": "https://www.zbrushcentral.com/"
+        },
+        {
+          "title": "The Gnomon Workshop — ZBrush Scuplture Foundations",
+          "url": "https://www.thegnomonworkshop.com/"
+        },
+        {
+          "title": "Pixologic — ZBrush 2023 Documenentation Index",
+          "url": "https://docs.pixologic.com/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2376,7 +3305,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Maxon — DynaMesh (ZBrush Help)",
+          "url": "https://help.maxon.net/zbr/en-us/Content/html/user-guide/3d-modeling/modeling-basics/creating-meshes/dynamesh/dynamesh.html"
+        },
+        {
+          "title": "Docs.pixologic — DynaMesh",
+          "url": "https://docs.pixologic.com/doc/101/dynamesh"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2395,7 +3333,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Maxon — Subdivision Levels (ZBrush Help)",
+          "url": "https://help.maxon.net/zbr/en-us/Content/html/user-guide/3d-modeling/modeling-basics/subdivision-levels/subdivision-levels.html"
+        },
+        {
+          "title": "Docs.pixologic — HD Geometry / Subdivision",
+          "url": "https://docs.pixologic.com/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2433,7 +3380,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Maxon — Polygroups (ZBrush Help)",
+          "url": "https://help.maxon.net/zbr/en-us/Content/html/reference-guide/tool/polymesh/polygroups/polygroups.html"
+        },
+        {
+          "title": "Docs.pixologic — Polygroups",
+          "url": "https://docs.pixologic.com/doc/70/polygroups"
+        },
+        {
+          "title": "Maxon — ZBrush Docs & Learning",
+          "url": "https://www.maxon.net/en/tutorials"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2452,7 +3412,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Substance — Getting Started with Substance 3D Painter",
+          "url": "https://substance3d.adobe.com/tutorials/courses/getting-started-with-substance-3d-painter"
+        },
+        {
+          "title": "Substance — Substance 3D Painter User Guide",
+          "url": "https://substance3d.adobe.com/products/painter"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2471,7 +3440,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Adobe — Generator (Substance 3D Painter)",
+          "url": "https://experienceleague.adobe.com/en/docs/substance-3d-painter/using/effects/generator"
+        },
+        {
+          "title": "Adobe — Smart Materials and Masks (Substance 3D Painter)",
+          "url": "https://experienceleague.adobe.com/en/docs/substance-3d-painter/using/features/smart-materials-and-masks"
+        },
+        {
+          "title": "Substance — Getting Started with Substance 3D Painter",
+          "url": "https://substance3d.adobe.com/tutorials/courses/getting-started-with-substance-3d-painter"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2528,7 +3510,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Autodesk — Modeling in Maya Help",
+          "url": "https://help.autodesk.com/cloudhelp/2025/ENU/Maya-Modeling/files/GUID-FC45804D-80D3-4A5D-BA13-25AA86597EEA.htm"
+        },
+        {
+          "title": "Autodesk — Maya Help Center",
+          "url": "https://help.autodesk.com"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2547,7 +3538,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Autodesk — Maya UV Texture Editor overview",
+          "url": "https://download.autodesk.com/global/docs/maya2014/en_us/files/GUID-73BF7546-3BF2-44F3-9192-15A024CEC173.htm"
+        },
+        {
+          "title": "Autodesk — Editing UVs: Move, rotate, and scale UVs",
+          "url": "https://download.autodesk.com/global/docs/maya2014/en_us/files/Editing_UVs_Move_rotate_and_scale_UVs.htm"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2699,7 +3699,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Marvelous Designer Support — Latest Tutorial",
+          "url": "https://support.marvelousdesigner.com/hc/en-us/articles/47358264360857-Latest-Tutorial"
+        },
+        {
+          "title": "Marvelous Designer — User Guide",
+          "url": "https://s3.marvelousdesigner.com/newmdweb/case/20240626/MD+User+Guide+2024.pdf"
+        },
+        {
+          "title": "The Gnomon Workshop — Creating Clothing for Characters in Marvelous Designer",
+          "url": "https://www.thegnomonworkshop.com/workshops/creating-clothing-for-characters-in-marvelous-designer"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2738,7 +3751,18 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Unreal Engine User Guide",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-quick-start-guide"
+        },
+        {
+          "title": "Epic Games — Viewport Navigation",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/viewport-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Content Browser",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/content-browser-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -2761,7 +3785,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Project Organization",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/organizing-your-project-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Unreal Engine Quick Start Guide",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-quick-start-guide"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -2784,7 +3815,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Naming Conventions",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/assets-and-packages-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Project Organization",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/organizing-your-project-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -2807,7 +3845,18 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Static Meshes",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/static-meshes"
+        },
+        {
+          "title": "Epic Games — Importing Static Meshes in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/importing-static-meshes-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Creating and Using LODs",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/creating-and-using-lods-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -2853,7 +3902,18 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Textures in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/textures-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Texture Compression Settings",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/texture-compression-settings"
+        },
+        {
+          "title": "Epic Games — Texture Asset Editor",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/texture-asset-editor-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -2879,7 +3939,18 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Creating and Using Material Instances",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/creating-and-using-material-instances-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Materials in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/materials-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Material Editor",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/material-editor-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -2902,7 +3973,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Creating and Using Material Instances",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/creating-and-using-material-instances-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Materials Overview",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/materials-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -2994,7 +4072,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Decals in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/decals"
+        },
+        {
+          "title": "Epic Games — Materials in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/materials-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -3017,7 +4102,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Paint Vertex Colors Tool in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/paint-vertex-colors-tool-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Materials in Unreal Engine (vertex interpolation)",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/materials-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -3063,7 +4155,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Collision Overview",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/collision-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Static Meshes",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/static-meshes"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -3089,7 +4188,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Nanite Virtualized Geometry in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/nanite-virtualized-geometry-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Static Meshes",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/static-meshes"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -3158,7 +4264,18 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Creating and Using LODs in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/creating-and-using-lods-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Static Meshes",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/static-meshes"
+        },
+        {
+          "title": "Epic Games — Importing Static Meshes",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/importing-static-meshes-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -3207,7 +4324,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Lumen Global Illumination and Reflections",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-global-illumination-and-reflections-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Lighting in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/10-16-lighting"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -3276,7 +4400,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Sky Atmosphere Component in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/sky-atmosphere-component-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Lumen Global Illumination and Reflections",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-global-illumination-and-reflections-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -3322,7 +4453,18 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Lumen Global Illumination and Reflections",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-global-illumination-and-reflections-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Reflection Capture Actor",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/reflection-captures-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Lighting in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/10-16-lighting"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -3345,7 +4487,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Post Process Effects",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/post-process-effects-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Lumen Global Illumination",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-global-illumination-and-reflections-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -3391,7 +4540,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Foliage Mode in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/foliage-mode-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Foliage Types",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/foliage-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -3437,7 +4593,18 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Landscape Sculpt Tool",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/landscape-sculpt-tool-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Landscape Overview",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/landscape-outside-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Landscape Tools in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/landscape-technical-guide-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -3906,7 +5073,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Sequencer Cinematic Editor",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/sequencer-cinematic-editor-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Cinematics in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/cinematics-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4094,7 +5268,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Using Perforce as Source Control for Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/using-perforce-as-source-control-for-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Source Control in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/source-control-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4139,7 +5320,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Project Organization",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/organizing-your-project-in-unreal-engine"
+        },
+        {
+          "title": "Gamedev.net — Naming Conventions Best Practices",
+          "url": "https://www.gamedev.net/articles/programming/general-and-gameplay-programming/naming-conventions-in-c-r2790"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -4158,7 +5348,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Project Organization",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/organizing-your-project-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Assets and Packages",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/assets-and-packages-in-unreal-engine"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -4177,7 +5376,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Perforce Helix Core — Version Control Basics",
+          "url": "https://www.perforce.com/products/helix-core"
+        },
+        {
+          "title": "Epic Games — Using Perforce as Source Control for Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/using-perforce-as-source-control-for-unreal-engine"
+        },
+        {
+          "title": "Git Documentation",
+          "url": "https://git-scm.com/docs"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -4196,7 +5408,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Using Perforce as Source Control for Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/using-perforce-as-source-control-for-unreal-engine"
+        },
+        {
+          "title": "Perforce Helix Core — Getting Started",
+          "url": "https://www.perforce.com/resources/blogs/tips-tricks"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -4234,7 +5455,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Static Meshes (LODs, settings)",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/static-meshes"
+        },
+        {
+          "title": "Epic Games — Texture Compression Settings",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/texture-compression-settings"
+        },
+        {
+          "title": "Polycount — Texel Density and Units in Depth",
+          "url": "https://polycount.com/discussion/192294/texel-density-and-units-in-depth"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -4272,7 +5506,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Project Organization",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/organizing-your-project-in-unreal-engine"
+        },
+        {
+          "title": "ArtStation Learning — 3D Art Review Workflows",
+          "url": "https://www.artstation.com/learning"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -4291,7 +5534,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Static Meshes (validation)",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/static-meshes"
+        },
+        {
+          "title": "Epic Games — Texture Compression Settings",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/texture-compression-settings"
+        },
+        {
+          "title": "Blender Manual — Mesh Analysis",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/mesh_analysis.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -4481,7 +5737,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "The Drawing Source — 7 Figure Drawing Proportions",
+          "url": "https://www.thedrawingsource.com/figure-drawing-proportions.html"
+        },
+        {
+          "title": "Artists Network — Drawing the Proportions of the Human Body",
+          "url": "https://www.artistsnetwork.com/art-techniques/drawing-proportions-human-body-ameral"
+        },
+        {
+          "title": "Proko — Figure Drawing Fundamentals",
+          "url": "https://www.proko.com/course/figure-drawing-fundamentals"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -4500,7 +5769,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Proko — Anatomy of the Human Body",
+          "url": "https://www.proko.com/course/anatomy-of-the-human-body"
+        },
+        {
+          "title": "Anatomy for Sculptors — Head",
+          "url": "https://anatomy4sculptors.com/"
+        },
+        {
+          "title": "Proko — Introduction to Human Anatomy for Artists",
+          "url": "https://www.proko.com/course-lesson/introduction-to-human-anatomy-for-artists"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -4538,7 +5820,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Marvelous Designer Support — Latest Tutorial",
+          "url": "https://support.marvelousdesigner.com/hc/en-us/articles/47358264360857-Latest-Tutorial"
+        },
+        {
+          "title": "The Gnomon Workshop — Creating Clothing for Characters in Marvelous Designer",
+          "url": "https://www.thegnomonworkshop.com/workshops/creating-clothing-for-characters-in-marvelous-designer"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -4614,7 +5905,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Landscape and Terrain Tools",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/landscape-tool-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Static Meshes",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/static-meshes"
+        },
+        {
+          "title": "Blender Guru — Beginner Chair Modelling Series (blockout approach)",
+          "url": "https://www.blenderguru.com/posts/chair-soborg"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -4633,7 +5937,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "World of Level Design — Modular Environment Design Masterclass",
+          "url": "https://www.worldofleveldesign.com/store/modular-environment-design.php"
+        },
+        {
+          "title": "The Rookies — Step-by-Step Guide to Modular Environment Art",
+          "url": "https://www.therookies.co/blog/breakdowns/step-by-step-guide-blender-environment-art"
+        },
+        {
+          "title": "Epic Games — Static Meshes",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/static-meshes"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -4652,7 +5969,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Studio — Sprite Fright: Set Dressing Tips",
+          "url": "https://studio.blender.org/blog/sprite-fright-set-dressing-tips"
+        },
+        {
+          "title": "Blender Studio — Sprite Fright Workflow: Lighting & Set Dressing",
+          "url": "https://studio.blender.org/blog/sprite-fright-workflow-lighting-set-dressing"
+        },
+        {
+          "title": "Epic Games — Foliage Mode in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/foliage-mode-in-unreal-engine"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -4778,7 +6108,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "The Gnomon Workshop — Blender Hard-Surface Modeling Techniques",
+          "url": "https://www.thegnomonworkshop.com/workshops/blender-hard-surface-modeling-techniques"
+        },
+        {
+          "title": "Blender Manual — Editing Normals (bevel normals)",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/normals.html"
+        },
+        {
+          "title": "Blender Manual — Bevel Modifier",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/bevel.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -4797,7 +6140,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "The Gnomon Workshop — Game Asset Weapon Creation",
+          "url": "https://www.thegnomonworkshop.com/"
+        },
+        {
+          "title": "FlippedNormals — Weapon Modelling Tutorials",
+          "url": "https://flippednormals.com/"
+        },
+        {
+          "title": "The Rookies — Weapon Art / Portfolio Breakdowns",
+          "url": "https://www.therookies.co/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -4816,7 +6172,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Marmoset — Basic Theory of PBR (metal/roughness)",
+          "url": "https://marmoset.co/posts/basic-theory-of-physically-based-rendering"
+        },
+        {
+          "title": "Adobe — Substance 3D Painter Getting Started",
+          "url": "https://substance3d.adobe.com/tutorials/courses/getting-started-with-substance-3d-painter"
+        },
+        {
+          "title": "Epic Games — Materials in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/materials-in-unreal-engine"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -4873,7 +6242,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "The Gnomon Workshop — Modeling a Stylized Character for Games",
+          "url": "https://www.thegnomonworkshop.com/workshops/modeling-a-stylized-character-for-games"
+        },
+        {
+          "title": "The Rookies — How to Make a Stylized 3D Disney Character",
+          "url": "https://www.therookies.co/blog/education/make-stylized-disney-character"
+        },
+        {
+          "title": "Proko — Figure Drawing Fundamentals",
+          "url": "https://www.proko.com/course/figure-drawing-fundamentals"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -4892,7 +6274,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "3Dmotive — Learn the Hand-Painted Texturing Style for Video Games",
+          "url": "https://3dmotive.teachable.com/p/3dmotive-learn-the-hand-painted-texturing-style-for-video-games"
+        },
+        {
+          "title": "Adobe — Smart Materials and Masks (Substance 3D Painter)",
+          "url": "https://experienceleague.adobe.com/en/docs/substance-3d-painter/using/features/smart-materials-and-masks"
+        },
+        {
+          "title": "The Rookies — How to Make a Stylized 3D Disney Character",
+          "url": "https://www.therookies.co/blog/education/make-stylized-disney-character"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -4968,7 +6363,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Transform Basics in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/transform-basics-in-unreal-engine"
+        },
+        {
+          "title": "Blender Manual — Unit Settings",
+          "url": "https://docs.blender.org/manual/en/latest/scene_layout/scene/properties.html"
+        },
+        {
+          "title": "Polycount — Texel Density and Units in Depth",
+          "url": "https://polycount.com/discussion/192294/texel-density-and-units-in-depth"
+        }
+      ],
       "industry_evidence": []
     },
     {

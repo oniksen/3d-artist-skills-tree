@@ -55,6 +55,45 @@ function bindProgressSectionEvents(skill) {
   });
 }
 
+function normalizeResources(resources) {
+  const list = (resources || []).slice(0, 8);
+  return list.map((r) => {
+    if (typeof r === 'string') {
+      return { title: '', url: r };
+    }
+    return { title: r.title || '', url: r.url || '' };
+  }).filter((r) => r.url);
+}
+
+function getDomainLabel(url) {
+  try {
+    return new URL(url).hostname.replace(/^www\./, '');
+  } catch (e) {
+    return url;
+  }
+}
+
+function buildResourcesHTML(resources) {
+  const list = normalizeResources(resources);
+  if (!list.length) return '';
+  return `
+    <div class="modal-section">
+      <h3>${I18n.t('modal_resources')}</h3>
+      <ol class="resource-list">
+        ${list.map((r, i) => `
+          <li class="resource-item">
+            <a href="${r.url}" target="_blank" rel="noopener noreferrer">
+              <span class="resource-num">${i + 1}</span>
+              <span class="resource-body">
+                <span class="resource-title">${r.title || r.url}</span>
+                <span class="resource-domain">${getDomainLabel(r.url)}</span>
+              </span>
+            </a>
+          </li>`).join('')}
+      </ol>
+    </div>`;
+}
+
 function openModal(skillId) {
   const skill = getSkillById(skillId);
   if (!skill) return;
@@ -169,13 +208,7 @@ function openModal(skillId) {
         <div class="modal-tags">${mistakes.map(m => `<span class="modal-tag" style="border-color:rgba(255,107,107,0.3);color:var(--danger)">${m}</span>`).join('')}</div>
       </div>` : ''}
 
-    ${resources.length ? `
-      <div class="modal-section">
-        <h3>${I18n.t('modal_resources')}</h3>
-        <div class="modal-tags">
-          ${resources.map(r => `<a href="${r}" target="_blank" rel="noopener" class="modal-tag" style="text-decoration:none;color:var(--accent2)">${r}</a>`).join('')}
-        </div>
-      </div>` : ''}
+    ${buildResourcesHTML(resources)}
   `;
 
   overlay.classList.add('active');
