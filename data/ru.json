@@ -616,7 +616,24 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Studio — Sprite Fright: Set Dressing Tips",
+          "url": "https://studio.blender.org/blog/sprite-fright-set-dressing-tips"
+        },
+        {
+          "title": "Blender Studio — Sprite Fright Workflow: Lighting & Set Dressing",
+          "url": "https://studio.blender.org/blog/sprite-fright-workflow-lighting-set-dressing"
+        },
+        {
+          "title": "The Rookies — Set Dressing & Environment Storytelling Breakdowns",
+          "url": "https://www.therookies.co/"
+        },
+        {
+          "title": "Epic Games — Foliage Mode in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/foliage-mode-in-unreal-engine"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -635,7 +652,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Proko — Drawing Fundamentals: Accuracy, Values, & Light",
+          "url": "https://www.proko.com/course/drawing-fundamentals-accuracy-values-light"
+        },
+        {
+          "title": "The Gnomon Workshop — Visual Development & Design Courses",
+          "url": "https://www.thegnomonworkshop.com/"
+        },
+        {
+          "title": "Ctrl+Paint — Digital Painting Simplified",
+          "url": "https://www.ctrlpaint.com/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -654,7 +684,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Materials Overview (quality bar)",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/materials-in-unreal-engine"
+        },
+        {
+          "title": "ArtStation Learning — Art Direction Fundamentals",
+          "url": "https://www.artstation.com/learning"
+        },
+        {
+          "title": "The Gnomon Workshop — Art Direction Courses",
+          "url": "https://www.thegnomonworkshop.com/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -765,7 +808,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Behance — Industrial Design Portfolio Case Studies",
+          "url": "https://www.behance.net/"
+        },
+        {
+          "title": "The Gnomon Workshop — Industrial Design Courses",
+          "url": "https://www.thegnomonworkshop.com/"
+        },
+        {
+          "title": "Wikipedia — Industrial design",
+          "url": "https://en.wikipedia.org/wiki/Industrial_design"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -919,7 +975,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Marmoset — Basic Theory of PBR (tangent-space normals)",
+          "url": "https://marmoset.co/posts/basic-theory-of-physically-based-rendering"
+        },
+        {
+          "title": "LearnOpenGL — Normal Mapping (tangent space)",
+          "url": "https://learnopengl.com/Advanced-Lighting/Normal-Mapping"
+        },
+        {
+          "title": "Polycount — Normal Maps & Tangent Basis",
+          "url": "https://polycount.com/discussion/178147/normal-map-artifacts"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1002,7 +1071,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "LearnOpenGL — Transformations (matrices)",
+          "url": "https://learnopengl.com/Getting-started/Transformations"
+        },
+        {
+          "title": "The W3C — SVG Matrix Transformations reference",
+          "url": "https://www.w3.org/TR/SVG/coords.html"
+        },
+        {
+          "title": "Khan Academy — Linear Transformations as Matrices",
+          "url": "https://www.khanacademy.org/math/linear-algebra/matrix-transformations/transformation-notation/v/transforming-position-vectors"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1088,7 +1170,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Color Management",
+          "url": "https://docs.blender.org/manual/en/4.5/render/color_management.html"
+        },
+        {
+          "title": "Epic Games — Managing Color in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/managing-color-in-unreal-engine"
+        },
+        {
+          "title": "Adobe — Color Management Basics",
+          "url": "https://www.adobe.com/creativecloud/video/learn/color-management.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1107,7 +1202,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "NVIDIA Blog — Ray Tracing vs Rasterization",
+          "url": "https://blogs.nvidia.com/blog/whats-difference-between-ray-tracing-rasterization"
+        },
+        {
+          "title": "LearnOpenGL — Hello Triangle (pipeline)",
+          "url": "https://learnopengl.com/Getting-started/Hello-Triangle"
+        },
+        {
+          "title": "Scratchapixel — Introduction to Rendering: A Rasterizer",
+          "url": "https://www.scratchapixel.com/lessons/3d-basic-rendering/rasterization-practical-implementation"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1126,7 +1234,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "NVIDIA Blog — What's the Difference Between Ray Tracing, Rasterization?",
+          "url": "https://blogs.nvidia.com/blog/whats-difference-between-ray-tracing-rasterization"
+        },
+        {
+          "title": "LearnOpenGL — PBR Theory",
+          "url": "https://learnopengl.com/PBR/Theory"
+        },
+        {
+          "title": "Epic Games — Lumen Global Illumination and Reflections",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-global-illumination-and-reflections-in-unreal-engine"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1181,7 +1302,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "LearnOpenGL — Shaders",
+          "url": "https://learnopengl.com/Getting-started/Shaders"
+        },
+        {
+          "title": "LearnOpenGL — Rendering Pipeline Overview",
+          "url": "https://learnopengl.com/Getting-started/Hello-Triangle"
+        },
+        {
+          "title": "NVIDIA — Understanding the GPU for Game Developers",
+          "url": "https://www.nvidia.com/en-us/geforce/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1200,7 +1334,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Instanced Static Mesh Component",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/instanced-static-mesh-component-in-unreal-engine"
+        },
+        {
+          "title": "Unity — batching / draw calls explainer",
+          "url": "https://unity.com/how-to/use-draw-calls-to-improve-performance"
+        },
+        {
+          "title": "LearnOpenGL — Instancing",
+          "url": "https://learnopengl.com/Advanced-OpenGL/Instancing"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1219,7 +1366,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Instanced Static Mesh Component",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/instanced-static-mesh-component-in-unreal-engine"
+        },
+        {
+          "title": "LearnOpenGL — Instancing",
+          "url": "https://learnopengl.com/Advanced-OpenGL/Instancing"
+        },
+        {
+          "title": "Epic Games — Foliage Mode (instancing)",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/foliage-mode-in-unreal-engine"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1238,7 +1398,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Visibility and Occlusion Culling",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/visibility-and-occlusion-culling-in-unreal-engine"
+        },
+        {
+          "title": "Scratchapixel — Frustrum Culling",
+          "url": "https://www.scratchapixel.com/lessons/3d-basic-rendering/perspective-and-orthographic-projection"
+        },
+        {
+          "title": "Wikipedia — Viewing frustum",
+          "url": "https://en.wikipedia.org/wiki/Viewing_frustum"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1289,7 +1462,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — World Partition: Hierarchical Level of Detail (HLOD)",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/world-partition---hierarchical-level-of-detail-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — World Partition",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/world-partition-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Nanite Virtualized Geometry",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/nanite-virtualized-geometry-in-unreal-engine"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1308,7 +1494,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Texture Streaming Overview",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/texture-streaming-overview-for-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Managing Streaming in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/texture-streaming-in-unreal-engine"
+        },
+        {
+          "title": "Blender Manual — Textures (mipmaps)",
+          "url": "https://docs.blender.org/manual/en/latest/render/materials/index.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1327,7 +1526,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Texture Compression Settings",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/texture-compression-settings"
+        },
+        {
+          "title": "Khronos — Understanding BC/ETC/ASTC Formats",
+          "url": "https://registry.khronos.org/"
+        },
+        {
+          "title": "Marmoset — PBR and Texture Compression Notes",
+          "url": "https://marmoset.co/posts/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1702,7 +1914,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "World of Level Design — Modular Environment Design Masterclass",
+          "url": "https://www.worldofleveldesign.com/store/modular-environment-design.php"
+        },
+        {
+          "title": "The Rookies — Step-by-Step Guide to Modular Environment Art",
+          "url": "https://www.therookies.co/blog/breakdowns/step-by-step-guide-blender-environment-art"
+        },
+        {
+          "title": "Epic Games — Static Meshes",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/static-meshes"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1721,7 +1946,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "The Rookies — Trim Sheet Tutorials",
+          "url": "https://www.therookies.co/"
+        },
+        {
+          "title": "Marmoset — Trim Sheets / Texture Streaming blog",
+          "url": "https://marmoset.co/posts/"
+        },
+        {
+          "title": "Adobe — Substance 3D Painter (trim sheet workflow)",
+          "url": "https://substance3d.adobe.com/tutorials/courses/getting-started-with-substance-3d-painter"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1740,7 +1978,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Textures (tiling/workflow)",
+          "url": "https://docs.blender.org/manual/en/latest/render/materials/index.html"
+        },
+        {
+          "title": "Adobe — Substance 3D Designer (seamless tiling)",
+          "url": "https://experienceleague.adobe.com/en/docs/substance-3d-designer/using/substance-graphs/substance-compositing-graphs"
+        },
+        {
+          "title": "Marmoset — Tiling Textures for Environments",
+          "url": "https://marmoset.co/posts/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1759,7 +2010,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "The Rookies — Hero Asset Breakdowns",
+          "url": "https://www.therookies.co/"
+        },
+        {
+          "title": "The Gnomon Workshop — Hero Prop / Vehicle Workshops",
+          "url": "https://www.thegnomonworkshop.com/"
+        },
+        {
+          "title": "FlippedNormals — Modeling Tutorials",
+          "url": "https://flippednormals.com/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1848,7 +2112,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Topology Guides — Modeling with Animation in Mind",
+          "url": "https://topologyguides.com/modeling-for-animation"
+        },
+        {
+          "title": "Polycount — Topology Wiki",
+          "url": "https://polycount.com/discussion/121708/topology-wiki"
+        },
+        {
+          "title": "Blender Manual — Mesh Structure (edge loops)",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/structure.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -1987,7 +2264,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — UDIMs",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/uv/workflows/udims.html"
+        },
+        {
+          "title": "Substance 3D Painter — UDIM workflow (Adobe)",
+          "url": "https://substance3d.adobe.com/tutorials/courses/getting-started-with-substance-3d-painter"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2006,7 +2292,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — UV Operators / Packing",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/uv.html"
+        },
+        {
+          "title": "Epic Games — Lightmap UVs (Static Lighting)",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/static-lighting-in-unreal-engine"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2205,7 +2500,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Render Baking",
+          "url": "https://docs.blender.org/manual/en/latest/render/cycles/baking.html"
+        },
+        {
+          "title": "Polycount — Normal Map Baking / Double Smoothing Issues",
+          "url": "https://polycount.com/discussion/83549/ambient-occlusion-baking"
+        },
+        {
+          "title": "Polycount — Common Normal Map Baking Problems",
+          "url": "https://polycount.com/discussion/178147/normal-map-artifacts"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2384,7 +2692,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Displacement Modifier",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/displace.html"
+        },
+        {
+          "title": "Blender Guru — Displacement / Parallax article",
+          "url": "https://www.blenderguru.com/"
+        },
+        {
+          "title": "Marmoset — PBR & Height/Bump/normal mapping",
+          "url": "https://marmoset.co/posts/basic-theory-of-physically-based-rendering"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2403,7 +2724,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Adobe — Substance 3D Painter (wear/dirt generators)",
+          "url": "https://experienceleague.adobe.com/en/docs/substance-3d-painter/using/effects/generator"
+        },
+        {
+          "title": "Marmoset — Texture Weirdness / Storytelling articles",
+          "url": "https://marmoset.co/posts/"
+        },
+        {
+          "title": "Blender Studio — Sprite Fright (wear & storytelling)",
+          "url": "https://studio.blender.org/blog/sprite-fright-set-dressing-tips"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2422,7 +2756,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Adobe — Substance 3D Designer (procedural)",
+          "url": "https://experienceleague.adobe.com/en/docs/substance-3d-designer/using/substance-graphs/substance-compositing-graphs"
+        },
+        {
+          "title": "Blender Manual — Shader Nodes / Procedural Textures",
+          "url": "https://docs.blender.org/manual/en/latest/render/shader_nodes/introduction.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2473,7 +2816,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Texture Compression Settings",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/texture-compression-settings"
+        },
+        {
+          "title": "Epic Games — Texture Streaming Overview",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/texture-streaming-overview-for-unreal-engine"
+        },
+        {
+          "title": "Marmoset — Texture Compression Notes",
+          "url": "https://marmoset.co/posts/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2531,7 +2887,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "pbr-book.org — Surface Reflection (BRDF)",
+          "url": "https://pbr-book.org/3ed-2018/Color_and_Radiometry/Surface_Reflection"
+        },
+        {
+          "title": "LearnOpenGL — PBR Theory",
+          "url": "https://learnopengl.com/PBR/Theory"
+        },
+        {
+          "title": "Marmoset — Basic Theory of PBR",
+          "url": "https://marmoset.co/posts/basic-theory-of-physically-based-rendering"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2578,7 +2947,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Principled BSDF (transmission/IOR)",
+          "url": "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/principled.html"
+        },
+        {
+          "title": "Marmoset — Physically-Based Rendering, And You Can Too!",
+          "url": "https://marmoset.co/posts/physically-based-rendering-and-you-can-too"
+        },
+        {
+          "title": "Epic Games — Materials Overview (refraction)",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/materials-in-unreal-engine"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2597,7 +2979,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Subsurface Scattering",
+          "url": "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/sss.html"
+        },
+        {
+          "title": "Blender Manual — Principled BSDF (transmission)",
+          "url": "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/principled.html"
+        },
+        {
+          "title": "Marmoset — Translucency & Subsurface Scattering guide",
+          "url": "https://marmoset.co/posts/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2616,7 +3011,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Subsurface Scattering",
+          "url": "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/sss.html"
+        },
+        {
+          "title": "Epic Games — Subsurface Profile in Unreal",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/subsurface-scattering-profile-in-unreal-engine"
+        },
+        {
+          "title": "Marmoset — Subsurface Scattering in Practice",
+          "url": "https://marmoset.co/posts/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2635,7 +3043,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Principled BSDF (clearcoat)",
+          "url": "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/principled.html"
+        },
+        {
+          "title": "Khronos — KHR_materials_clearcoat (glTF)",
+          "url": "https://github.com/KhronosGroup/glTF/blob/main/extensions/2.0/Khronos/KHR_materials_clearcoat/README.md"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2654,7 +3071,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Principled BSDF (anisotropy)",
+          "url": "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/principled.html"
+        },
+        {
+          "title": "Marmoset — Basic Theory of PBR",
+          "url": "https://marmoset.co/posts/basic-theory-of-physically-based-rendering"
+        },
+        {
+          "title": "Khronos — KHR_materials_anisotropy (glTF)",
+          "url": "https://github.com/KhronosGroup/glTF/blob/main/extensions/2.0/Khronos/KHR_materials_anisotropy/README.md"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2673,7 +3103,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Layered Materials (Material Layers)",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/layered-materials-in-unreal-engine"
+        },
+        {
+          "title": "Adobe — Substance 3D Designer (layering)",
+          "url": "https://experienceleague.adobe.com/en/docs/substance-3d-designer/using/substance-graphs/substance-compositing-graphs"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2720,7 +3159,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Paint Vertex Colors Tool",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/paint-vertex-colors-tool-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Materials (vertex interpolation)",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/materials-in-unreal-engine"
+        },
+        {
+          "title": "Blender Manual — Vertex Paint",
+          "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/vertex_paint/index.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2739,7 +3191,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Adobe — Substance 3D Designer",
+          "url": "https://experienceleague.adobe.com/en/docs/substance-3d-designer/using/substance-graphs/substance-compositing-graphs"
+        },
+        {
+          "title": "Blender Manual — Shader Nodes / Procedural Textures",
+          "url": "https://docs.blender.org/manual/en/latest/render/shader_nodes/introduction.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2822,7 +3283,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Lightmass / Baked Lighting (Legacy) Notes",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/samples-in-unreal-engine"
+        },
+        {
+          "title": "Blender Manual — World (lighting/environment)",
+          "url": "https://docs.blender.org/manual/en/latest/render/lights/world.html"
+        },
+        {
+          "title": "Epic Games — Lumen Global Illumination (live vs baked)",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-global-illumination-and-reflections-in-unreal-engine"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2933,7 +3407,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "3dRender.com — Three Point Lighting Tutorial (Jeremy Birn)",
+          "url": "http://www.3drender.com/light/3point.html"
+        },
+        {
+          "title": "Epic Games — Lighting in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/10-16-lighting"
+        },
+        {
+          "title": "Blender Studio — Sprite Fright Workflow: Lighting & Set Dressing",
+          "url": "https://studio.blender.org/blog/sprite-fright-workflow-lighting-set-dressing"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2952,7 +3439,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Render Passes",
+          "url": "https://docs.blender.org/manual/en/4.5/render/layers/passes.html"
+        },
+        {
+          "title": "Blender Manual — Compositing (passes workflow)",
+          "url": "https://docs.blender.org/manual/en/latest/compositing/index.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2971,7 +3467,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Cycles Introduction",
+          "url": "https://docs.blender.org/manual/en/latest/render/cycles/introduction.html"
+        },
+        {
+          "title": "NVIDIA Blog — Ray Tracing vs Rasterization",
+          "url": "https://blogs.nvidia.com/blog/whats-difference-between-ray-tracing-rasterization"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -2990,7 +3495,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Cycles Sampling (denoising)",
+          "url": "https://docs.blender.org/manual/en/latest/render/cycles/render_settings/sampling.html"
+        },
+        {
+          "title": "Blender Manual — Denoise Node",
+          "url": "https://docs.blender.org/manual/en/latest/compositing/types/filter/denoise.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -3037,7 +3551,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Motion Blur (Cycles)",
+          "url": "https://docs.blender.org/manual/en/latest/render/cycles/render_settings/motion_blur.html"
+        },
+        {
+          "title": "Epic Games — Post Process Effects (motion blur)",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/post-process-effects-in-unreal-engine"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -3120,7 +3643,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Geometry Nodes",
+          "url": "https://docs.blender.org/manual/en/3.0/modeling/geometry_nodes/index.html"
+        },
+        {
+          "title": "Blender Studio — Geometry Nodes Tutorials",
+          "url": "https://studio.blender.org/blog/"
+        },
+        {
+          "title": "Blender Manual — Geometry Nodes Addons / Fields",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/index.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -3235,7 +3771,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Asset Browser",
+          "url": "https://docs.blender.org/manual/en/4.5/editors/asset_browser.html"
+        },
+        {
+          "title": "Blender Manual — Assets (Blender 4.5)",
+          "url": "https://docs.blender.org/manual/en/latest/files/asset_libraries/index.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -3254,7 +3799,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Python API",
+          "url": "https://docs.blender.org/api/current"
+        },
+        {
+          "title": "Blender Manual — Scripting (Python)",
+          "url": "https://docs.blender.org/manual/en/latest/advanced/scripting/index.html"
+        },
+        {
+          "title": "Blender — Quickstart Python API guide",
+          "url": "https://docs.blender.org/api/current/info_quickstart.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -3361,7 +3919,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Maxon — ZRemesher (ZBrush Help)",
+          "url": "https://help.maxon.net/zbr/en-us/Content/html/user-guide/3d-modeling/topology/zremesher/zremesher.html"
+        },
+        {
+          "title": "Maxon — ZBrush Documentation",
+          "url": "https://help.maxon.net/zbr/en-us/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -3472,7 +4039,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Adobe — Anchor Point (Substance 3D Painter)",
+          "url": "https://experienceleague.adobe.com/en/docs/substance-3d-painter/using/effects/anchor-point"
+        },
+        {
+          "title": "Adobe — Substance 3D Painter Getting Started",
+          "url": "https://substance3d.adobe.com/tutorials/courses/getting-started-with-substance-3d-painter"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -3491,7 +4067,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Adobe — Substance graphs (Substance 3D Designer)",
+          "url": "https://experienceleague.adobe.com/en/docs/substance-3d-designer/using/substance-graphs/substance-compositing-graphs"
+        },
+        {
+          "title": "Adobe — Substance 3D Designer Documentation",
+          "url": "https://experienceleague.adobe.com/en/docs/substance-3d-designer"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -3566,7 +4151,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Autodesk — Maya Skeleton & Rigging Help",
+          "url": "https://help.autodesk.com"
+        },
+        {
+          "title": "Topology Guides — Modeling with Animation in Mind",
+          "url": "https://topologyguides.com/modeling-for-animation"
+        },
+        {
+          "title": "Maya Help — Character Setup / Rigging",
+          "url": "https://help.autodesk.com/view/MAYAUL/2027/ENU"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -3585,7 +4183,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Autodesk — PyMEL for Maya documentation",
+          "url": "https://help.autodesk.com/cloudhelp/2023/ENU/Maya-Tech-Docs/PyMel/index.html"
+        },
+        {
+          "title": "Autodesk — Maya Python (Technical Docs)",
+          "url": "https://help.autodesk.com/cloudhelp/2023/ENU/Maya-Tech-Docs/Python/index.html"
+        },
+        {
+          "title": "Autodesk — Maya Scripting Guide",
+          "url": "https://help.autodesk.com"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -3604,7 +4215,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "SideFX — Procedural Modeling",
+          "url": "https://www.sidefx.com/products/houdini/modeling/procedural-modeling"
+        },
+        {
+          "title": "SideFX — Houdini Documentation",
+          "url": "https://www.sidefx.com/docs/houdini/"
+        },
+        {
+          "title": "SideFX — Learn Houdini",
+          "url": "https://www.sidefx.com/learn/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -3623,7 +4247,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "SideFX — Geometry Attributes",
+          "url": "https://www.sidefx.com/docs/houdini/model/attributes.html"
+        },
+        {
+          "title": "SideFX — Attribute Wrangle node",
+          "url": "https://www.sidefx.com/docs/houdini/nodes/sop/attribwrangle.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -3642,7 +4275,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "SideFX — VEX Language Reference",
+          "url": "https://www.sidefx.com/docs/houdini/vex/lang.html"
+        },
+        {
+          "title": "SideFX — VEX (Houdini Help)",
+          "url": "https://www.sidefx.com/docs/houdini/vex/index.html"
+        },
+        {
+          "title": "SideFX — Attribute Wrangle node",
+          "url": "https://www.sidefx.com/docs/houdini/nodes/sop/attribwrangle.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -3661,7 +4307,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "SideFX — Executing tasks with PDG/TOPs",
+          "url": "https://www.sidefx.com/docs/houdini/tops/index.html"
+        },
+        {
+          "title": "SideFX — PDG/Task Graph Overview",
+          "url": "https://www.sidefx.com/docs/houdini/tops/"
+        },
+        {
+          "title": "SideFX — Topnet TOP nodes",
+          "url": "https://www.sidefx.com/docs/houdini/nodes/top/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -3680,7 +4339,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Pixar — OpenUSD",
+          "url": "https://www.pixar.com/openusd"
+        },
+        {
+          "title": "SideFX — USD in Houdini (LOPs)",
+          "url": "https://www.sidefx.com/docs/houdini/solaris/index.html"
+        },
+        {
+          "title": "NVIDIA — USD Fundamentals (NVIDIA Developer)",
+          "url": "https://www.nvidia.com/en-us/learn/digital-twin/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -3731,7 +4403,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Marvelous Designer Support — 3D File (FBX) Import/Export",
+          "url": "https://support.marvelousdesigner.com/hc/en-us/articles/47358232885017-3D-File-FBX-Import-Export"
+        },
+        {
+          "title": "Marvelous Designer Support — Latest Tutorial",
+          "url": "https://support.marvelousdesigner.com/hc/en-us/articles/47358264360857-Latest-Tutorial"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -3879,7 +4560,18 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Skeletal Meshes",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/skeletal-meshes"
+        },
+        {
+          "title": "Epic Games — Importing Skeletal Meshes from FBX",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/importing-skeletal-meshes-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Skeleton Asset",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/skeleton-asset-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4003,7 +4695,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Material Functions",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/material-functions-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Materials in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/materials-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4026,7 +4725,18 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Using Material Layers in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/using-material-layers-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Layers/Layered Materials docs",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/layered-materials-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Materials Overview",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/materials-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4049,7 +4759,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Substrate in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/substrate-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Substrate Overview / Whats New",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/substrate-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4132,7 +4849,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — World Position Offset Material Functions",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/world-position-offset-material-functions-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Materials (texture coordinates)",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/materials-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4218,7 +4942,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Nanite Virtualized Geometry",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/nanite-virtualized-geometry-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Nanite CRM / Streaming Diagnostics",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/nanite-crm-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4241,7 +4972,18 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Nanite Foliage",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/nanite-foliage"
+        },
+        {
+          "title": "Epic Games — Nanite Virtualized Geometry",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/nanite-virtualized-geometry-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Foliage Mode in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/foliage-mode-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4298,7 +5040,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — World Partition: Hierarchical Level of Detail (HLOD)",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/world-partition---hierarchical-level-of-detail-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — World Partition",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/world-partition-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4354,7 +5103,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Lumen Global Illumination and Reflections",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-global-illumination-and-reflections-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Lumens Troubleshooting / Limitations",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-technical-details-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4377,7 +5133,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Virtual Shadow Maps",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/virtual-shadow-maps-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Lighting in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/10-16-lighting"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4430,7 +5193,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Volumetric Fog",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/volumetric-fog-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Fog in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/fog-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4517,7 +5287,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Color Grading and Filmic Tonemapper",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/color-grading-and-filmic-tonemapper"
+        },
+        {
+          "title": "Epic Games — Post Process Effects",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/post-process-effects-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4570,7 +5347,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Procedural Foliage Tool",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/procedural-foliage-tool-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Foliage Mode",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/foliage-mode-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4627,7 +5411,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Landscape Materials",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/landscape-materials-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Landscape Overview / Technical",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/landscape-technical-guide-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4650,7 +5441,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Landscape Splines",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/landscape-splines-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Landscape Sculpt Tool",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/landscape-sculpt-tool-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4673,7 +5471,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — World Partition in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/world-partition-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — World Partition: What it is",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/world-partition-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4696,7 +5501,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Data Layers in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/data-layers-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Working with Data Layers",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/working-with-data-layers-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4722,7 +5534,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Procedural Content Generation Framework (PCG)",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/procedural-content-generation-framework-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Procedural Content Generation Overview",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/procedural-content-generation-overview"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4745,7 +5564,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — PCG Sample / Surface Sampling Documentation",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/procedural-content-generation-framework-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — PCG Graphs & Nodes",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/pcg-nodes-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4768,7 +5594,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — PCG Data Types Reference",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/procedural-content-generation-framework-data-types-reference-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — PCG Framework",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/procedural-content-generation-framework-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4791,7 +5624,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — PCG Runtime Generation Debugging",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/pcg-runtime-generation-debugging-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — PCG Framework",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/procedural-content-generation-framework-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4817,7 +5657,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — PCG Development Guides (partitioning/performance)",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/pcg-development-guides"
+        },
+        {
+          "title": "Epic Games — PCG Framework",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/procedural-content-generation-framework-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4843,7 +5690,18 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Using PCG with GPU Processing in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/using-pcg-with-gpu-processing-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Procedural Content Generation Framework",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/procedural-content-generation-framework-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — PCG Development Guides",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/pcg-development-guides"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4866,7 +5724,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Blueprints Visual Scripting",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/blueprints-visual-scripting-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Blueprint UI / Events reference",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/blueprints-visual-scripting-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4889,7 +5754,18 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Editor Utility Widgets in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/editor-utility-widgets-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Editor Scripting Utilities (API)",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/API/Plugins/EditorScriptingUtilities"
+        },
+        {
+          "title": "Epic Games — Editor Utility Blueprints",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/editor-utility-widgets-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4912,7 +5788,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Unreal Python API",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/PythonAPI"
+        },
+        {
+          "title": "Epic Games — Python Scripting (Automating Tasks)",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/scripting-the-unreal-editor-using-python"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4935,7 +5818,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Overview of Niagara Effects",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/overview-of-niagara-effects-for-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Niagara System / Emitters docs",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/niagara-effects-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4958,7 +5848,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Niagara (mesh emitters)",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/niagara-effects-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Overview of Niagara Effects",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/overview-of-niagara-effects-for-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -4981,7 +5878,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — GPU Simulation in Niagara in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/gpu-simulation-in-niagara-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Overview of Niagara Effects",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/overview-of-niagara-effects-for-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -5004,7 +5908,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Control Rig in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/control-rig-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Control Rig (Rigging workflows)",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/control-rig-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -5027,7 +5938,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — IK Rig Animation Retargeting",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/ik-rig-animation-retargeting-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Retargeter / Rig docs",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/ik-rig-animation-retargeting-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -5050,7 +5968,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Physics Asset Editor",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/physics-asset-editor-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Creating and Managing Physics Assets",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/creating-and-managing-physics-assets-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -5103,7 +6028,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Movie Render Queue",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/movie-render-queue"
+        },
+        {
+          "title": "Epic Games — Cinematics / Sequencer docs",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/cinematics-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -5130,7 +6062,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Unreal Insights",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/unreal-insights-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Performance & Profiling docs",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/performance-and-profiling-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -5153,7 +6092,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Shader Complexity view modes",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/rendering-features-and-view-modes-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Performance & Profiling docs",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/performance-and-profiling-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -5176,7 +6122,18 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "RenderDoc — Documentation",
+          "url": "https://renderdoc.org/docs/index.html"
+        },
+        {
+          "title": "Epic Games — Unreal Insights in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/unreal-insights-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — GPU Profiling & View Modes",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/performance-and-profiling-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -5199,7 +6156,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Texture Streaming Overview",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/texture-streaming-overview-for-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Managing Texture Streaming",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/texture-streaming-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -5222,7 +6186,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Instanced Static Mesh Component",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/instanced-static-mesh-component-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Merging Actors (draw calls)",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/merging-and-instancing-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -5245,7 +6216,18 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — World Partition in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/world-partition-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — World Partition: Data Layers",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/world-partition---data-layers-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — World Partition: Hierarchical Level of Detail (HLOD)",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/world-partition---hierarchical-level-of-detail-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -5298,7 +6280,14 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/designing-visuals-rendering-and-graphics"
+        {
+          "title": "Epic Games — Data Validation in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/data-validation-in-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Asset Naming/Best Practices",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/assets-and-packages-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Epic Games Unreal Engine documentation"
@@ -5436,7 +6425,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Git LFS — Official Site",
+          "url": "https://git-lfs.com/"
+        },
+        {
+          "title": "GitHub Docs — About Git Large File Storage",
+          "url": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage"
+        },
+        {
+          "title": "Perforce — Helix Core for game assets",
+          "url": "https://www.perforce.com/integrations/perforce-and-unreal-integration"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -5487,7 +6489,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Unity — Art optimization tips for mobile game developers",
+          "url": "https://unity.com/how-to/mobile-game-optimization-tips-part-2"
+        },
+        {
+          "title": "Epic Games — Texture Streaming Overview (budgeting)",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/texture-streaming-overview-for-unreal-engine"
+        },
+        {
+          "title": "Epic Games — Creating and Using LODs",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/creating-and-using-lods-in-unreal-engine"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -5566,7 +6581,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Gamedev.net — Estimating Game Development Tasks",
+          "url": "https://www.gamedev.net/"
+        },
+        {
+          "title": "Scrum.org — Sprint Estimation",
+          "url": "https://www.scrum.org/resources/sprint-estimation"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -5585,7 +6609,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Game Developer — Managing Risk in Video Game Development",
+          "url": "https://www.gamedeveloper.com/business/managing-risk-in-video-game-development"
+        },
+        {
+          "title": "The Rookies — Game Production Breakdowns",
+          "url": "https://www.therookies.co/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -5604,7 +6637,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Tech-Artists.Org — Pipeline Automation and Workflows",
+          "url": "https://www.tech-artists.org/t/node-based-pipeline-automation-and-workflows/13301"
+        },
+        {
+          "title": "Adopting Agile — Retrospective/Pipeline Improvement",
+          "url": "https://www.scrum.org/resources/what-is-a-sprint-retrospective"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -5623,7 +6665,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "GitHub Docs — Writing documentation guides",
+          "url": "https://docs.github.com/en/get-started/writing-on-github"
+        },
+        {
+          "title": "Notion — Documentation Best Practices",
+          "url": "https://www.notion.com/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -5642,7 +6693,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Unreal Studio / Content creation docs",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/material-functions-in-unreal-engine"
+        },
+        {
+          "title": "The Rookies — Game Production Breakdowns",
+          "url": "https://www.therookies.co/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -5661,7 +6721,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "The Pragmatic Engineer — Mentoring engineers",
+          "url": "https://blog.pragmaticengineer.com/mentoring"
+        },
+        {
+          "title": "Wikipedia — Mentorship",
+          "url": "https://en.wikipedia.org/wiki/Mentorship"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -5680,7 +6749,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Juego Studio — How to Lock Art Direction in Games",
+          "url": "https://www.juegostudio.com/blog/art-direction-in-games"
+        },
+        {
+          "title": "Makko — How to Write a Game Art Bible",
+          "url": "https://blog.makko.ai/art-bible-game-development/"
+        },
+        {
+          "title": "80.lv — The Stages of Environment Art in Gamedev",
+          "url": "https://80.lv/articles/the-stages-of-environment-art-in-gamedev"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -5699,7 +6781,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Juego Studio — How to Lock Art Direction in Games",
+          "url": "https://www.juegostudio.com/blog/art-direction-in-games"
+        },
+        {
+          "title": "Makko — How to Write a Game Art Bible",
+          "url": "https://blog.makko.ai/art-bible-game-development/"
+        },
+        {
+          "title": "ArtStation Learning — Art Direction Fundamentals",
+          "url": "https://www.artstation.com/learning"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -5718,7 +6813,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Work with Indies — On Applying for 3D Artist Jobs",
+          "url": "https://www.workwithindies.com/learn/on-applying-for-3d-artist-jobs"
+        },
+        {
+          "title": "3D Artist Substack — What I Learned from Reviewing 160 Portfolios",
+          "url": "https://3dartist.substack.com/p/what-i-learned-from-reviewing-160"
+        },
+        {
+          "title": "The Rookies — Rookie Awards / Portfolio Guidance",
+          "url": "https://www.therookies.co/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -5801,7 +6909,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Topology Guides — Facial Topology",
+          "url": "https://topologyguides.com/direct-tutorials/"
+        },
+        {
+          "title": "Polycount — Facial Topology Wiki",
+          "url": "https://polycount.com/discussion/121708/topology-wiki"
+        },
+        {
+          "title": "Blender Manual — Mesh Structure (edge flow)",
+          "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/structure.html"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -5848,7 +6969,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Blender Manual — Hair and Particle System",
+          "url": "https://docs.blender.org/manual/en/latest/physics/particle_system/index.html"
+        },
+        {
+          "title": "Blender Studio — Grooming / Hair Workflow",
+          "url": "https://studio.blender.org/blog/"
+        },
+        {
+          "title": "Epic Games — Groom (strand-based hair) in Unreal",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/groom-in-unreal-engine"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -5867,7 +7001,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Adobe — Substance 3D Painter Getting Started",
+          "url": "https://substance3d.adobe.com/tutorials/courses/getting-started-with-substance-3d-painter"
+        },
+        {
+          "title": "The Gnomon Workshop — Texturing Characters Courses",
+          "url": "https://www.thegnomonworkshop.com/"
+        },
+        {
+          "title": "Marmoset — Basic Theory of PBR",
+          "url": "https://marmoset.co/posts/basic-theory-of-physically-based-rendering"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -5886,7 +7033,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Skeletanos Skeletal Meshes & Skeleton",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/skeletal-meshes"
+        },
+        {
+          "title": "Epic Games — Creating and Using LODs",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/creating-and-using-lods-in-unreal-engine"
+        },
+        {
+          "title": "Polycount — Characters Optimization General Resources",
+          "url": "https://polycount.com/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -6002,7 +7162,22 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://jobs.ashbyhq.com/thatgamecompany/7ea5dd25-3fcb-4d42-8217-89dd9b6f5083/"
+        {
+          "title": "Blender Studio — Sprite Fright: Set Dressing Tips",
+          "url": "https://studio.blender.org/blog/sprite-fright-set-dressing-tips"
+        },
+        {
+          "title": "Blender Studio — Sprite Fright Workflow: Lighting & Set Dressing",
+          "url": "https://studio.blender.org/blog/sprite-fright-workflow-lighting-set-dressing"
+        },
+        {
+          "title": "The Rookies — Environment Storytelling Breakdowns",
+          "url": "https://www.therookies.co/"
+        },
+        {
+          "title": "ArtStation Learning — Environment Storytelling",
+          "url": "https://www.artstation.com/learning"
+        }
       ],
       "industry_evidence": [
         "Senior 3D Environment Artist job requirements"
@@ -6025,7 +7200,18 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://jobs.ashbyhq.com/thatgamecompany/7ea5dd25-3fcb-4d42-8217-89dd9b6f5083/"
+        {
+          "title": "The Rookies — Environment Art Guides",
+          "url": "https://www.therookies.co/"
+        },
+        {
+          "title": "Epic Games — Landscape Materials",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/landscape-materials-in-unreal-engine"
+        },
+        {
+          "title": "Blender Studio — Sprite Fright Set Dressing (biome props)",
+          "url": "https://studio.blender.org/blog/sprite-fright-set-dressing-tips"
+        }
       ],
       "industry_evidence": [
         "Senior 3D Environment Artist job requirements"
@@ -6048,7 +7234,18 @@
       "acceptance_criteria": [],
       "common_mistakes": [],
       "resources": [
-        "https://jobs.ashbyhq.com/thatgamecompany/7ea5dd25-3fcb-4d42-8217-89dd9b6f5083/"
+        {
+          "title": "Juego Studio — How to Scale Environmental Art for Large-Scale Games",
+          "url": "https://www.juegostudio.com/blog/how-to-scale-environmental-art-for-large-scale-games"
+        },
+        {
+          "title": "80.lv — The Stages of Environment Art in Gamedev",
+          "url": "https://80.lv/articles/the-stages-of-environment-art-in-gamedev"
+        },
+        {
+          "title": "Epic Games — World Partition in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/world-partition-in-unreal-engine"
+        }
       ],
       "industry_evidence": [
         "Senior 3D Environment Artist job requirements"
@@ -6070,7 +7267,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Wikipedia — Manufacturing / Industrial design",
+          "url": "https://en.wikipedia.org/wiki/Industrial_design"
+        },
+        {
+          "title": "The Gnomon Workshop — Hard Surfaces & Industrial Courses",
+          "url": "https://www.thegnomonworkshop.com/"
+        },
+        {
+          "title": "CG Cookie — Introduction to Hard Surface Modeling",
+          "url": "https://cgcookie.com/courses/introduction-to-hard-surface-modeling"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -6089,7 +7299,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "The Gnomon Workshop — Hard-Surface / Mechanical Workshops",
+          "url": "https://www.thegnomonworkshop.com/"
+        },
+        {
+          "title": "Blender Bros — Hard Surface Blog & Courses",
+          "url": "https://www.blenderbros.com/blog/from-a-blockout-to-a-mech-in-blender"
+        },
+        {
+          "title": "FlippedNormals — Hard Surface Tutorials",
+          "url": "https://flippednormals.com/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -6204,7 +7427,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Wikipedia — Automobile design",
+          "url": "https://en.wikipedia.org/wiki/Automotive_design"
+        },
+        {
+          "title": "The Gnomon Workshop — Vehicle Modeling Workshops",
+          "url": "https://www.thegnomonworkshop.com/"
+        },
+        {
+          "title": "The Rookies — Vehicle Art Breakdowns",
+          "url": "https://www.therookies.co/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -6223,7 +7459,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Marmoset — Physically-Based Rendering And You Can Too",
+          "url": "https://marmoset.co/posts/physically-based-rendering-and-you-can-too"
+        },
+        {
+          "title": "Epic Games — Materials in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/materials-in-unreal-engine"
+        },
+        {
+          "title": "Adobe — Substance 3D Painter (car paint / materials)",
+          "url": "https://substance3d.adobe.com/tutorials/courses/getting-started-with-substance-3d-painter"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -6306,7 +7555,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Wikipedia — Non-photorealistic rendering",
+          "url": "https://en.wikipedia.org/wiki/Non-photorealistic_rendering"
+        },
+        {
+          "title": "Blender Manual — Freestyle (NPR)",
+          "url": "https://docs.blender.org/manual/en/latest/render/freestyle/introduction.html"
+        },
+        {
+          "title": "The Rookies — NPR / Stylized Shading Tutorials",
+          "url": "https://www.therookies.co/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -6325,7 +7587,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "The Gnomon Workshop — Photoreal Texturing / Shading",
+          "url": "https://www.thegnomonworkshop.com/"
+        },
+        {
+          "title": "Marmoset — Basic Theory of PBR",
+          "url": "https://marmoset.co/posts/basic-theory-of-physically-based-rendering"
+        },
+        {
+          "title": "FlippedNormals — PBR / Texturing Tutorials",
+          "url": "https://flippednormals.com/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -6344,7 +7619,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Developer Community — Introduction to RealityCapture and Photogrammetry",
+          "url": "https://dev.epicgames.com/community/learning/paths/n1/realityscan-introduction-to-realitycapture-and-photogrammetry"
+        },
+        {
+          "title": "Epic Games — RealityScan Documentation",
+          "url": "https://dev.epicgames.com/documentation/realityscan/realityscan-documentation"
+        },
+        {
+          "title": "PolyHaven — Photogrammetry Assets (reference)",
+          "url": "https://polyhaven.com/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -6398,7 +7686,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Materials in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/materials-in-unreal-engine"
+        },
+        {
+          "title": "LearnOpenGL — Shaders",
+          "url": "https://learnopengl.com/getting-started/shaders"
+        },
+        {
+          "title": "The Book of Shaders",
+          "url": "https://thebookofshaders.com/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -6420,7 +7721,16 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Microsoft Learn — Programming guide for HLSL",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-pguide"
+        },
+        {
+          "title": "LearnOpenGL — Shaders",
+          "url": "https://learnopengl.com/getting-started/shaders"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -6442,7 +7752,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Editor Utility Widgets in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/editor-utility-widgets-in-unreal-engine"
+        },
+        {
+          "title": "Blender Python API",
+          "url": "https://docs.blender.org/api/current"
+        },
+        {
+          "title": "Tech-Artists.Org — Forums",
+          "url": "https://www.tech-artists.org/"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -6463,7 +7786,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Scripting the Unreal Editor using Python",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/scripting-the-unreal-editor-using-python"
+        },
+        {
+          "title": "Blender Python API",
+          "url": "https://docs.blender.org/api/current"
+        },
+        {
+          "title": "Tech-Artists.Org — Pipeline Automation",
+          "url": "https://www.tech-artists.org/t/node-based-pipeline-automation-and-workflows/13301"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -6482,7 +7818,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — Unreal Insights in Unreal Engine",
+          "url": "https://dev.epicgames.com/documentation/unreal-engine/unreal-insights-in-unreal-engine"
+        },
+        {
+          "title": "RenderDoc — Documentation",
+          "url": "https://renderdoc.org/docs/index.html"
+        },
+        {
+          "title": "Epic Games — Performance and Profiling",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/performance-and-profiling-in-unreal-engine"
+        }
+      ],
       "industry_evidence": []
     },
     {
@@ -6501,7 +7850,20 @@
       "practice": "",
       "acceptance_criteria": [],
       "common_mistakes": [],
-      "resources": [],
+      "resources": [
+        {
+          "title": "Epic Games — PCG Development Guides",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/pcg-development-guides"
+        },
+        {
+          "title": "SideFX — Houdini Procedural Modeling",
+          "url": "https://www.sidefx.com/products/houdini/modeling/procedural-modeling"
+        },
+        {
+          "title": "Blender Manual — Geometry Nodes",
+          "url": "https://docs.blender.org/manual/en/3.0/modeling/geometry_nodes/index.html"
+        }
+      ],
       "industry_evidence": []
     }
   ],
