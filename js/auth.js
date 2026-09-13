@@ -70,6 +70,11 @@ const Auth = (() => {
           .doc(user.uid)
           .set({ email: user.email, displayName: user.displayName, createdAt: user.createdAt }, { merge: true })
           .catch(() => {});
+        firebase
+          .firestore()
+          .doc('public/owner/main')
+          .set({ uid: user.uid, displayName: user.displayName, email: user.email, updatedAt: new Date().toISOString() }, { merge: true })
+          .catch(() => {});
       }
     } catch (_) {}
   }

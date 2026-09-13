@@ -1,7 +1,7 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Only the single owner account may read/write any user data.
+    // Only the single owner account may write any user data.
     // Deploy via: Firebase Console -> Firestore Database -> Rules
     //        or: firebase deploy --only firestore:rules
     function isOwner() {
@@ -9,8 +9,22 @@ service cloud.firestore {
         && request.auth.token.email == 'zadbanny@gmail.com';
     }
 
+    // Public pointer to the owner account so guests can READ
+    // (view-only) the owner's progress. Written by the owner at login.
+    function ownerUid() {
+      return get(/databases/$(database)/documents/public/owner/main).data.uid;
+    }
+
+    match /public/owner/{docId} {
+      allow read: if true;
+      allow write: if isOwner();
+    }
+
     match /users/{uid}/{document=**} {
-      allow read, write: if isOwner() && request.auth.uid == uid;
+      // Guest (unauthenticated): read-only view of the owner's data.
+      allow read: if isOwner() && request.auth.uid == uid
+             || request.auth == null && uid == ownerUid();
+      allow write: if isOwner() && request.auth.uid == uid;
     }
   }
 }

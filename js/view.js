@@ -63,16 +63,16 @@ const View = (() => {
     const val = document.getElementById('scoreChipVal');
     if (!chip || !val) return;
     const readonly = Progress.isReadonly();
-    chip.classList.toggle('hidden', readonly);
-    if (!readonly) val.textContent = Progress.getTotalScore();
+    chip.classList.toggle('hidden', readonly && !Progress.hasData());
+    if (!(readonly && !Progress.hasData())) val.textContent = Progress.getTotalScore();
   }
 
   function renderStreakBadge() {
     const badge = document.getElementById('streakBadge');
     if (!badge) return;
     const readonly = Progress.isReadonly();
-    badge.classList.toggle('hidden', readonly);
-    if (readonly) {
+    badge.classList.toggle('hidden', readonly && !Progress.hasData());
+    if (readonly && !Progress.hasData()) {
       const popover = document.getElementById('streakPopover');
       if (popover) popover.classList.add('hidden');
       return;
@@ -333,7 +333,7 @@ const View = (() => {
     if (level && LEVEL_ORDER.includes(level)) {
       selectLevel(level);
     } else {
-      const defaultLevel = Progress.isReadonly() ? 'junior' : Progress.getCurrentLevelId();
+      const defaultLevel = (Progress.isReadonly() && !Progress.hasData()) ? 'junior' : Progress.getCurrentLevelId();
       selectLevel(LEVEL_ORDER.includes(defaultLevel) ? defaultLevel : 'junior');
     }
   }

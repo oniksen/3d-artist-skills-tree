@@ -91,7 +91,7 @@
   "progress_mastered": "Mastered",
   "progress_no_subtopics": "No subtopics yet for this skill.",
   "progress_done": "Done",
-  "auth_required_progress": "Sign in to track study progress and earn rewards.",
+  "auth_required_progress": "Viewing read-only data. Sign in to make changes and earn rewards.",
 
   "level_locked_hint": "Level {level} is locked. Current level completion: {percent}%",
   "level_status_locked": "Locked",

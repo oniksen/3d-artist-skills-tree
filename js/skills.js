@@ -46,7 +46,7 @@ function renderSkills() {
           <div class="category-dot" style="background:${color}; color:${color}"></div>
           <div class="category-title">
             <h2>${getCategoryLabel(cat)}</h2>
-            ${!readonly ? `
+            ${!readonly || Progress.hasData() ? `
               <div class="cat-progress">
                 <div class="cat-progress-bar"><div class="cat-progress-fill" style="width:${catScore.percent}%"></div></div>
                 <span class="cat-progress-pct">${catScore.percent}%</span>
@@ -129,7 +129,7 @@ function buildSkillCard(skill) {
     ? `<span class="prereq-tag">+${skill.prerequisites.length - 3}</span>`
     : '';
 
-  const progressHtml = !readonly ? `
+  const progressHtml = !readonly || Progress.hasData() ? `
     <div class="skill-progress-mini${mastered ? ' mastered' : ''}">
       <div class="sp-bar"><div class="sp-fill" style="width:${prog.percent}%"></div></div>
       <span class="sp-pct">${mastered ? I18n.t('progress_done') : `${prog.percent}%`}</span>

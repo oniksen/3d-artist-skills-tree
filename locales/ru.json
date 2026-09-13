@@ -91,7 +91,7 @@
   "progress_mastered": "Освоено",
   "progress_no_subtopics": "Для этого навыка пока нет подтем.",
   "progress_done": "Готово",
-  "auth_required_progress": "Войдите, чтобы отмечать изученное и получать награды.",
+  "auth_required_progress": "Просмотр данных (только чтение). Войдите, чтобы изменять прогресс и получать награды.",
 
   "level_locked_hint": "Уровень {level} заблокирован. Текущий уровень пройден на {percent}%",
   "level_status_locked": "Заблокирован",

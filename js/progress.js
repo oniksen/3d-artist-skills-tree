@@ -16,9 +16,36 @@ const Progress = (() => {
     achievements: [],
   };
 
+  let cachedOwnerUid = null;
+  let ownerResolvePromise = null;
+
+  // Guest (view-only) mode: resolves the owner account uid from the
+  // public pointer doc so guests can READ the owner's progress while
+  // remaining unable to modify it (isReadonly() stays true).
+  async function resolveOwnerUid() {
+    if (cachedOwnerUid !== null) return cachedOwnerUid;
+    if (ownerResolvePromise) return ownerResolvePromise;
+    ownerResolvePromise = (async () => {
+      try {
+        if (typeof firebase !== 'undefined' && firebase.firestore) {
+          const snap = await firebase.firestore().doc('public/owner/main').get();
+          const data = snap.exists ? snap.data() : null;
+          cachedOwnerUid = (data && data.uid) || null;
+        } else {
+          cachedOwnerUid = null;
+        }
+      } catch (_) {
+        cachedOwnerUid = null;
+      }
+      ownerResolvePromise = null;
+      return cachedOwnerUid;
+    })();
+    return ownerResolvePromise;
+  }
+
   function currentUid() {
     const user = Auth.getCurrentUser();
-    return user ? user.uid : null;
+    return user ? user.uid : cachedOwnerUid;
   }
 
   function isReadonly() {
@@ -30,14 +57,20 @@ const Progress = (() => {
     return Math.min(s, maxWeight || 1);
   }
 
+  function clearState() {
+    state.uid = null;
+    state.progress = null;
+    state.assessments = {};
+    state.streak = null;
+    state.achievements = [];
+  }
+
   async function refresh() {
-    const id = currentUid();
+    const id = Auth.getCurrentUser()
+      ? currentUid()
+      : await resolveOwnerUid();
     if (!id) {
-      state.uid = null;
-      state.progress = null;
-      state.assessments = {};
-      state.streak = null;
-      state.achievements = [];
+      clearState();
       return state;
     }
     const [progress, assessments, streak, achievements] = await Promise.all([
@@ -58,6 +91,10 @@ const Progress = (() => {
 
   function getState() {
     return state;
+  }
+
+  function hasData() {
+    return !!state.progress && !!state.uid;
   }
 
   function getAssessment(skillId) {
@@ -233,6 +270,7 @@ const Progress = (() => {
     refresh,
     isReadonly,
     getState,
+    hasData,
     getAssessment,
     getSkillScore,
     isSkillMastered,

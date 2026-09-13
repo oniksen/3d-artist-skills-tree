@@ -22,7 +22,7 @@ function buildLevelNav() {
     const isCurrent = Progress.isReadonly() ? lv === currentLevel : lv === Progress.getCurrentLevelId();
     const locked = !readonly && !unlocked;
     const score = Progress.getLevelScore(lv);
-    const showBar = !readonly && (passed || (lv === Progress.getCurrentLevelId()));
+    const showBar = Progress.hasData() && (readonly || passed || (lv === Progress.getCurrentLevelId()));
 
     const cls = ['level-btn'];
     if (lv === currentLevel) cls.push('active');
@@ -109,7 +109,7 @@ function renderLevelInfo() {
     }
   }
 
-  const progressHtml = !readonly ? `
+  const progressHtml = !readonly || Progress.hasData() ? `
     <div class="level-score-block">
       <div class="level-score-bar"><div class="level-score-fill" style="width:${score.percent}%"></div></div>
       <div class="level-score-meta">

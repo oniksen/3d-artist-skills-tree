@@ -20,7 +20,7 @@ async function init() {
 
   if (window.__fbAuthReady) await window.__fbAuthReady;
   await Progress.refresh();
-  currentLevel = Progress.isReadonly() ? 'junior' : Progress.getCurrentLevelId();
+  currentLevel = (Progress.isReadonly() && !Progress.hasData()) ? 'junior' : Progress.getCurrentLevelId();
 
   buildLevelNav();
   buildCategoryFilters();
