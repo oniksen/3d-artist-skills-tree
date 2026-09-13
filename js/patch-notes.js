@@ -74,15 +74,25 @@ async function showPatchNotesIfNew() {
 async function openPatchNotesButton() {
   try {
     const latest = await fetchLatestPatchNote();
-    if (latest) openLatestPatchNotes(latest);
+    if (latest) {
+      openLatestPatchNotes(latest);
+    } else if (typeof Toast !== 'undefined' && Toast.show) {
+      Toast.show('patch_notes_failed', 'warn');
+    }
   } catch (e) {
     console.warn('[patch-notes] failed to load:', e && e.message ? e.message : e);
+    if (typeof Toast !== 'undefined' && Toast.show) {
+      Toast.show('patch_notes_failed', 'warn');
+    }
   }
 }
 
 function initPatchNotes() {
-  const btn = document.getElementById('patchNotesBtn');
-  if (btn) btn.addEventListener('click', openPatchNotesButton);
+  document.addEventListener('click', (e) => {
+    if (e.target.closest && e.target.closest('#patchNotesBtn')) {
+      openPatchNotesButton();
+    }
+  });
 }
 
 if (document.readyState === 'loading') {

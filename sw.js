@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE = 'skill-tree-v19';
+const CACHE = 'skill-tree-v20';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -105,15 +105,22 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
+  const isScript = url.pathname.endsWith('.js');
+
   event.respondWith(
-    caches.match(request).then(
-      (cached) =>
-        cached ||
-        fetch(request).then((res) => {
-          const copy = res.clone();
-          caches.open(CACHE).then((cache) => cache.put(request, copy));
-          return res;
-        })
-    )
+    (isScript
+      ? fetch(request).catch(() => caches.match(request))
+      : caches.match(request).then(
+          (cached) =>
+            cached ||
+            fetch(request).catch(() => caches.match(request))
+        )
+    ).then((res) => {
+      if (res && res.ok) {
+        const copy = res.clone();
+        caches.open(CACHE).then((cache) => cache.put(request, copy));
+      }
+      return res;
+    })
   );
 });
