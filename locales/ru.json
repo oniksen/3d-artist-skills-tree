@@ -183,5 +183,9 @@
   "toast_level_master": "Уровень {level} полностью освоен! 👑",
   "toast_category_perfect": "Категория «{category}» освоена!",
   "toast_path_complete": "Весь карьерный путь пройден! 🏁",
-  "toast_level_unlocked": "🎉 Уровень {level} разблокирован!"
+  "toast_level_unlocked": "🎉 Уровень {level} разблокирован!",
+
+  "theme_light": "Светлая тема",
+  "theme_dark": "Тёмная тема",
+  "theme_system": "Системная тема"
 }

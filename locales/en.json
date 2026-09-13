@@ -183,5 +183,9 @@
   "toast_level_master": "Level {level} fully mastered! 👑",
   "toast_category_perfect": "Category {category} mastered!",
   "toast_path_complete": "Entire career path complete! 🏁",
-  "toast_level_unlocked": "🎉 Level {level} unlocked!"
+  "toast_level_unlocked": "🎉 Level {level} unlocked!",
+
+  "theme_light": "Light theme",
+  "theme_dark": "Dark theme",
+  "theme_system": "System theme"
 }

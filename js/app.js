@@ -17,6 +17,7 @@ async function init() {
   initModal();
   initSearch();
   initFilterSidebar();
+  if (typeof Theme !== 'undefined' && Theme.refreshTitles) Theme.refreshTitles();
 
   if (window.__fbAuthReady) await window.__fbAuthReady;
   await Progress.refresh();
@@ -47,6 +48,7 @@ async function switchLang(lang) {
   renderDashboard();
   View.renderAchievements();
   View.refreshStats();
+  if (typeof Theme !== 'undefined' && Theme.refreshTitles) Theme.refreshTitles();
 
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.lang === lang);

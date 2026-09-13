@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE = 'skill-tree-v15';
+const CACHE = 'skill-tree-v16';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -12,6 +12,7 @@ const STATIC_ASSETS = [
   './icons/apple-icon-180.png',
   './css/variables.css',
   './css/base.css',
+  './css/theme.css',
   './css/canvas.css',
   './css/header.css',
   './css/profile.css',
@@ -34,6 +35,7 @@ const STATIC_ASSETS = [
   './js/icons.js',
   './js/bus.js',
   './js/i18n.js',
+  './js/theme.js',
   './js/data.js',
   './js/categories.js',
   './js/firebase-config.js',
