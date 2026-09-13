@@ -108,7 +108,8 @@ const LocalStore = (() => {
 
 const Store = (() => {
   function firestoreAvailable() {
-    return FIREBASE_ENABLED &&
+    return typeof FIREBASE_ENABLED !== 'undefined' &&
+      FIREBASE_ENABLED &&
       typeof firebase !== 'undefined' &&
       typeof firebase.firestore === 'function';
   }
