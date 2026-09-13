@@ -187,5 +187,6 @@
 
   "theme_light": "Light theme",
   "theme_dark": "Dark theme",
-  "theme_system": "System theme"
+  "theme_system": "System theme",
+  "patch_notes_button": "What's new"
 }

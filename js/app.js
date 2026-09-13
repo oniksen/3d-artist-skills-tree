@@ -88,6 +88,12 @@ function updateStaticText() {
   if (filterBtn) filterBtn.setAttribute('aria-label', I18n.t('filters_aria'));
   const filterClose = document.getElementById('filterSidebarClose');
   if (filterClose) filterClose.setAttribute('aria-label', I18n.t('filters_close'));
+  const patchBtn = document.getElementById('patchNotesBtn');
+  if (patchBtn) {
+    const patchTitle = I18n.t('patch_notes_button');
+    patchBtn.setAttribute('title', patchTitle);
+    patchBtn.setAttribute('aria-label', patchTitle);
+  }
   document.title = I18n.t('site_title');
 }
 

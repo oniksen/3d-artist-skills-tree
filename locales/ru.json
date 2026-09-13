@@ -187,5 +187,6 @@
 
   "theme_light": "Светлая тема",
   "theme_dark": "Тёмная тема",
-  "theme_system": "Системная тема"
+  "theme_system": "Системная тема",
+  "patch_notes_button": "Что нового"
 }
