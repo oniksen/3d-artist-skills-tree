@@ -18,6 +18,7 @@ async function init() {
   initSearch();
   initFilterSidebar();
 
+  if (window.__fbAuthReady) await window.__fbAuthReady;
   await Progress.refresh();
   currentLevel = Progress.isReadonly() ? 'junior' : Progress.getCurrentLevelId();
 

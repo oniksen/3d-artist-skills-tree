@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE = 'skill-tree-v8';
+const CACHE = 'skill-tree-v10';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -43,11 +43,13 @@ const STATIC_ASSETS = [
   './js/progress.js',
   './js/achievements.js',
   './js/streak.js',
-  './js/roadmap.js',
-  './js/dashboard.js',
-  './js/toast.js',
+  './js/canvas.js',
+  './js/search.js',
   './js/skills.js',
   './js/modal.js',
+  './js/level-nav.js',
+  './js/roadmap.js',
+  './js/dashboard.js',
   './js/view.js',
   './js/app.js',
   './js/pwa.js',

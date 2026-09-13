@@ -1,0 +1,16 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Only the single owner account may read/write any user data.
+    // Deploy via: Firebase Console -> Firestore Database -> Rules
+    //        or: firebase deploy --only firestore:rules
+    function isOwner() {
+      return request.auth != null
+        && request.auth.token.email == 'zadbanny@gmail.com';
+    }
+
+    match /users/{uid}/{document=**} {
+      allow read, write: if isOwner() && request.auth.uid == uid;
+    }
+  }
+}

@@ -149,6 +149,10 @@
   "auth_email_exists": "An account with this email already exists",
   "auth_wrong_credentials": "Wrong email or password",
   "auth_error_generic": "Something went wrong",
+  "auth_signup_disabled": "Registration is disabled in this app",
+  "auth_email_not_allowed": "This account is not allowed to use the app",
+  "auth_too_many_requests": "Too many attempts. Try again later",
+  "auth_network_error": "Network error. Check your connection",
 
   "profile_score": "Score",
   "profile_since": "Member since {date}",

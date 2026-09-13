@@ -236,10 +236,7 @@ const View = (() => {
 
   // ---------- Auth (login modal) ----------
 
-  let loginMode = 'login';
-
   function openLogin() {
-    loginMode = 'login';
     renderLogin();
     const overlay = document.getElementById('loginOverlay');
     overlay.classList.add('active');
@@ -255,13 +252,12 @@ const View = (() => {
 
   function renderLogin() {
     const content = document.getElementById('loginContent');
-    const isSignup = loginMode === 'signup';
     content.innerHTML = `
       <div class="auth-inner">
         <button class="modal-close" id="loginCloseBtn">&times;</button>
         <div class="auth-icon">${Icons.svg('palette', 44)}</div>
-        <h2>${isSignup ? I18n.t('auth_signup_title') : I18n.t('auth_login_title')}</h2>
-        <p class="auth-sub">${isSignup ? I18n.t('auth_signup_sub') : I18n.t('auth_login_sub')}</p>
+        <h2>${I18n.t('auth_login_title')}</h2>
+        <p class="auth-sub">${I18n.t('auth_login_sub')}</p>
         <form class="auth-form" id="authForm">
           <label class="auth-field">
             <span>${I18n.t('auth_email_label')}</span>
@@ -269,22 +265,15 @@ const View = (() => {
           </label>
           <label class="auth-field">
             <span>${I18n.t('auth_password_label')}</span>
-            <input type="password" id="authPassword" required minlength="6" autocomplete="${isSignup ? 'new-password' : 'current-password'}" placeholder="••••••••">
+            <input type="password" id="authPassword" required minlength="6" autocomplete="current-password" placeholder="••••••••">
           </label>
           <p class="auth-error hidden" id="authError"></p>
           <button type="submit" class="auth-submit" id="authSubmit">
-            ${isSignup ? I18n.t('auth_signup_btn') : I18n.t('auth_login_btn')}
+            ${I18n.t('auth_login_btn')}
           </button>
         </form>
-        <button class="auth-switch" id="authSwitch">
-          ${isSignup ? I18n.t('auth_switch_to_login') : I18n.t('auth_switch_to_signup')}
-        </button>
       </div>`;
     content.querySelector('#loginCloseBtn').addEventListener('click', () => closeLoginInternal());
-    content.querySelector('#authSwitch').addEventListener('click', () => {
-      loginMode = isSignup ? 'login' : 'signup';
-      renderLogin();
-    });
     const form = content.querySelector('#authForm');
     const errBox = content.querySelector('#authError');
     form.addEventListener('submit', async e => {
@@ -296,9 +285,7 @@ const View = (() => {
       btn.textContent = '…';
       errBox.classList.add('hidden');
       try {
-        const user = isSignup
-          ? await Auth.signUp(email, password)
-          : await Auth.signIn(email, password);
+        const user = await Auth.signIn(email, password);
         await onAuthChanged(user);
         closeLoginInternal();
         Toast.show(I18n.t('auth_welcome', { name: user.displayName || user.email }), 'success');
@@ -307,7 +294,7 @@ const View = (() => {
         errBox.textContent = I18n.t(key) || I18n.t('auth_error_generic');
         errBox.classList.remove('hidden');
         btn.disabled = false;
-        btn.textContent = isSignup ? I18n.t('auth_signup_btn') : I18n.t('auth_login_btn');
+        btn.textContent = I18n.t('auth_login_btn');
       }
     });
   }

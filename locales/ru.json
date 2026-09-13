@@ -149,6 +149,10 @@
   "auth_email_exists": "Аккаунт с таким email уже существует",
   "auth_wrong_credentials": "Неверный email или пароль",
   "auth_error_generic": "Что-то пошло не так",
+  "auth_signup_disabled": "Регистрация в приложении отключена",
+  "auth_email_not_allowed": "Этот аккаунт не допущен к использованию приложения",
+  "auth_too_many_requests": "Слишком много попыток. Попробуйте позже",
+  "auth_network_error": "Ошибка сети. Проверьте подключение",
 
   "profile_score": "Очки",
   "profile_since": "С нами с {date}",
