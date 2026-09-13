@@ -35,8 +35,9 @@ const Progress = (() => {
         } else {
           cachedOwnerUid = null;
         }
-      } catch (_) {
+      } catch (err) {
         cachedOwnerUid = null;
+        console.warn('[progress] owner uid lookup failed:', err.code || err.message);
       }
       ownerResolvePromise = null;
       return cachedOwnerUid;

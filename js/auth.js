@@ -69,12 +69,12 @@ const Auth = (() => {
           .collection('users')
           .doc(user.uid)
           .set({ email: user.email, displayName: user.displayName, createdAt: user.createdAt }, { merge: true })
-          .catch(() => {});
+          .catch(err => console.warn('[auth] profile upsert failed:', err.code || err.message));
         firebase
           .firestore()
           .doc('public/owner/main')
           .set({ uid: user.uid, displayName: user.displayName, email: user.email, updatedAt: new Date().toISOString() }, { merge: true })
-          .catch(() => {});
+          .catch(err => console.warn('[auth] public/owner upsert failed:', err.code || err.message));
       }
     } catch (_) {}
   }
