@@ -28,10 +28,10 @@ const Progress = (() => {
     ownerResolvePromise = (async () => {
       try {
         if (typeof firebase !== 'undefined' && firebase.firestore) {
-          const snap = await firebase.firestore().doc('public/owner/main').get();
+          const snap = await firebase.firestore().doc('public/main').get();
           const data = snap.exists ? snap.data() : null;
           cachedOwnerUid = (data && data.uid) || null;
-          if (!cachedOwnerUid) console.warn('[progress] owner uid not found at public/owner/main — guests see zero state until owner signs in');
+          if (!cachedOwnerUid) console.warn('[progress] owner uid not found at public/main — guests see zero state until owner signs in');
         } else {
           cachedOwnerUid = null;
         }

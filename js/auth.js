@@ -72,7 +72,7 @@ const Auth = (() => {
           .catch(err => console.warn('[auth] profile upsert failed:', err.code || err.message));
         firebase
           .firestore()
-          .doc('public/owner/main')
+          .doc('public/main')
           .set({ uid: user.uid, displayName: user.displayName, email: user.email, updatedAt: new Date().toISOString() }, { merge: true })
           .catch(err => console.warn('[auth] public/owner upsert failed:', err.code || err.message));
       }
