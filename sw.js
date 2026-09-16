@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE = 'skill-tree-v23';
+const CACHE = 'skill-tree-v24';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -15,6 +15,7 @@ const STATIC_ASSETS = [
   './css/theme.css',
   './css/canvas.css',
   './css/header.css',
+  './css/sync.css',
   './css/profile.css',
   './css/side-nav.css',
   './css/hero.css',
@@ -41,6 +42,7 @@ const STATIC_ASSETS = [
   './js/firebase-config.js',
   './js/store.js',
   './js/store-firestore.js',
+  './js/sync.js',
   './js/auth.js',
   './js/progress.js',
   './js/achievements.js',

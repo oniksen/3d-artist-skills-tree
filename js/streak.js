@@ -56,16 +56,20 @@ const Streak = (() => {
   }
 
   async function sync() {
+    return syncLocal() || (await getData());
+  }
+
+  // Synchronous, optimistic version for the click path: updates the
+  // current day's streak from in-memory state, persists via the Sync
+  // queue and returns the streak synchronously — no network round-trip.
+  function syncLocal() {
     const user = Auth.getCurrentUser();
     if (!user) return null;
     const uid = user.uid;
-    let streak = (await Store.getStreak(uid)) || {
-      activeDays: [],
-      lastActiveDate: '',
-      currentStreak: 0,
-      longestStreak: 0,
-      updatedAt: null,
-    };
+    const existing = (typeof Progress !== 'undefined') ? Progress.getState().streak : null;
+    const streak = existing && typeof existing === 'object'
+      ? existing
+      : { activeDays: [], lastActiveDate: '', currentStreak: 0, longestStreak: 0, updatedAt: null };
     const today = getLocalDayString();
     if (!(streak.activeDays || []).includes(today)) {
       streak.activeDays = [...(streak.activeDays || []), today];
@@ -74,8 +78,9 @@ const Streak = (() => {
       streak.currentStreak = c.currentStreak;
       streak.longestStreak = c.longestStreak;
       streak.updatedAt = new Date().toISOString();
-      await Store.setStreak(uid, streak);
-      await Achievements.checkStreak(uid, streak.currentStreak);
+      Progress.setStreak(streak);
+      Sync.enqueueStreak(streak);
+      Achievements.checkStreak(uid, streak.currentStreak);
     }
     return streak;
   }
@@ -107,5 +112,5 @@ const Streak = (() => {
     return days;
   }
 
-  return { getLocalDayString, parseDayString, shiftDay, computeStreaks, sync, getData, getWeek, STREAK_ACHIEVEMENT_DAYS };
+  return { getLocalDayString, parseDayString, shiftDay, computeStreaks, sync, syncLocal, getData, getWeek, STREAK_ACHIEVEMENT_DAYS };
 })();

@@ -122,6 +122,8 @@ const Store = (() => {
   }
 
   return {
+    isFirestore: () => firestoreAvailable() && typeof FirestoreStore !== 'undefined',
+
     getUsers: () => impl().getUsers(),
     saveUsers: users => impl().saveUsers(users),
     getSession: () => impl().getSession(),

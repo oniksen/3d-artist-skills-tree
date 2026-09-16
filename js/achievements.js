@@ -72,8 +72,8 @@ const Achievements = (() => {
     return def.matches(record);
   }
 
-  async function grant(uid, type, metadata, matchKey, matchValue) {
-    const earned = await Store.getAchievements(uid);
+  function grant(uid, type, metadata, matchKey, matchValue) {
+    const earned = Progress.getState().achievements || [];
     const existing = earned.find(r => {
       if (r.type !== type) return false;
       if (matchKey) return r.metadata && r.metadata[matchKey] === matchValue;
@@ -81,7 +81,8 @@ const Achievements = (() => {
     });
     if (existing) return null;
     const record = { type, metadata: metadata || {}, achievedAt: new Date().toISOString() };
-    await Store.addAchievement(uid, record);
+    earned.push(record);
+    Sync.enqueueAchievement(record);
     Bus.emit('achievement:new', record);
     return record;
   }

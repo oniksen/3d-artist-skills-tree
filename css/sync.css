@@ -1,0 +1,233 @@
+/* Sync indicator — compact circular progress ring in the top bar. */
+
+.sync-indicator {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--glass);
+  cursor: default;
+  flex-shrink: 0;
+  transition: background var(--transition-fast),
+              border-color var(--transition-fast),
+              box-shadow var(--transition-fast);
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.sync-indicator.hidden { display: none; }
+
+.sync-indicator.is-clickable { cursor: pointer; }
+
+.sync-indicator:hover {
+  background: rgba(255,255,255,0.06);
+  border-color: var(--border-hover);
+}
+
+/* Ring SVG */
+.sync-ring {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sync-track {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 1.8;
+  opacity: 0.5;
+}
+
+.sync-fill {
+  fill: none;
+  stroke: url(#syncGrad);
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-dasharray: 0;
+  stroke-dashoffset: 97.389;
+  opacity: 0;
+  transition: opacity 0.35s, stroke-dashoffset 0.3s cubic-bezier(0.4,0,0.2,1);
+  transform-origin: center;
+}
+
+/* Centre icon / text */
+.sync-core {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+  font-family: var(--mono);
+  line-height: 1;
+  color: var(--text-muted);
+  transition: color var(--transition-fast);
+  pointer-events: none;
+  width: 14px;
+  height: 14px;
+}
+
+.sync-core svg { width: 14px; height: 14px; }
+
+/* ─── State: synced ─────────────────────────────────────────── */
+.sync-indicator.is-synced {
+  border-color: rgba(81, 207, 102, 0.25);
+  background: rgba(81, 207, 102, 0.06);
+  animation: syncPulseFade 0.6s ease-out;
+}
+
+.sync-indicator.is-synced .sync-fill { opacity: 0; }
+.sync-indicator.is-synced .sync-core { color: var(--success); }
+
+/* ─── State: dirty ──────────────────────────────────────────── */
+.sync-indicator.is-dirty {
+  border-color: rgba(253, 203, 110, 0.35);
+  background: rgba(253, 203, 110, 0.06);
+  cursor: pointer;
+}
+
+.sync-indicator.is-dirty .sync-fill {
+  opacity: 1;
+  stroke-dasharray: 22 75.389;
+  stroke-dashoffset: 97.389;
+  animation: syncTick 2.8s cubic-bezier(0.65,0,0.35,1) infinite;
+}
+
+.sync-indicator.is-dirty .sync-core {
+  color: var(--accent4);
+}
+
+.sync-indicator.is-dirty .sync-core::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent4);
+  box-shadow: 0 0 6px rgba(253,203,110,0.5);
+  animation: syncDotPulse 1.6s ease-in-out infinite;
+}
+
+/* ─── State: syncing ────────────────────────────────────────── */
+.sync-indicator.is-syncing {
+  border-color: rgba(108, 92, 231, 0.35);
+  background: rgba(108, 92, 231, 0.08);
+  box-shadow: 0 0 0 2px rgba(108,92,231,0.15);
+  cursor: default;
+}
+
+.sync-indicator.is-syncing .sync-fill {
+  opacity: 1;
+  stroke-dasharray: 14 83.389;
+  animation: syncSpin 0.9s linear infinite;
+  transition: none;
+}
+
+.sync-indicator.is-syncing .sync-core {
+  color: var(--accent);
+  font-size: 8px;
+  letter-spacing: -0.02em;
+}
+
+/* ─── State: error ──────────────────────────────────────────── */
+.sync-indicator.is-error {
+  border-color: rgba(255, 107, 107, 0.4);
+  background: rgba(255, 107, 107, 0.08);
+  cursor: pointer;
+  animation: syncShake 0.45s ease-in-out;
+}
+
+.sync-indicator.is-error .sync-fill { opacity: 0; }
+.sync-indicator.is-error .sync-core { color: var(--danger); }
+
+/* ─── Tooltip ───────────────────────────────────────────────── */
+.sync-tip {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: rgba(16,16,26,0.96);
+  border: 1px solid var(--border-hover);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.04);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.2s;
+  transform-origin: bottom center;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 70;
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-family: var(--font);
+  font-weight: 500;
+}
+
+.sync-tip.visible { opacity: 1; transform: translateX(-50%) translateY(-4px); pointer-events: auto; }
+
+.sync-tip-status { display: block; font-size: 11px; color: var(--text-muted); }
+
+.sync-tip-now {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: none;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: filter 0.15s, transform 0.15s;
+}
+
+.sync-tip-now:hover { filter: brightness(1.12); transform: translateY(-1px); }
+
+/* ─── Keyframes ─────────────────────────────────────────────── */
+@keyframes syncSpin {
+  from { stroke-dashoffset: 97.389; }
+  to   { stroke-dashoffset: 0; }
+}
+
+@keyframes syncTick {
+  0%   { stroke-dashoffset: 97.389; }
+  50%  { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: -97.389; }
+}
+
+@keyframes syncDotPulse {
+  0%,100% { opacity: 1; transform: scale(1); }
+  50%     { opacity: 0.6; transform: scale(0.85); }
+}
+
+@keyframes syncPulseFade {
+  0%   { box-shadow: 0 0 0 0 rgba(81,207,102,0.35); }
+  100% { box-shadow: 0 0 0 6px rgba(81,207,102,0); }
+}
+
+@keyframes syncShake {
+  0%,100% { transform: translateX(0); }
+  25%     { transform: translateX(-3px); }
+  75%     { transform: translateX(3px); }
+}
+
+/* ─── Subtle idle ring visible when synced (premium hint) ───── */
+.sync-indicator.is-synced .sync-fill {
+  opacity: 0.18;
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+  animation: none;
+}

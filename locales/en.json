@@ -114,6 +114,12 @@
   "streak_day_2": "days",
   "streak_day_5": "days",
 
+  "sync_synced": "All changes saved",
+  "sync_dirty": "Unsaved changes — will sync on exit",
+  "sync_syncing": "Syncing…",
+  "sync_error": "Sync failed — will retry",
+  "sync_now": "Sync now",
+
   "dash_title": "Dashboard",
   "dash_subtitle": "Your progress on the way to Art Director.",
   "dash_current_level": "Current level",

@@ -21,6 +21,7 @@ async function init() {
 
   if (window.__fbAuthReady) await window.__fbAuthReady;
   await Progress.refresh();
+  if (typeof Sync !== 'undefined') Sync.init();
   currentLevel = (Progress.isReadonly() && !Progress.hasData()) ? 'junior' : Progress.getCurrentLevelId();
 
   buildLevelNav();

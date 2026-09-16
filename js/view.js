@@ -56,6 +56,7 @@ const View = (() => {
     renderScoreChip();
     renderStreakBadge();
     renderUserMenu();
+    renderSyncIndicator();
   }
 
   function renderScoreChip() {
@@ -65,6 +66,51 @@ const View = (() => {
     const readonly = Progress.isReadonly();
     chip.classList.toggle('hidden', readonly && !Progress.hasData());
     if (!(readonly && !Progress.hasData())) val.textContent = Progress.getTotalScore();
+  }
+
+  function renderSyncIndicator() {
+    const el = document.getElementById('syncIndicator');
+    if (!el) return;
+    const readonly = Progress.isReadonly();
+    const remote = typeof Store !== 'undefined' && Store.isFirestore();
+    if (!remote || readonly) {
+      el.classList.add('hidden');
+      return;
+    }
+    const s = (typeof Sync !== 'undefined') ? Sync.getState() : { status: 'synced', progress: 0 };
+    el.classList.remove('hidden');
+    el.classList.remove('is-synced', 'is-dirty', 'is-syncing', 'is-error', 'is-clickable');
+    el.classList.add('is-' + s.status);
+    if (s.status === 'dirty' || s.status === 'error') el.classList.add('is-clickable');
+    const core = document.getElementById('syncCore');
+    if (core) {
+      if (s.status === 'syncing') {
+        core.textContent = Math.round((s.progress || 0) * 100) || '';
+      } else if (s.status === 'synced') {
+        core.innerHTML = Icons.svg('circle-check', 14);
+      } else if (s.status === 'error') {
+        core.innerHTML = Icons.svg('triangle-alert', 13);
+      } else {
+        core.innerHTML = '';
+      }
+    }
+    el.title = I18n.t('sync_' + s.status) || '';
+  }
+
+  function updateSyncTip(force) {
+    const tip = document.getElementById('syncTip');
+    const status = document.getElementById('syncTipStatus');
+    const now = document.getElementById('syncNowBtn');
+    if (!tip || !status || !now) return;
+    const s = (typeof Sync !== 'undefined') ? Sync.getState() : { status: 'synced' };
+    if (force && (s.status === 'dirty' || s.status === 'error')) {
+      tip.classList.add('visible');
+    } else {
+      tip.classList.remove('visible');
+      return;
+    }
+    status.textContent = I18n.t('sync_' + s.status);
+    now.textContent = I18n.t('sync_now');
   }
 
   function renderStreakBadge() {
@@ -368,6 +414,10 @@ const View = (() => {
   }
 
   async function onAuthChanged() {
+    if (typeof Sync !== 'undefined') {
+      if (Auth.getCurrentUser()) Sync.init();
+      else Sync.resetSession();
+    }
     await Progress.refresh();
     if (!Progress.isReadonly()) {
       const cur = Progress.getCurrentLevelId();
@@ -596,6 +646,27 @@ const View = (() => {
     });
     Bus.on('achievement:new', record => achievementToast(record));
     Bus.on('level:up', result => levelUpToast(result));
+
+    const syncIndicator = document.getElementById('syncIndicator');
+    if (syncIndicator && typeof Sync !== 'undefined') {
+      syncIndicator.addEventListener('click', () => {
+        const s = Sync.getState();
+        if (s.status === 'dirty' || s.status === 'error') Sync.flush();
+      });
+      syncIndicator.addEventListener('mouseenter', () => updateSyncTip(true));
+      syncIndicator.addEventListener('mouseleave', () => updateSyncTip(false));
+      const syncNow = document.getElementById('syncNowBtn');
+      if (syncNow) {
+        syncNow.addEventListener('click', e => {
+          e.stopPropagation();
+          Sync.flush();
+        });
+      }
+    }
+    Bus.on('sync:change', () => {
+      renderSyncIndicator();
+      updateSyncTip(false);
+    });
   }
 
   return { init, refreshStats, renderAchievements, renderStreakBadge, route };

@@ -81,11 +81,33 @@ const Progress = (() => {
       Store.getStreak(id).catch(() => null),
       Store.getAchievements(id).catch(() => null),
     ]);
+    const prevUid = state.uid;
     state.uid = id;
-    state.progress = progress || { currentLevelId: LEVEL_ORDER[0], unlockedLevelIds: [LEVEL_ORDER[0]], totalScore: 0 };
-    state.assessments = assessments || {};
+    const sameUser = prevUid === id;
+    const queuedProgress = (typeof Sync !== 'undefined' && Sync.getPendingProgress)
+      ? Sync.getPendingProgress()
+      : {};
+    state.progress = Object.assign(
+      { currentLevelId: LEVEL_ORDER[0], unlockedLevelIds: [LEVEL_ORDER[0]], totalScore: 0 },
+      progress || {},
+      sameUser ? queuedProgress : {}
+    );
+    if (sameUser) {
+      // Preserve optimistic local edits that have not been flushed yet.
+      state.assessments = Object.assign({}, assessments || {}, state.assessments);
+      const previous = state.achievements || [];
+      state.achievements = achievements || [];
+      previous.forEach(rec => {
+        const dup = state.achievements.some(e =>
+          e.type === rec.type && JSON.stringify(e.metadata || {}) === JSON.stringify(rec.metadata || {})
+        );
+        if (!dup) state.achievements.push(rec);
+      });
+    } else {
+      state.assessments = assessments || {};
+      state.achievements = achievements || [];
+    }
     state.streak = streak;
-    state.achievements = achievements || [];
     return state;
   }
 
@@ -178,6 +200,10 @@ const Progress = (() => {
     return state.progress ? state.progress.totalScore : 0;
   }
 
+  function setStreak(streak) {
+    state.streak = streak;
+  }
+
   async function ensureLoaded() {
     if (!state.progress && currentUid()) {
       await refresh();
@@ -203,38 +229,36 @@ const Progress = (() => {
     const assessment = { score, subtopics, updatedAt: new Date().toISOString() };
     state.assessments[skillId] = assessment;
     state.uid = id;
-    await Store.setAssessment(id, skillId, assessment);
+    Sync.enqueueAssessment(skillId, assessment);
 
     if (becomingNew) {
       try {
-        const s = await Streak.sync();
+        const s = Streak.syncLocal();
         if (s) state.streak = s;
         Bus.emit('streak:change', s || null);
       } catch (_) {}
     }
-    await recalculate();
+    recalculate();
     Bus.emit('progress:change', { skillId, score });
     return assessment;
   }
 
-  async function recalculate() {
+  function recalculate() {
     const id = currentUid();
     if (!id) return;
-    await ensureLoaded();
     const totalScore = Object.keys(state.assessments).reduce((sum, sid) => {
       const skill = getSkillById(sid);
       return sum + clampScore(state.assessments[sid].score, skill ? skill.maxWeight : 1);
     }, 0);
-    await Store.updateProgress(id, { totalScore });
+    Sync.enqueueProgress({ totalScore });
     if (state.progress) state.progress.totalScore = totalScore;
-    await Achievements.evaluateProgress(id);
-    await checkLevelUp();
+    Achievements.evaluateProgress(id);
+    checkLevelUp();
   }
 
-  async function checkLevelUp() {
+  function checkLevelUp() {
     const id = currentUid();
     if (!id) return null;
-    await ensureLoaded();
     if (!state.progress) return null;
     const cur = state.progress.currentLevelId;
     const curIdx = LEVEL_ORDER.indexOf(cur);
@@ -250,12 +274,12 @@ const Progress = (() => {
 
     const unlocked = [...(state.progress.unlockedLevelIds || [])];
     if (!unlocked.includes(next)) unlocked.push(next);
-    await Store.updateProgress(id, { currentLevelId: next, unlockedLevelIds: unlocked });
+    Sync.enqueueProgress({ currentLevelId: next, unlockedLevelIds: unlocked });
     state.progress.currentLevelId = next;
     state.progress.unlockedLevelIds = unlocked;
 
     const result = { fromLevel: cur, toLevel: next };
-    await Achievements.evaluateLevelUp(id, result);
+    Achievements.evaluateLevelUp(id, result);
     Bus.emit('level:up', result);
     return result;
   }
@@ -263,8 +287,13 @@ const Progress = (() => {
   async function reset() {
     const id = currentUid();
     if (!id) return;
-    await Store.resetProgress(id);
-    await refresh();
+    Sync.resetSession();
+    Sync.enqueueReset();
+    state.progress = { currentLevelId: LEVEL_ORDER[0], unlockedLevelIds: [LEVEL_ORDER[0]], totalScore: 0 };
+    state.assessments = {};
+    state.streak = null;
+    state.achievements = [];
+    await Sync.flush();
     Bus.emit('progress:change', { reset: true });
   }
 
@@ -288,6 +317,7 @@ const Progress = (() => {
     toggleSubtopic,
     recalculate,
     checkLevelUp,
+    setStreak,
     reset,
   };
 })();
